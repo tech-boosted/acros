@@ -5,15 +5,15 @@ const Navbar = () => {
   let Links = [
     { name: "About Us", link: "/about-us" },
     { name: "Resources", link: "/resources" },
-    { name: "Services", link: "/" },
-    { name: "Career", link: "/" },
+    { name: "Services", link: "/services" },
+    { name: "Career", link: "/career" },
     { name: "Contact", link: "/contact-us" },
   ];
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="shadow-md absolute top-0 fixed left-0 w-full  z-50 ">
-      <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
+    <div className="  w-full  z-50 ">
+      <div className="md:flex items-center justify-between bg-white py-4 ">
         <div
           className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-gray-800"
@@ -37,10 +37,13 @@ const Navbar = () => {
           }`}
         >
           {Links.map((link) => (
-            <li key={link.name} className="bg-white md:ml-8 text-lg md:my-0 my-7">
+            <li
+              key={link.name}
+              className="bg-white md:ml-8 text-lg md:my-0 my-7"
+            >
               <a
                 href={link.link}
-                className="text-gray-800 hover:text-theme-500 duration-500"
+                className="hover:text-purple-400 text-gray-800 hover:text-theme-500 duration-500"
               >
                 {link.name}
               </a>

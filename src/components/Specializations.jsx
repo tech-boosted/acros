@@ -2,8 +2,8 @@ import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 const Specializations = () => {
   return (
-    <div className="md:w-[70vw] w-[90vw] m-auto block text-[19px] mt-20 mb-10">
-      <h2 className="text-[45px] font-bold mb-4">Specialization</h2>
+    <div className="w-full text-desc-custom mt-20 mb-10">
+      <h2 className="md:text-title-custom text-title-custom-mv font-bold mb-4">Specialization</h2>
       <p className="mb-4">Unleashing your brand potential</p>
       <p className="">
         Our team has extensive experience in building and optimizing e- <br />{" "}
@@ -12,8 +12,8 @@ const Specializations = () => {
       <div className="flex-col mt-8">
         <div className="flex-col">
           <div className="flex my-10 items-center">
-            <h2 className="w-[40%] text-[32px] font-bold">PPC Ads</h2>
-            <p className="w-[50%] text-[18px]">
+            <h2 className="w-[40%] text-subtitle-custom-mv md:text-subtitle-custom font-bold">PPC Ads</h2>
+            <p className="w-[50%] ">
               Subject matter experts in marketplace & D2C PPC <br /> Ads.
             </p>
             <div className="w-[10%] text-blue-700  text-[22px]">
@@ -24,8 +24,10 @@ const Specializations = () => {
         </div>
         <div className="flex-col">
           <div className="flex my-10 items-center">
-            <h2 className="w-[40%] text-[32px] font-bold">Paid Social Ads</h2>
-            <p className="w-[50%] text-[18px]">
+            <h2 className="w-[40%] text-subtitle-custom-mv md:text-subtitle-custom font-bold">
+              Paid Social Ads
+            </h2>
+            <p className="w-[50%] ">
               Skilled advertisers to leverage social media platforms <br /> to
               increase sales and profitability.
             </p>
@@ -37,8 +39,8 @@ const Specializations = () => {
         </div>
         <div className="flex-col">
           <div className="flex my-10 items-center">
-            <h2 className="w-[40%] text-[32px] font-bold">DSP Ads</h2>
-            <p className="w-[50%] text-[18px]">
+            <h2 className="w-[40%] text-subtitle-custom-mv md:text-subtitle-custom font-bold">DSP Ads</h2>
+            <p className="w-[50%] ">
               Seasoned advertisers with in-depth knowledge and <br /> proven
               results of DSP Ads for e-commerce.
             </p>
@@ -50,8 +52,10 @@ const Specializations = () => {
         </div>
         <div className="flex-col">
           <div className="flex my-10 items-center">
-            <h2 className="w-[40%] text-[32px] font-bold">Native Ads</h2>
-            <p className="w-[50%] text-[18px]">
+            <h2 className="w-[40%] text-subtitle-custom-mv md:text-subtitle-custom font-bold">
+              Native Ads
+            </h2>
+            <p className="w-[50%] ">
               Proficient media buyers to build synergy with PPC, <br /> Social,
               and DSP to maximize ROI
             </p>

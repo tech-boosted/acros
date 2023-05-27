@@ -2,9 +2,9 @@ import React from "react";
 
 const Connect = () => {
   return (
-    <div className="md:w-[70vw] w-[90vw] m-auto block">
-      <h2 className="text-[45px] font-bold my-6">Let's talk</h2>
-      <p className="text-[25px] mb-10">Schedule a Meeting with the Experts</p>
+    <div className="w-full text-desc-custom">
+      <h2 className="md:text-title-custom text-title-custom-mv font-bold my-6">Let's talk</h2>
+      <p className="text-subtitle-custom-mv md:text-subtitle-custom mb-10">Schedule a Meeting with the Experts</p>
       <div className="md:flex flex-cols gap-4 justify-between">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4 ">
           <input

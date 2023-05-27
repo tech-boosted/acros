@@ -6,9 +6,7 @@ import FindUsOn from "../components/Contact/FindUsOn";
 const Contact = () => {
   return (
     <div>
-      <Navbar />
       <FindUsOn />
-      <Footer />
     </div>
   );
 };

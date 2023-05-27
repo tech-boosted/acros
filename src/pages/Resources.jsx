@@ -6,9 +6,7 @@ import Navbar from "../components/Navbar";
 const Resources = () => {
   return (
     <div>
-      <Navbar/>
       <InsightsBanner/>
-      <Footer/>
     </div>
   )
 }

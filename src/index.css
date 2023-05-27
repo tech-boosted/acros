@@ -12,6 +12,25 @@ div {
   font-family: "Satoshi Variable";
 }
 
+:root {
+  --title: 112px;
+  --subtitle: 32px;
+  --description: 18px;
+}
+.slide-track {
+  /* width: calc(18 * 250px); */
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+
 @font-face {
   font-family: "Satoshi Variable";
   src: url("./assests/acros-media/Satoshi-Black.woff");

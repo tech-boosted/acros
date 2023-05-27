@@ -16,7 +16,6 @@ import Banner1 from "../components/Banner1";
 const Home = () => {
   return (
     <div>
-      <Navbar />
       {/* <Banner /> */}
       <Banner1/>
       <Section />
@@ -26,7 +25,6 @@ const Home = () => {
       <WorkWithUs />
       <TechStack />
       <Connect />
-      <Footer />  
     </div>
   );
 };

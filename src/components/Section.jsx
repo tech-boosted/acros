@@ -10,12 +10,12 @@ const Section = () => {
         <div className="rounded-[30px] p-[50px]  h-fit text-white w-full bg-gradient-to-r from-[#A422E5] to-[#A422E5] text-desc-custom">
           <section className="flex justify-between items-center">
             <div>
-              <p className=" md:text-title-custom text-title-custom-mv font-bold ">
+              <p className=" md:text-title-custom text-title-custom-mv font-satoshi-bold">
                 Multi-Channel Advertising Partners
               </p>
             </div>
             <button className="rounded-full bg-white px-2 w-[150px] md:w-[200px] md:px-8 h-[42px] text-base font-medium text-black transition duration-200 hover:bg-gray-200 active:bg-gray-300">
-              <p className=" text-slate-950 md:text-[18px] text-[12px]">
+              <p className=" text-primary md:text-[18px] text-[12px]">
                 Read More
               </p>
             </button>
@@ -36,7 +36,7 @@ const Section = () => {
 
           <div className="grid md:grid-cols-4 gap-4 grid-cols-1 md:text-start text-center ">
             <div className="flex-col">
-              <div className="md:text-title-custom text-title-custom-mv">
+              <div className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
                 100+
               </div>
               <div className="">
@@ -45,7 +45,7 @@ const Section = () => {
             </div>
 
             <div className="flex-col">
-              <div className="md:text-title-custom text-title-custom-mv">
+              <div className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
                 50+
               </div>
               <div className="">
@@ -55,7 +55,7 @@ const Section = () => {
             </div>
 
             <div className="flex-col">
-              <div className="md:text-title-custom text-title-custom-mv">
+              <div className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
                 15+
               </div>
               <div className="">
@@ -64,7 +64,7 @@ const Section = () => {
             </div>
 
             <div className="flex-col">
-              <div className="md:text-title-custom text-title-custom-mv">
+              <div className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
                 10+
               </div>
               <div className="">
@@ -77,7 +77,7 @@ const Section = () => {
 
       <div className=" flex items-center justify-center text-desc-custom ">
         <div className="my-[120px] w-full  text-right">
-          <h1 className="md:text-title-custom text-title-custom-mv font-semibold mb-8">
+          <h1 className="md:text-title-custom text-title-custom-mv mb-8 font-satoshi-bold">
             Our Impact
           </h1>
           <p className="text-subtitle-custom-mv md:text-subtitle-custom mb-4">
@@ -89,30 +89,30 @@ const Section = () => {
           </div>
           <div className="grid md:grid-cols-4 gap-4  grid-cols-1 text-center">
             <div>
-              <h1 className="md:text-title-custom text-title-custom-mv font-extrabold">
+              <h1 className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
                 $2B
               </h1>
-              <p className="">Managed Portfolio Worth $2 Billion in 2022</p>
+              <p className="font-satoshi-medium">Managed Portfolio Worth $2 Billion in 2022</p>
             </div>
             <div>
-              <h1 className="md:text-title-custom text-title-custom-mv font-extrabold">
+              <h1 className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
                 14x
               </h1>
-              <p className="">Achieved Average ROAS of 14x in 2022</p>
+              <p className="font-satoshi-medium">Achieved Average ROAS of 14x in 2022</p>
             </div>
             <div>
-              <h1 className="md:text-title-custom text-title-custom-mv font-extrabold">
+              <h1 className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
                 50+
               </h1>
-              <p className="">
+              <p className="font-satoshi-medium">
                 Proficient in 50+ Retail and Wholesale Categories
               </p>
             </div>
             <div>
-              <h1 className="md:text-title-custom text-title-custom-mv font-extrabold">
+              <h1 className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
                 45%
               </h1>
-              <p className="">45% Increase in Profitability</p>
+              <p className="font-satoshi-medium">45% Increase in Profitability</p>
             </div>
           </div>
         </div>

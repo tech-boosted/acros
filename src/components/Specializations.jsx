@@ -3,7 +3,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 const Specializations = () => {
   return (
     <div className="w-full text-desc-custom mt-20 mb-10">
-      <h2 className="md:text-title-custom text-title-custom-mv font-bold mb-4">Specialization</h2>
+      <h2 className="md:text-title-custom text-title-custom-mv mb-4 font-satoshi-bold">Specialization</h2>
       <p className="mb-4">Unleashing your brand potential</p>
       <p className="">
         Our team has extensive experience in building and optimizing e- <br />{" "}
@@ -35,7 +35,7 @@ const Specializations = () => {
               <BsArrowUpRight />
             </div>
           </div>
-          <div className="w-full bg-gradient-to-r from-blue-400 via-blue-700 to-green-400 h-[2px]"></div>
+          <div className="w-full bg-gradient-to-r from-blue-400 to-green-400 h-[2px]"></div>
         </div>
         <div className="flex-col">
           <div className="flex my-10 items-center">

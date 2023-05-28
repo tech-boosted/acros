@@ -11,9 +11,13 @@ module.exports = {
         'desc-custom': '18px',
         'title-custom-mv' : '35px',
         'subtitle-custom-mv' : '22px',
-        
       },
     },
+    colors: {
+      'primary': '#AA00FF',
+      'secondary': '#49219C',
+      'white': '#FFFFFF'
+    }
 
   },
   plugins: [],

@@ -3,7 +3,7 @@ import React from "react";
 const Section = () => {
   return (
     <div>
-      <div className="pt-10">
+      <div className="pt-10 my-10">
         <h2 className="text-center md:text-title-custom text-title-custom-mv font-semibold mb-20">
           Scale your E-Commerce Advertising with Trusted Partners
         </h2>

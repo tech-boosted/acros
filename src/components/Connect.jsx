@@ -2,7 +2,7 @@ import React from "react";
 
 const Connect = () => {
   return (
-    <div className="w-full text-desc-custom">
+    <div className="w-full text-desc-custom my-10">
       <h2 className="md:text-title-custom text-title-custom-mv font-bold my-6">Let's talk</h2>
       <p className="text-subtitle-custom-mv md:text-subtitle-custom mb-10">Schedule a Meeting with the Experts</p>
       <div className="md:flex flex-cols gap-4 justify-between">

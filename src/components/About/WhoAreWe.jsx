@@ -15,7 +15,9 @@ const WhoAreWe = () => {
       </div>
       <div className="h-fit py-[90px] ">
         <div className="h-[60%] flex md:flex-row flex-col">
-          <div className="text-title-custom-mv md:text-title-custom  font-bold w-[50%]">About Us</div>
+          <div className="text-title-custom-mv md:text-title-custom  font-bold w-[50%]">
+            About Us
+          </div>
           <div className="md:w-[50%] w-full mb-10 flex items-center">
             We’re passionate about helping businesses succeed in the fast <br />{" "}
             -paced world of e-commerce. Our team of experts is dedicated to{" "}
@@ -26,26 +28,34 @@ const WhoAreWe = () => {
 
         <div className=" grid md:grid-cols-4 grid-cols-1 gap-12 text-center">
           <div className="flex-col ">
-            <p className="text-title-custom-mv md:text-title-custom font-bold">10+</p>
+            <p className="text-title-custom-mv md:text-title-custom font-bold">
+              10+
+            </p>
             <p className="">
               Diverse Mastery of Advertising & Marketing Disciplines
             </p>
           </div>
           <div className="flex-col ">
-            <p className="text-title-custom-mv md:text-title-custom font-bold">12+</p>
+            <p className="text-title-custom-mv md:text-title-custom font-bold">
+              12+
+            </p>
             <p className="">
               Backed by over a Decade of Expertise in the E-commerce Industry
             </p>
           </div>
           <div className="flex-col ">
-            <p className="text-title-custom-mv md:text-title-custom font-bold">70+</p>
+            <p className="text-title-custom-mv md:text-title-custom font-bold">
+              70+
+            </p>
             <p className="">
               Evergrowing Talent Pool of Advertisers who are Thoroughbreds in
               E-commerce Advertising.
             </p>
           </div>
           <div className="flex-col ">
-            <p className="text-title-custom-mv md:text-title-custom font-bold">$12B</p>
+            <p className="text-title-custom-mv md:text-title-custom font-bold">
+              $12B
+            </p>
             <p className="">Revenue Generation Across Multiple Channels</p>
           </div>
         </div>

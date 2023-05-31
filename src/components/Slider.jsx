@@ -8,6 +8,12 @@ import logo6 from "../assests/acros-media/Frame-135.jpg";
 import logo7 from "../assests/acros-media/Frame-136.jpg";
 import logo8 from "../assests/acros-media/Frame-137.jpg";
 import logo9 from "../assests/acros-media/Frame-138.jpg";
+import logo10 from "../assests/acros-media/Frame-139.jpg";
+import logo11 from "../assests/acros-media/Frame-140.jpg";
+import logo12 from "../assests/acros-media/Frame-141.jpg";
+import logo13 from "../assests/acros-media/Frame-142.jpg";
+import logo14 from "../assests/acros-media/Reckitt-Logo-1.png";
+import logo15 from "../assests/acros-media/Frame-145.jpg";
 const Slider = () => {
   return (
     <div>
@@ -78,42 +84,42 @@ const Slider = () => {
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
-              src={logo4}
+              src={logo10}
               alt="mattle"
               className="w-full transition transform delay-200 hover:translate-z-[20px]"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
-              src={logo5}
+              src={logo11}
               alt="mattle"
               className="w-full transition transform delay-200 hover:translate-z-[20px]"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
-              src={logo6}
+              src={logo12}
               alt="mattle"
               className="w-full transition transform delay-200 hover:translate-z-[20px]"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
-              src={logo4}
+              src={logo13}
               alt="mattle"
               className="w-full transition transform delay-200 hover:translate-z-[20px]"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
-              src={logo5}
+              src={logo14}
               alt="mattle"
               className="w-full transition transform delay-200 hover:translate-z-[20px]"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
-              src={logo6}
+              src={logo15}
               alt="mattle"
               className="w-full transition transform delay-200 hover:translate-z-[20px]"
             />

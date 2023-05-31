@@ -31,7 +31,7 @@ const InsightsBanner = () => {
   return (
     <div>
       <div className="bg-gradient-to-r from-[#AA00FF] to-[#0044FF]  w-full h-fit px-12 py-10  rounded-[30px] text-white my-12 text-desc-custom">
-        <h2 className="mb-10 md:text-title-custom text-title-custom-mv font-bold">
+        <h2 className="mb-10 md:text-title-custom text-title-custom-mv font-satoshi-bold">
           Insightful Digital Buzz
         </h2>
         <p className="">
@@ -69,14 +69,14 @@ const InsightsBanner = () => {
       </div>
 
       {showArticle && (
-        <div className="w-full grid md:grid-cols-2  grid-cols-1 gap-28  m-auto">
-          <div>
+        <div className="w-full grid md:grid-cols-2  grid-cols-1 gap-8  m-auto">
+          <div className="">
             <img
-              src={Rectangle1}
+              src={BG1}
               alt="Article1"
-              className="h-[360px] rounded-[30px]"
+              className="w-full rounded-[30px]"
             />
-            <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-bold my-4">
+            <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
               Keep customers hooked to your brand
             </h2>
             <span className="text-[12px]  text-gray-600">May 1, 2023</span>
@@ -89,11 +89,11 @@ const InsightsBanner = () => {
           </div>
           <div>
             <img
-              src={AR1}
+              src={CS1}
               alt="Article1"
-              className="h-[360px] rounded-[30px]"
+              className="w-full rounded-[30px]"
             />
-            <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-bold my-4">
+            <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
               Build a Hero Brand by Merit
             </h2>
             <span className="text-[12px]  text-gray-600">April 29, 2023</span>
@@ -108,9 +108,9 @@ const InsightsBanner = () => {
             <img
               src={AR2}
               alt="Article1"
-              className="h-[360px] rounded-[30px]"
+              className="w-full rounded-[30px]"
             />
-            <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-bold my-4">
+            <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
               Different types of shoppers and how to engage them
             </h2>
             <span className="text-[12px]  text-gray-600">April 29, 2023</span>
@@ -128,11 +128,11 @@ const InsightsBanner = () => {
         <div className="w-full grid md:grid-cols-2  grid-cols-1 gap-8  m-auto">
           <div>
             <img
-              src={Rectangle1}
+              src={CS1}
               alt="Article1"
-              className="h-[360px] rounded-[30px]"
+              className="w-full rounded-[30px]"
             />
-            <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-bold my-4">
+            <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
               What is the most important metric of E-Commerce Advertising to
               build a HERO BRAND.?{" "}
             </h2>
@@ -148,9 +148,9 @@ const InsightsBanner = () => {
             <img
               src={BG2}
               alt="Article1"
-              className="h-[360px] rounded-[30px]"
+              className="w-full rounded-[30px]"
             />
-            <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-bold my-4">
+            <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
               Difference between an e-commerce Shopper, Consumer and Customer
               and how to engage them.{" "}
             </h2>
@@ -166,9 +166,9 @@ const InsightsBanner = () => {
             <img
               src={BG1}
               alt="Article1"
-              className="h-[360px] rounded-[30px]"
+              className="w-full rounded-[30px]"
             />
-            <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-bold my-4">
+            <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
               How to build an online first retail brand which keeps its
               customers hooked to the brand and products.{" "}
             </h2>
@@ -189,9 +189,9 @@ const InsightsBanner = () => {
             <img
               src={BG1}
               alt="Article1"
-              className="h-[360px] rounded-[30px]"
+              className="w-full rounded-[30px]"
             />
-            <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-bold my-4">
+            <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
               Outdoing Nike with their own mantra of “Just Do It”.{" "}
             </h2>
             <span className="text-[12px]  text-gray-600">May 1, 2023</span>
@@ -206,9 +206,9 @@ const InsightsBanner = () => {
             <img
               src={CS2}
               alt="Article1"
-              className="h-[360px] rounded-[30px]"
+              className="w-full rounded-[30px]"
             />
-            <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-bold my-4">
+            <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
               Driven by Omni-Channel Strategy. Campus is Asia’s Largest Sports
               Footwear Brand.{" "}
             </h2>
@@ -224,9 +224,9 @@ const InsightsBanner = () => {
             <img
               src={CS1}
               alt="Article1"
-              className="h-[360px] rounded-[30px]"
+              className="w-full rounded-[30px]"
             />
-            <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-bold my-4">
+            <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
               Brand Outperformed Nike’s Catchphrase with Simple Keyword
               Strategy.{" "}
             </h2>

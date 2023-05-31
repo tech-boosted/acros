@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <div>
         <AgencyPartner/>
-        <Capabilities/>
+        {/* <Capabilities/> */}
     </div>
   )
 }

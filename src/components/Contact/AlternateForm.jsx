@@ -4,7 +4,7 @@ const AlternateForm = () => {
   return (
     <div>
       <div className="text-center my-10 w-full">
-        <h2 className="text-title-custom-mv md:text-title-custom ">
+        <h2 className="text-title-custom-mv md:text-title-custom font-satoshi-bold">
           {" "}
           Alternatively
         </h2>

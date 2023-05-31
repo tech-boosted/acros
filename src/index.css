@@ -3,13 +3,10 @@
 @tailwind utilities;
 
 body {
+  font-family: "Satoshi Variable Regular", Sans-serif !important;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Satoshi Variable";
-}
-div {
-  font-family: "Satoshi Variable";
 }
 
 :root {
@@ -18,20 +15,54 @@ div {
   --description: 18px;
 }
 .slide-track {
-  /* width: calc(18 * 250px); */
-  animation: scroll 30s linear infinite;
+  width: calc(18 * 250px);
+  animation: scroll 40s linear infinite;
 }
 
+
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
+  0%{
+    transform:translateX(0);
   }
-  100% {
-    transform: translateX(calc(-250px * 9));
+  100%{
+    transform:translateX(calc(-9*250px));
+
   }
+}
+
+
+@font-face {
+  font-family: "Satoshi Variable Light";
+  src: url("./assests/acros-media/Satoshi-Light.woff");
+}
+
+.font-satoshi-light {
+  font-family: "Satoshi Variable Light";
 }
 
 @font-face {
-  font-family: "Satoshi Variable";
-  src: url("./assests/acros-media/Satoshi-Black.woff");
+  font-family: "Satoshi Variable Medium";
+  src: url("./assests/acros-media/Satoshi-Medium.woff");
+}
+
+.font-satoshi-medium {
+  font-family: "Satoshi Variable Medium";
+}
+
+@font-face {
+  font-family: "Satoshi Variable Bold";
+  src: url("./assests/acros-media/Satoshi-Bold.woff");
+}
+
+.font-satoshi-bold {
+  font-family: "Satoshi Variable Bold";
+}
+
+@font-face {
+  font-family: "Satoshi Variable Regular";
+  src: url("./assests/acros-media/Satoshi-Regular.woff");
+}
+
+.font-satoshi-regular {
+  font-family: "Satoshi Variable Regular";
 }

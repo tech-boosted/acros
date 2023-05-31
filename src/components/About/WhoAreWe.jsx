@@ -4,8 +4,8 @@ const WhoAreWe = () => {
   return (
     <div className="w-fullm-auto block text-desc-custom">
       <div className="md:my-[80px] my-[50px]">
-        <h2 className="text-title-custom font-bold">We are Acros</h2>
-        <p className=" text-gray-500">
+        <h2 className="text-title-custom font-satoshi-bold">We are Acros</h2>
+        <p className="">
           We are a team of ex-Amazon, Google and Meta executives who make a
           bigger impact in the e- <br /> commerce industry via thought
           leadership and client servicing. A proven leader in the industry that{" "}
@@ -15,7 +15,7 @@ const WhoAreWe = () => {
       </div>
       <div className="h-fit py-[90px] ">
         <div className="h-[60%] flex md:flex-row flex-col">
-          <div className="text-title-custom-mv md:text-title-custom  font-bold w-[50%]">
+          <div className="text-title-custom-mv md:text-title-custom  font-satoshi-bold w-[50%]">
             About Us
           </div>
           <div className="md:w-[50%] w-full mb-10 flex items-center">
@@ -28,35 +28,35 @@ const WhoAreWe = () => {
 
         <div className=" grid md:grid-cols-4 grid-cols-1 gap-12 text-center">
           <div className="flex-col ">
-            <p className="text-title-custom-mv md:text-title-custom font-bold">
+            <p className="text-title-custom-mv md:text-title-custom font-satoshi-bold">
               10+
             </p>
-            <p className="">
+            <p className="font-satoshi-medium">
               Diverse Mastery of Advertising & Marketing Disciplines
             </p>
           </div>
           <div className="flex-col ">
-            <p className="text-title-custom-mv md:text-title-custom font-bold">
+            <p className="text-title-custom-mv md:text-title-custom font-satoshi-bold">
               12+
             </p>
-            <p className="">
+            <p className="font-satoshi-medium">
               Backed by over a Decade of Expertise in the E-commerce Industry
             </p>
           </div>
           <div className="flex-col ">
-            <p className="text-title-custom-mv md:text-title-custom font-bold">
+            <p className="text-title-custom-mv md:text-title-custom font-satoshi-bold">
               70+
             </p>
-            <p className="">
+            <p className="font-satoshi-medium">
               Evergrowing Talent Pool of Advertisers who are Thoroughbreds in
               E-commerce Advertising.
             </p>
           </div>
           <div className="flex-col ">
-            <p className="text-title-custom-mv md:text-title-custom font-bold">
+            <p className="text-title-custom-mv md:text-title-custom font-satoshi-bold">
               $12B
             </p>
-            <p className="">Revenue Generation Across Multiple Channels</p>
+            <p className="font-satoshi-medium">Revenue Generation Across Multiple Channels</p>
           </div>
         </div>
       </div>

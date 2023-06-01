@@ -15,11 +15,11 @@ module.exports = {
       primary: "#AA00FF",
       secondary: "#49219C",
 
-      white: "#ffffff",
       lightPrimary: "#F4F7FE",
       blueSecondary: "#4318FF",
       brandLinear: "#868CFF",
       white: "#FFFFFF",
+      black :"#000000",
 
       gray: {
         50: "#f8f9fa",

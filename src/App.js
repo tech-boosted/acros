@@ -9,12 +9,62 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Services from "./pages/Services";
 import Operations from "./pages/Operations";
+import WrittenContent from "./components/Content/WrittenContent";
+import { articles, blogs, caseStudies } from "./utils/Variable";
 
 function App() {
+
+  function getCategoryRoutes(category) {
+    var arr = [];
+
+    if (category === "Blogs") {
+      blogs.map((item, index) => {
+        arr.push(
+          <Route
+            path={`blogs/0${index + 1}`}
+            element={
+              <WrittenContent category={"Blogs"} indexValue={Number(index)} />
+            }
+          />
+        );
+      });
+    } else if (category === "Articles") {
+      articles.map((item, index) => {
+        arr.push(
+          <Route
+            path={`articles/0${index + 1}`}
+            element={
+              <WrittenContent
+                category={"Articles"}
+                indexValue={Number(index)}
+              />
+            }
+          />
+        );
+      });
+    } else if (category === "CaseStudies") {
+      caseStudies.map((item, index) => {
+        arr.push(
+          <Route
+            path={`caseStudies/0${index + 1}`}
+            element={
+              <WrittenContent
+                category={"CaseStudies"}
+                indexValue={Number(index)}
+              />
+            }
+          />
+        );
+      });
+    }
+    return arr;
+  }
+
+
   return (
     <Router>
       <div className="container md:w-[80vw] m-auto w-[90vw] block">
-        <Navbar/>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
@@ -24,8 +74,12 @@ function App() {
           <Route path="/agency" element={<Services />} />
           <Route path="/operations" element={<Operations />} />
           <Route path="/technology" element={<Operations />} />
+
+          {getCategoryRoutes("Blogs")}
+          {getCategoryRoutes("Articles")}
+          {getCategoryRoutes("CaseStudies")}
         </Routes>
-        <Footer/>
+        <Footer />
       </div>
     </Router>
   );

@@ -91,7 +91,7 @@ export default function Openings() {
         onChange={handleChange("panel1")}
       >
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <div className="grid grid-cols-6 my-4 items-center">
+          <div className="grid md:grid-cols-6 grid-cols-1 my-4 items-center">
             <Button
               variant="contained"
               sx={{
@@ -100,7 +100,7 @@ export default function Openings() {
                 border: 0,
                 color: "white",
                 height: "48px",
-                padding: "0 30px",
+                padding: "0 10px",
                 boxShadow: "0 3px 5px 2px rgba(132, 140, 207, 0.3)",
                 transition: "box-shadow 0.3s ease-in-out",
                 "&:hover": {
@@ -110,10 +110,10 @@ export default function Openings() {
             >
               Advertising
             </Button>
-            <div className="col-span-3 flex items-center justify-center md:text-subtitle-custom text-subtitle-custom-mv font-satoshi-bold">
+            <div className="md:col-span-3 flex items-center md:my-0 my-4 justify-center md:text-subtitle-custom text-subtitle-custom-mv font-satoshi-bold">
               Search Advertising Manager
             </div>
-            <div className="col-span-2 text-desc-custom">
+            <div className="md:col-span-2 text-desc-custom">
               This position requires the candidate to have a minimum of 6 years
               of expert level experience in strategizing and execution of PPC
               campaigns in an Amazon Advertising Agency environment.{" "}
@@ -215,12 +215,13 @@ export default function Openings() {
         </AccordionDetails>
       </Accordion>
 
+      
       <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
       >
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <div className="grid grid-cols-6 my-4 items-center">
+          <div className="grid md:grid-cols-6 grid-cols-1 my-4 items-center">
             <Button
               variant="contained"
               sx={{
@@ -229,7 +230,7 @@ export default function Openings() {
                 border: 0,
                 color: "white",
                 height: "48px",
-                padding: "0 30px",
+                padding: "0 10px",
                 boxShadow: "0 3px 5px 2px rgba(132, 140, 207, 0.3)",
                 transition: "box-shadow 0.3s ease-in-out",
                 "&:hover": {
@@ -239,10 +240,10 @@ export default function Openings() {
             >
               Advertising
             </Button>
-            <div className="col-span-3 flex items-center justify-center md:text-subtitle-custom text-subtitle-custom-mv font-satoshi-bold">
+            <div className="md:col-span-3 flex items-center md:my-0 my-4 justify-center md:text-subtitle-custom text-subtitle-custom-mv font-satoshi-bold">
               Search Advertising Manager
             </div>
-            <div className="col-span-2 text-desc-custom">
+            <div className="md:col-span-2 text-desc-custom">
               This position requires the candidate to have a minimum of 6 years
               of expert level experience in strategizing and execution of PPC
               campaigns in an Amazon Advertising Agency environment.{" "}
@@ -343,6 +344,8 @@ export default function Openings() {
           </div>{" "}
         </AccordionDetails>
       </Accordion>
+
+
 
       
     </div>

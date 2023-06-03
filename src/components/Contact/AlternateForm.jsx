@@ -5,15 +5,19 @@ const AlternateForm = () => {
     name: "",
     email: "",
     phoneNumber: "",
-    description: "",
-    website: "",
+    city: "",
+    qualification: "",
+    position: "",
+    experience: "",
+    file: "",
+    website:"",
+    description:""
   });
   const [formError, setFormError] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-    // console.log(formData);
   };
 
   const handleSubmit = (e) => {

@@ -17,36 +17,33 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
   const activeRoute = (routeName) => {
-    console.log(routeName);
-    console.log(location.pathname.includes(routeName));
     return location.pathname.includes(routeName);
   };
 
-  console.log(activeRoute("/about-us"));
 
   const renderMobileList = () => {
     if (open) {
       return (
         <ul className="absolute w-full h-[400px]   flex-col pt-5 bg-white items-center z-[999]  transition-all duration-500 ease-in ">
           {Links.map((link) => (
-            <li
-              key={link.name}
-              className=" pt-2"
-              onClick={() => setOpen(!open)}
-            >
-              <Link
-                to={link.link}
-                className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium                 
-                ${
-                  activeRoute(link.link) === true
-                    ? " text-primary"
-                    : "font-medium text-slate-950"
-                }
+            <Link
+              to={link.link}
+              className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium                 
+             ${
+               activeRoute(link.link) === true
+                 ? " text-primary"
+                 : "font-medium text-slate-950"
+             }
 `}
+            >
+              <li
+                key={link.name}
+                className=" pt-2"
+                onClick={() => setOpen(!open)}
               >
                 {link.name}
-              </Link>
-            </li>
+              </li>
+            </Link>
           ))}
           <li
             className="bg-white pt-2 transform transition-all ease-in-out mb-10"
@@ -113,7 +110,7 @@ const Navbar = () => {
                   to={"/technology"}
                   className=" hover:text-primary  duration-200 font-satoshi-medium"
                 >
-                  Others
+                  Technology
                 </Link>
               </li>
             </ul>{" "}
@@ -149,27 +146,9 @@ const Navbar = () => {
         {renderIcon()}
 
         <ul className="hidden md:flex md:items-center md:pb-0 md:static md:z-auto z-[10] w-full md:w-auto md:pl-0 transition-all duration-500 ease-in">
-          {Links.map((link) => (
-            <li key={link.name} className="bg-white md:ml-8">
-              <Link
-                to={link.link}
-                className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
-                ${
-                  activeRoute(link.link) === true
-                    ? " text-primary"
-                    : "font-medium text-slate-950"
-                }
-  
-                `}
-              >
-                {link.name}
-              </Link>
-            </li>
-          ))}
-
           {/* 🔥🔥 services rendering as it contains dropdown on hover */}
           <li
-            className="bg-white md:ml-8 "
+            className="relative bg-white md:ml-8 "
             onMouseOver={() => {
               setDropdown("block");
             }}
@@ -182,10 +161,14 @@ const Navbar = () => {
             </span>
 
             <ul
-              className={`dropdown absolute text-white bg-primary shadow-xl w-fit h-fit rounded-lg  right-[5%]  ${dropdown} text-[16px] py-2`}
+              className={`z-[50] dropdown absolute text-white bg-primary shadow-xl w-fit h-fit rounded-lg  right-[10%]  ${dropdown} text-[16px] py-2`}
             >
-              <li
-                className={` hover:bg-white px-8 py-2 hover:text-purple-700
+              <Link
+                to={"/agency"}
+                className="hover:text-primary duration-200 font-satoshi-medium"
+              >
+                <li
+                  className={` hover:bg-white px-8 py-2 hover:text-purple-700
                               ${
                                 activeRoute("/agency") === true
                                   ? " text-primary bg-white"
@@ -193,16 +176,16 @@ const Navbar = () => {
                               }
               
               `}
-              >
-                <Link
-                  to={"/agency"}
-                  className="hover:text-primary duration-200 font-satoshi-medium"
                 >
                   Agency
-                </Link>
-              </li>
-              <li
-                className={` hover:bg-white px-8 py-2 hover:text-purple-700
+                </li>
+              </Link>
+              <Link
+                to={"/operations"}
+                className=" hover:text-primary  duration-200 font-satoshi-medium"
+              >
+                <li
+                  className={` hover:bg-white px-8 py-2 hover:text-purple-700
                               ${
                                 activeRoute("/operations") === true
                                   ? " text-primary bg-white"
@@ -210,16 +193,16 @@ const Navbar = () => {
                               }
               
               `}
-              >
-                <Link
-                  to={"/operations"}
-                  className=" hover:text-primary  duration-200 font-satoshi-medium"
                 >
                   Operations
-                </Link>
-              </li>
-              <li
-                className={` hover:bg-white px-8 py-2 hover:text-purple-700
+                </li>
+              </Link>
+              <Link
+                to={"/technology"}
+                className=" hover:text-primary  duration-200 font-satoshi-medium"
+              >
+                <li
+                  className={` hover:bg-white px-8 py-2 hover:text-purple-700
                               ${
                                 activeRoute("/other") === true
                                   ? " text-primary bg-white"
@@ -227,16 +210,66 @@ const Navbar = () => {
                               }
               
               `}
-              >
-                <Link
-                  to={"/others"}
-                  className=" hover:text-primary  duration-200 font-satoshi-medium"
                 >
-                  Others
-                </Link>
-              </li>
+                  Technology{" "}
+                </li>
+              </Link>
             </ul>
           </li>
+
+          <Link
+            to={"/about-us"}
+            className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
+              ${
+                activeRoute("/about-us") === true
+                  ? " text-primary"
+                  : "font-medium text-slate-950"
+              }
+
+              `}
+          >
+            <li className="bg-white md:ml-8">{"About us"}</li>
+          </Link>
+          <Link
+            to={"/resources"}
+            className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
+              ${
+                activeRoute("/resources") === true
+                  ? " text-primary"
+                  : "font-medium text-slate-950"
+              }
+
+              `}
+          >
+            <li className="bg-white md:ml-8">{"Resources"}</li>
+          </Link>
+          <Link
+            to={"/career"}
+            className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
+              ${
+                activeRoute("/career") === true
+                  ? " text-primary"
+                  : "font-medium text-slate-950"
+              }
+
+              `}
+          >
+            <li className="bg-white md:ml-8">{"Career"}</li>
+          </Link>
+
+          <Link
+            to={"/contact-us"}
+            className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
+              ${
+                activeRoute("/contact-us") === true
+                  ? " text-primary"
+                  : "font-medium text-slate-950"
+              }
+
+              `}
+          >
+            <li className="bg-white md:ml-8">{"Contact"}</li>
+          </Link>
         </ul>
 
         {renderMobileList()}

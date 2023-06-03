@@ -5,14 +5,18 @@ const Connect = () => {
     name: "",
     email: "",
     phoneNumber: "",
-    description: "",
-    website: "",
+    city: "",
+    qualification: "",
+    position: "",
+    experience: "",
+    file: "",
+    website:"",
+    description:""
   });
   const [formError, setFormError] = useState({});
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-    // console.log(formData);
   };
 
   const handleSubmit = (e) => {
@@ -49,17 +53,6 @@ const Connect = () => {
     return errors;
   };
 
-
-  const dj = ()=>{
-    const sanju = "sharm ";
-    const satish = "sharma";
-    const dabbu = "nisha";
-    console.log(dabbu);
-  }
-  dj();
-
-
-
   return (
     <div className="w-full text-desc-custom">
       <h2 className="md:text-title-custom text-title-custom-mv font-satoshi-bold my-6">
@@ -68,8 +61,8 @@ const Connect = () => {
       <p className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-medium mb-10">
         Schedule a Meeting with the Experts
       </p>
-      <div className="md:flex flex-cols justify-between">
         <p className="text-red-500">{formError.main}</p>
+      <div className="md:flex flex-cols justify-between">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4 w-full">
           <input
             type="text"

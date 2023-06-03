@@ -28,8 +28,10 @@ const InsightsBanner = () => {
     }
   };
   return (
+
     <div>
       <div className="bg-gradient-to-r from-[#AA00FF] to-[#0044FF]  w-full h-fit px-12 py-10  rounded-[30px] text-white mt-16 text-desc-custom">
+        
         <h2 className="mb-10 md:text-title-custom text-title-custom-mv font-satoshi-bold">
           Insightful Digital Buzz
         </h2>
@@ -92,7 +94,9 @@ const InsightsBanner = () => {
 
       {showBlogs && (
         <div className="w-full grid md:grid-cols-2  grid-cols-1 gap-8  m-auto">
-          {blogs.map((item, index) => (
+          {
+            
+          blogs.map((item, index) => (
             <Link to={`/blogs/0${index + 1}`}>
               <div>
                 <img

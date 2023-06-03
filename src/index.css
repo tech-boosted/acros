@@ -15,8 +15,11 @@ body {
   --description: 18px;
 }
 .slide-track {
-  width: calc(18 * 250px);
   animation: scroll 40s linear infinite;
+}
+.slide-track2{
+  animation: scroll2 25s linear infinite;
+
 }
 
 
@@ -29,6 +32,16 @@ body {
 
   }
 }
+@keyframes scroll2 {
+  0%{
+    transform:translateX(0);
+  }
+  100%{
+    transform:translateX(calc(-5*240px));
+
+  }
+}
+
 
 
 @font-face {

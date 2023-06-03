@@ -5,9 +5,6 @@ import { agencySpecificationsArr } from "../../utils/Variable";
 import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import { FiChevronDown } from "react-icons/fi";
-import { Button } from "@mui/material";
 import Tabs from "../../utils/Tabs";
 
 const Accordion = styled((props) => (
@@ -72,6 +69,7 @@ const Specializations = () => {
           <Accordion
             expanded={expanded === item.key}
             onChange={handleChange(item.key)}
+            key={index}
           >
             <AccordionSummary
               aria-controls="panel1d-content"

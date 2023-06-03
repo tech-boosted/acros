@@ -73,7 +73,7 @@ const InsightsBanner = () => {
       {showArticle && (
         <div className="w-full grid md:grid-cols-2  grid-cols-1 gap-8  m-auto">
           {articles.map((item, index) => (
-            <Link to={`/articles/0${index + 1}`}>
+            <Link to={`/articles/0${index + 1}`} key={index}>
               <div>
                 <img
                   src={item.img}
@@ -97,7 +97,7 @@ const InsightsBanner = () => {
           {
             
           blogs.map((item, index) => (
-            <Link to={`/blogs/0${index + 1}`}>
+            <Link to={`/blogs/0${index + 1}`} key={index}>
               <div>
                 <img
                   src={item.img}
@@ -119,7 +119,7 @@ const InsightsBanner = () => {
       {showCaseStudies && (
         <div className="w-full grid md:grid-cols-2  grid-cols-1 gap-8  m-auto">
           {caseStudies.map((item, index) => (
-            <Link to={`/caseStudies/0${index + 1}`}>
+            <Link to={`/caseStudies/0${index + 1}`} key={index}>
               <div>
                 <img
                   src={item.img}

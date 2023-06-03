@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const AlternateForm = () => {
   const [formData, setFormData] = useState({
@@ -26,13 +26,13 @@ const AlternateForm = () => {
     setFormError(errors);
   };
 
-  useEffect(() => {
-    if (Object.keys(formError).length === 0) {
-      console.log(formData);
-    } else {
-      console.log(formError);
-    }
-  }, [formError]);
+  // useEffect(() => {
+  //   if (Object.keys(formError).length === 0) {
+  //     console.log(formData);
+  //   } else {
+  //     console.log(formError);
+  //   }
+  // }, [formError]);
 
   const validate = (values) => {
     const errors = {};

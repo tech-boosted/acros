@@ -1,5 +1,4 @@
 import React from "react";
-import TechStack from "../TechStack";
 import TechStackLogo1 from "../../assests/acros-media/TechStack-1.png";
 import TechStackLogo2 from "../../assests/acros-media/TechStack-2.png";
 import TechStackLogo3 from "../../assests/acros-media/TechStack-3.png";
@@ -9,9 +8,6 @@ import TechStackLogo6 from "../../assests/acros-media/TechStack-6.png";
 import TechStackLogo7 from "../../assests/acros-media/TechStack-7.png";
 import Partners from "../Partners";
 import Connect from "../Connect";
-import Slider from "../Slider";
-import { BsArrowUpRight } from "react-icons/bs";
-import { Accordion } from "@mui/material";
 import Specializations from "./Specialization";
 
 const AgencyPartner = () => {

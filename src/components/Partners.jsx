@@ -38,8 +38,7 @@ import AdsLogo5 from "../assests/acros-media/Advertising-Platform-Expertise-5.pn
 import AdsLogo6 from "../assests/acros-media/Advertising-Platform-Expertise-6.png"
 
 
-import Slider from "../components/Slider";
-import grid1 from "../assests/acros-media/Mattel-brand.png";
+// import Slider from "../components/Slider";
 
 const Partners = () => {
   return (

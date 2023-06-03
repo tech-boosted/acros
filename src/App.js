@@ -19,9 +19,10 @@ function App() {
     var arr = [];
 
     if (category === "Blogs") {
-      blogs.map((item, index) => {
+      blogs.forEach((item, index) => {
         arr.push(
           <Route
+            key={index}
             path={`blogs/0${index + 1}`}
             element={
               <WrittenContent category={"Blogs"} indexValue={Number(index)} />
@@ -30,9 +31,10 @@ function App() {
         );
       });
     } else if (category === "Articles") {
-      articles.map((item, index) => {
+      articles.forEach((item, index) => {
         arr.push(
           <Route
+            key={index}
             path={`articles/0${index + 1}`}
             element={
               <WrittenContent
@@ -44,9 +46,10 @@ function App() {
         );
       });
     } else if (category === "CaseStudies") {
-      caseStudies.map((item, index) => {
+      caseStudies.forEach((item, index) => {
         arr.push(
           <Route
+            key={index}
             path={`caseStudies/0${index + 1}`}
             element={
               <WrittenContent

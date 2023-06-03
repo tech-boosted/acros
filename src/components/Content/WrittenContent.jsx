@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BsCalendar, BsCalendar2, BsCalendar2CheckFill } from "react-icons/bs";
+import { BsCalendar2CheckFill } from "react-icons/bs";
 import { articles, blogs, caseStudies } from "../../utils/Variable";
 import parse from "html-react-parser";
 

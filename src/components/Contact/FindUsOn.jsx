@@ -28,16 +28,16 @@ const FindUsOn = () => {
           <div className="flex-col">
             <p className=" mb-6 font-satoshi-medium">/Find us on/</p>
             
-              <a target="blank" href="https://www.facebook.com/people/Acros/100066930852884/" className="flex items-center gap-4  cursor-pointer  mb-2" >
+              <a target="_blank" rel="noreferrer" href="https://www.facebook.com/people/Acros/100066930852884/" className="flex items-center gap-4  cursor-pointer  mb-2" >
 
               <FaFacebook className="text-center text-[22px]" />
               {" Facebook"}
               </a>
-              <a target="blank" href="https://www.instagram.com/acros.advertising/"  className="flex items-center gap-4  cursor-pointer  mb-2 ">
+              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/acros.advertising/"  className="flex items-center gap-4  cursor-pointer  mb-2 ">
 
               <BsInstagram className="text-center text-[22px] " /> {"Instagram"}
               </a>
-              <a target="blank" href="https://www.linkedin.com/company/acros-advertising/"  className="flex items-center gap-4  cursor-pointer  mb-2" >
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/acros-advertising/"  className="flex items-center gap-4  cursor-pointer  mb-2" >
 
               <AiFillLinkedin className="text-center text-[22px] " />{"LinkedIn"}
               </a>

@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { articles, blogs, caseStudies } from "../../utils/Variable";
 
-
-const InsightsBanner = () => {
-
-
+const InsightsBanner = ({ blogs, articles, cs }) => {
   const [showArticle, setShowArticle] = useState(true);
   const [showBlogs, setShowBlogs] = useState(false);
   const [showCaseStudies, setShowCaseStudies] = useState(false);
@@ -27,11 +23,10 @@ const InsightsBanner = () => {
       setShowCaseStudies(true);
     }
   };
-  return (
 
+  return (
     <div>
       <div className="bg-gradient-to-r from-[#AA00FF] to-[#0044FF]  w-full h-fit px-12 py-10  rounded-[30px] text-white mt-16 text-desc-custom">
-        
         <h2 className="mb-10 md:text-title-custom text-title-custom-mv font-satoshi-bold">
           Insightful Digital Buzz
         </h2>
@@ -42,10 +37,13 @@ const InsightsBanner = () => {
         </p>
       </div>
 
-
       <div className="tabs h-[22vh] w-full flex justify-start gap-4 items-center   md:my-0 ">
         <button
-          className={` ${showArticle ? "bg-primary text-white font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1" : "text-primary border border-primary hover:bg-primary hover:text-white active:bg-primary font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"}`}
+          className={` ${
+            showArticle
+              ? "bg-primary text-white font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1"
+              : "text-primary border border-primary hover:bg-primary hover:text-white active:bg-primary font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+          }`}
           onClick={() => {
             handleClick("Articles");
           }}
@@ -53,7 +51,11 @@ const InsightsBanner = () => {
           Article
         </button>
         <button
-          className={` ${showBlogs ? "bg-primary text-white font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1" : "text-primary border border-primary hover:bg-primary hover:text-white active:bg-primary font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"}`}
+          className={` ${
+            showBlogs
+              ? "bg-primary text-white font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1"
+              : "text-primary border border-primary hover:bg-primary hover:text-white active:bg-primary font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+          }`}
           onClick={() => {
             handleClick("Blogs");
           }}
@@ -61,7 +63,11 @@ const InsightsBanner = () => {
           Blogs
         </button>
         <button
-          className={` ${showCaseStudies ? "bg-primary text-white font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1" : "text-primary border border-primary hover:bg-primary hover:text-white active:bg-primary font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"}`}
+          className={` ${
+            showCaseStudies
+              ? "bg-primary text-white font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1"
+              : "text-primary border border-primary hover:bg-primary hover:text-white active:bg-primary font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+          }`}
           onClick={() => {
             handleClick("Case Studies");
           }}
@@ -73,67 +79,77 @@ const InsightsBanner = () => {
       {showArticle && (
         <div className="w-full grid md:grid-cols-2  grid-cols-1 gap-8  m-auto">
           {articles.map((item, index) => (
-            <Link to={`/articles/0${index + 1}`} key={index}>
-              <div>
+            <div>
+              <Link to={`/articles/0${index + 1}`} key={index}>
                 <img
-                  src={item.img}
+                  src={item.imgSrc}
                   alt="Article1"
                   className="w-full rounded-[30px]"
                 />
-                <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
-                  {item.title}
-                </h2>
-                <span className="text-[12px]  text-gray-600">{item.date}</span>
-                <p className=" my-4">{item.shortDescription}</p>
-                <button>Read More</button>
-              </div>
-            </Link>
+              </Link>
+              <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
+                {item.title}
+              </h2>
+              <span className="text-[12px]  text-gray-600">{item.date}</span>
+              <p className=" my-4">{item.shortDescription}</p>
+              <Link to={`/articles/0${index + 1}`} key={index}>
+                <button className="text-primary border border-primary hover:bg-primary hover:text-white active:bg-primary font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                  Read More
+                </button>
+              </Link>
+            </div>
           ))}
         </div>
       )}
 
       {showBlogs && (
         <div className="w-full grid md:grid-cols-2  grid-cols-1 gap-8  m-auto">
-          {
-            
-          blogs.map((item, index) => (
-            <Link to={`/blogs/0${index + 1}`} key={index}>
-              <div>
+          {blogs.map((item, index) => (
+            <div>
+              <Link to={`/blogs/0${index + 1}`} key={index}>
                 <img
-                  src={item.img}
+                  src={item.imgSrc}
                   alt="Article1"
                   className="w-full rounded-[30px]"
                 />
-                <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
-                  {item.title}
-                </h2>
-                <span className="text-[12px]  text-gray-600">{item.date}</span>
-                <p className=" my-4">{item.shortDescription}</p>
-                <button>Read More</button>
-              </div>
-            </Link>
+              </Link>
+              <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
+                {item.title}
+              </h2>
+              <span className="text-[12px]  text-gray-600">{item.date}</span>
+              <p className=" my-4">{item.shortDescription}</p>
+              <Link to={`/blogs/0${index + 1}`} key={index}>
+                <button className="text-primary border border-primary hover:bg-primary hover:text-white active:bg-primary font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                  Read More
+                </button>
+              </Link>
+            </div>
           ))}
         </div>
       )}
 
       {showCaseStudies && (
         <div className="w-full grid md:grid-cols-2  grid-cols-1 gap-8  m-auto">
-          {caseStudies.map((item, index) => (
-            <Link to={`/caseStudies/0${index + 1}`} key={index}>
-              <div>
+          {cs.map((item, index) => (
+            <div>
+              <Link to={`/caseStudies/0${index + 1}`} key={index}>
                 <img
-                  src={item.img}
+                  src={item.imgSrc}
                   alt="Article1"
                   className="w-full rounded-[30px]"
                 />
-                <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
-                  {item.title}
-                </h2>
-                <span className="text-[12px]  text-gray-600">{item.date}</span>
-                <p className=" my-4">{item.shortDescription}</p>
-                <button>Read More</button>
-              </div>
-            </Link>
+              </Link>
+              <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
+                {item.title}
+              </h2>
+              <span className="text-[12px]  text-gray-600">{item.date}</span>
+              <p className=" my-4">{item.shortDescription}</p>
+              <Link to={`/caseStudies/0${index + 1}`} key={index}>
+                <button className="text-primary border border-primary hover:bg-primary hover:text-white active:bg-primary font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                  Read More
+                </button>
+              </Link>{" "}
+            </div>
           ))}
         </div>
       )}

@@ -1,17 +1,27 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
+import { postMiddleware } from "../../middleware";
+  import Snackbar from "@mui/material/Snackbar";
+  import MuiAlert from "@mui/material/Alert";
 
 const AlternateForm = () => {
+  const [open, setOpen] = React.useState(false);
+  const Alert = React.forwardRef(function Alert(props, ref) {
+    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+  });
+
   const [formData, setFormData] = useState({
+    category: "Contact-us",
     name: "",
     email: "",
-    phoneNumber: "",
+    phoneNumber: null,
     city: "",
     qualification: "",
     position: "",
     experience: "",
     file: "",
-    website:"",
-    description:""
+    website: "",
+    description: "",
   });
   const [formError, setFormError] = useState({});
 
@@ -26,14 +36,37 @@ const AlternateForm = () => {
     setFormError(errors);
   };
 
-  // useEffect(() => {
-  //   if (Object.keys(formError).length === 0) {
-  //     console.log(formData);
-  //   } else {
-  //     console.log(formError);
-  //   }
-  // }, [formError]);
+  useEffect(() => {
 
+    const callback = (res) => {
+      setOpen(true);
+
+      console.log(res.data.success);
+      setFormData({
+        category: "Contact-us",
+        name: "",
+        email: "",
+        phoneNumber: null,
+        city: "",
+        qualification: "",
+        position: "",
+        experience: "",
+        file: "",
+        website: "",
+        description: "",
+      });
+      setFormError({});
+    };
+    if (Object.keys(formError).length === 0) {
+      if (formData.email.length !== 0) {
+        console.log(formData);
+        postMiddleware("/form/new", formData, callback, true);
+      }
+      console.log(formData);
+    } else {
+      console.log(formError);
+    }
+  }, [formError]);
   const validate = (values) => {
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -144,6 +177,21 @@ const AlternateForm = () => {
           </button>
         </div>
       </div>
+      <Snackbar
+        anchorOrigin={{ vertical: "top", horizontal: "right" }}
+        open={open}
+        autoHideDuration={6000}
+        onClose={() => setOpen(false)}
+        key={"top" + "right"}
+      >
+        <Alert
+          onClose={() => setOpen(false)}
+          severity="success"
+          sx={{ width: "100%" }}
+        >
+          Your response has been submitted
+        </Alert>
+      </Snackbar>
     </div>
   );
 };

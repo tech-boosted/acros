@@ -10,11 +10,42 @@ import Footer from "./components/Footer";
 import Services from "./pages/Services";
 import Operations from "./pages/Operations";
 import WrittenContent from "./components/Content/WrittenContent";
-import { articles, blogs, caseStudies } from "./utils/Variable";
 import Technology from "./pages/Technology";
 import Admin from "./components/Admin/Admin";
+import Protected from "./utils/Protected";
+import SignIn from "./components/Admin/SignIn";
+import { useEffect } from "react";
+import { useState } from "react";
+import { getMiddleware } from "./middleware";
 
 function App() {
+  const [articles, setArticles] = useState([]);
+  const [blogs, setBlogs] = useState([]);
+  const [cs, setCS] = useState([]);
+
+  useEffect(() => {
+    const callback = (res) => {
+      console.log(res);
+      let tempArticle = res.data.resources.filter((item) => {
+        return item.type === "Article";
+      });
+      let tempBlog = res.data.resources.filter((item) => {
+        return item.type === "Blog";
+      });
+      let tempCS = res.data.resources.filter((item) => {
+        return item.type === "Case Study";
+      });
+
+      setArticles(tempArticle);
+      setBlogs(tempBlog);
+      setCS(tempCS);
+
+      console.log(tempArticle);
+      console.log(tempBlog);
+    };
+    getMiddleware("/resource/all", callback, false);
+  }, []);
+
   function getCategoryRoutes(category) {
     var arr = [];
 
@@ -24,9 +55,7 @@ function App() {
           <Route
             key={index}
             path={`blogs/0${index + 1}`}
-            element={
-              <WrittenContent category={"Blogs"} indexValue={Number(index)} />
-            }
+            element={<WrittenContent obj={item} />}
           />
         );
       });
@@ -36,27 +65,17 @@ function App() {
           <Route
             key={index}
             path={`articles/0${index + 1}`}
-            element={
-              <WrittenContent
-                category={"Articles"}
-                indexValue={Number(index)}
-              />
-            }
+            element={<WrittenContent obj={item} />}
           />
         );
       });
     } else if (category === "CaseStudies") {
-      caseStudies.forEach((item, index) => {
+      cs.forEach((item, index) => {
         arr.push(
           <Route
             key={index}
             path={`caseStudies/0${index + 1}`}
-            element={
-              <WrittenContent
-                category={"CaseStudies"}
-                indexValue={Number(index)}
-              />
-            }
+            element={<WrittenContent obj={item} />}
           />
         );
       });
@@ -72,13 +91,17 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<Contact />} />
-          <Route path="/resources" element={<Resources />} />
+          <Route path="/resources" element={<Resources blogs={blogs} articles={articles} cs={cs} />} />
           <Route path="/career" element={<Career />} />
           <Route path="/agency" element={<Services />} />
           <Route path="/operations" element={<Operations />} />
           <Route path="/technology" element={<Technology />} />
 
-          <Route exact path="/admin" element={<Admin />} />
+          <Route element={<Protected />}>
+            <Route path="/admin/*" element={<Admin />} />
+          </Route>
+
+          <Route path={"/sign-in"} element={<SignIn />} />
 
           {getCategoryRoutes("Blogs")}
           {getCategoryRoutes("Articles")}

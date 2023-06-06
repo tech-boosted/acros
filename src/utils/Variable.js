@@ -246,29 +246,27 @@ export const blogs = [
     date: "May 1, 2023",
     shortDescription: `<div>
       When it comes to building a hero brand with e-commerceadvertising, few of the most important metrics to track are: aCustomer Lifetime Value (CLV).`,
-    description: `<p>\nGaurav\n<ol>\n<li>one</li>\n<li>two</li>\n<li>three</li>\n\n<br/>\n<br/>\n<p>hello para 2 </p>\n</ol>\n</p>`
-    // `
-    // <p>
-    // When it comes to building a hero brand with e-commerce advertising, few of the most important metrics to track are: 
-    //  </p>
-    //  <br/>
-    //  <br/>
-    //  <p>
+    description: `
+    <p>
+    When it comes to building a hero brand with e-commerce advertising, few of the most important metrics to track are: 
+     </p>
+     <br/>
+     <br/>
+     <p>
      
-    //  a) Customer Lifetime Value (CLV). This metric takes into account not just the initial purchase but also the value of the customer over time, including repeat purchases and referrals. &nbsp; Customer Lifetime Value (CLV) is an important metric for any e-commerce brand. Improving CLV can help the brand increase its revenue and profitability.
-    //  </p>
-    //  b) Conversion Rate, which measures the percentage of users who take a desired action (such as making a purchase).
-    //  <p>
-    //  c) Customer Acquisition, improving customer acquisition requires a focus on building brand awareness, reaching new audiences, and providing incentives for potential customers to make their first purchase. Here are some ways to improve customer acquisition:
-    //  </p>
-    //  <p>
-    //  d) Customer Retention, which measures the percentage of customers who return to make additional
-    //  </p>
+     a) Customer Lifetime Value (CLV). This metric takes into account not just the initial purchase but also the value of the customer over time, including repeat purchases and referrals. &nbsp; Customer Lifetime Value (CLV) is an important metric for any e-commerce brand. Improving CLV can help the brand increase its revenue and profitability.
+     </p>
+     b) Conversion Rate, which measures the percentage of users who take a desired action (such as making a purchase).
+     <p>
+     c) Customer Acquisition, improving customer acquisition requires a focus on building brand awareness, reaching new audiences, and providing incentives for potential customers to make their first purchase. Here are some ways to improve customer acquisition:
+     </p>
+     <p>
+     d) Customer Retention, which measures the percentage of customers who return to make additional
+     </p>
      
-    //  <br/>
-    //   By tracking these metrics, brands can optimize their advertising strategies to build long-term customer relationships and drive sustainable growth.
-    //   <div/>`
-      ,
+     <br/>
+      By tracking these metrics, brands can optimize their advertising strategies to build long-term customer relationships and drive sustainable growth.
+      <div/>`,
   },
   {
     title:

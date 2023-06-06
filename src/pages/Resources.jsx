@@ -1,10 +1,10 @@
 import React from 'react'
 import InsightsBanner from '../components/Resources/InsightsBanner'
 
-const Resources = () => {
+const Resources = ({blogs,articles,cs}) => {
   return (
     <div>
-      <InsightsBanner/>
+      <InsightsBanner blogs={blogs} articles={articles} cs={cs} />
     </div>
   )
 }

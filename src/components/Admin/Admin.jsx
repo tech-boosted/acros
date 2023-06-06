@@ -1,147 +1,96 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import {
+  Navigate,
+  Route,
+  Routes,
+  useLocation,
+  useNavigate,
+} from "react-router";
+import Resources from "./Resources";
+import Career from "./Career";
+import { postMiddleware } from "../../middleware";
+import FormPage from "./FormPage";
 
 const Admin = () => {
-  const [formData, setFormData] = useState({
-    type: "",
-    title: "",
-    description: "",
-    shortDescription: "",
-    imgSrc: "",
-    date: "",
-  });
-  const [formError, setFormError] = useState("");
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const errors = validate(formData);
-    setFormError(errors);
-  };
 
-  useEffect(() => {
-    if (Object.keys(formError).length === 0) { 
 
-      axios
-        .post("http://localhost:3600/api/v1/resource/new", formData)
-        .then((response) => {
-          return response;
-        })
-        .then((data) => {
-          console.log(data);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    } else {
-      console.log(formError);
-    }
-  }, [formError]);
-
-  const validate = (values) => {
-    const errors = {};
-    // const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-
-    if (!values.title) {
-      errors.main = "*Please fill all the required fields";
-    }
-    if (!values.description) {
-      errors.main = "*Please fill all the required fields";
-    }
-    if (!values.shortDescription) {
-      errors.main = "*Please fill all the required fields";
-    }
-    if (!values.date) {
-      errors.main = "*Please fill all the required fields";
-    }
-
-    return errors;
-  };
+  const location = useLocation();
+  const navigate = useNavigate();
 
   return (
     <div>
-      <div className="text-desc-custom">
-        <h2 className="text-center text-title-custom-mv md:text-title-custom-mv font-satoshi-bold mt-10">
-          Admin Portal
-        </h2>
-        <p className="text-red-500 mb-4">{formError.main}</p>
-
-        <div className="grid md:grid-cols-3 grid-cols-1 md:gap-12 gap-4 md:gap-y-12">
-          <select
-            name="type"
-            id=""
-            onChange={(e) => handleChange(e)}
-            placeholder="*Select Category"
-            required
-            className="w-full border bg-white text-gray-700 border-t-0 border-r-0 border-l-0 focus:outline-none border-black px-4 py-2 md:my-0 my-2"
+      <h2 className="text-title-custom font-satoshi-bold my-10 text-center">
+        Admin Portal
+      </h2>
+      <div className="tabs flex justify-between">
+        <div>
+          <button
+            className={` ${
+              location.pathname.includes("/resources")
+                ? "bg-primary text-white font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1"
+                : "text-primary border border-primary hover:bg-primary hover:text-white active:bg-primary font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+            }`}
+            onClick={() => {
+              navigate("/admin/resources");
+            }}
           >
-            <option value="">-- *Select Category</option>
-            <option value="Article">Article</option>
-            <option value="Blog">Blog</option>
-            <option value="Case Study">Case Study</option>
-          </select>
-          <input
-            type="text"
-            name="title"
-            id=""
-            onChange={(e) => handleChange(e)}
-            placeholder="*Enter title"
-            className="w-full border border-t-0 border-r-0 border-l-0 focus:outline-none border-black px-4 py-2 md:my-0 my-2"
-          />
-          <input
-            type="text"
-            name="date"
-            onChange={(e) => handleChange(e)}
-            id=""
-            placeholder="*Date in MMM DD, YYYY format"
-            className="w-full border border-t-0 border-r-0 border-l-0 focus:outline-none border-black px-4 py-2 md:my-0 my-2"
-          />
-          <textarea
-            className="md:col-span-2 w-full border border-t-0 border-r-0 border-l-0 focus:outline-none border-black px-4 py-2 md:my-0 my-2"
-            name="description"
-            id=""
-            value={formData.description}
-            onChange={(e) => handleChange(e)}
-            placeholder={"**Description"}
-            cols="10"
-            rows="5"
+            Resources
+          </button>
+          <button
+            className={` ${
+              location.pathname.includes("/career")
+                ? "bg-primary text-white font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1"
+                : "text-primary border border-primary hover:bg-primary hover:text-white active:bg-primary font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+            }`}
+            onClick={() => {
+              navigate("/admin/career");
+            }}
           >
-            yoyo
-          </textarea>
-          <textarea
-            className=" w-full border border-t-0 border-r-0 border-l-0 focus:outline-none border-black px-4 py-2 md:my-0 my-2"
-            name="shortDescription"
-            id=""
-            value={formData.ShortDescription}
-            onChange={(e) => handleChange(e)}
-            placeholder="**Short Description"
-            cols="10"
-            rows="5"
-          ></textarea>
-
-          <input
-            type="file"
-            name="imgSrc"
-            onChange={(e) => handleChange(e)}
-            id=""
-            accept="image/png,image/jpg , image/jpeg"
-            className="w-full border-t-0 border-r-0 border-l-0 focus:outline-none border-black px-4 py-2 md:my-0 my-2"
-          />
+            Careers
+          </button>
+          <button
+            className={` ${
+              location.pathname.includes("/forms")
+                ? "bg-primary text-white font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1"
+                : "text-primary border border-primary hover:bg-primary hover:text-white active:bg-primary font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+            }`}
+            onClick={() => {
+              navigate("/admin/forms");
+            }}
+          >
+            Forms
+          </button>
         </div>
 
-        <button
-          onClick={(e) => {
-            handleSubmit(e);
-          }}
-          className="my-10 w-[200px] py-3 md:py-2 border-2 border-primary rounded-[30px] md:h-[45px] mb-5 block mx-auto "
-        >
-          Submit
-        </button>
+        <div>
+          <button
+            className={` ${
+              location.pathname.includes("/forms")
+                ? "bg-primary text-white font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1"
+                : "text-primary border border-primary hover:bg-primary hover:text-white active:bg-primary font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+            }`}
+            onClick={() => {
+              const callback = (res) => {
+                localStorage.removeItem("token");
+                alert(res.data.message);
+                navigate("/sign-in");
+
+                console.log(res.data.message);
+              };
+              postMiddleware("/logout", {}, callback, true);
+            }}
+          >
+            Logout
+          </button>
+        </div>
       </div>
+      <Routes>
+        <Route path={"/career/*"} element={<Career />} />
+        <Route path={"/resources/*"} element={<Resources />} />
+        <Route path={"/forms/*"} element={<FormPage/>} />
+      </Routes>
     </div>
   );
 };

@@ -1,7 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { postMiddleware } from "../../middleware";
+import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
+import { storage } from "../../config/firebase";
+import { useRef } from "react";
+import Snackbar from "@mui/material/Snackbar";
+import MuiAlert from "@mui/material/Alert";
 
 const Form = () => {
+
+  
   const [formData, setFormData] = useState({
+    category: "Career",
     name: "",
     email: "",
     phoneNumber: "",
@@ -10,11 +19,55 @@ const Form = () => {
     position: "",
     experience: "",
     file: "",
-    website:"",
-    description:""
+    website: "",
+    description: "",
   });
   const [formError, setFormError] = useState("");
+  const [open, setOpen] = React.useState(false);
+  const [progresspercent, setProgresspercent] = useState(0);
+  const [disable, setDisable] = useState(false);
 
+
+
+  const Alert = React.forwardRef(function Alert(props, ref) {
+    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+  });
+  const fileInputRef = useRef(null);
+
+  const handleFileChange = (e) => {
+    setDisable(true);
+    console.log(e.target.files[0]);
+    const file = e.target?.files[0];
+
+    if (!file) {
+      alert("Error while uploading photo");
+      return;
+    }
+
+    const storageRef = ref(storage, `resume/${file.name}`);
+    const uploadTask = uploadBytesResumable(storageRef, file);
+
+    uploadTask.on(
+      "state_changed",
+      (snapshot) => {
+        const progress = Math.round(
+          (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+        );
+        setProgresspercent(progress);
+      },
+      (error) => {
+        alert(error);
+      },
+      () => {
+        getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+          setFormData({ ...formData, ["file"]: downloadURL });
+          setDisable(false);
+        });
+      }
+    );
+  };
+
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -27,8 +80,31 @@ const Form = () => {
   };
 
   useEffect(() => {
+    const callback = (res) => {
+      setOpen(true);
+      setFormData({
+        category: "Career",
+        name: "",
+        email: "",
+        phoneNumber: null,
+        city: "",
+        qualification: "",
+        position: "",
+        experience: "",
+        file: "",
+        website: "",
+        description: "",
+      });
+      if (fileInputRef.current) {
+        fileInputRef.current.value = null;
+      }
+
+      setFormError({});
+    };
     if (Object.keys(formError).length === 0) {
-      // console.log(formData);
+      if (formData.email.length !== 0) {
+        postMiddleware("/form/new", formData, callback, true);
+      }
     } else {
       console.log(formError);
     }
@@ -71,13 +147,16 @@ const Form = () => {
           id=""
           onChange={(e) => handleChange(e)}
           placeholder="*Your Name"
+          value={formData.name}
           className="w-full border border-t-0 border-r-0 border-l-0 focus:outline-none border-black px-4 py-2 md:my-0 my-2"
         />
+
         <input
           type="text"
           name="email"
           id=""
           onChange={(e) => handleChange(e)}
+          value={formData.email}
           placeholder="*Email"
           className="w-full border border-t-0 border-r-0 border-l-0 focus:outline-none border-black px-4 py-2 md:my-0 my-2"
         />
@@ -86,6 +165,7 @@ const Form = () => {
           name="phoneNumber"
           onChange={(e) => handleChange(e)}
           id=""
+          value={formData.phoneNumber}
           placeholder="*Phone Number"
           className="w-full border border-t-0 border-r-0 border-l-0 focus:outline-none border-black px-4 py-2 md:my-0 my-2"
         />
@@ -94,6 +174,7 @@ const Form = () => {
           name="city"
           onChange={(e) => handleChange(e)}
           id=""
+          value={formData.city}
           placeholder="*City"
           className="w-full border border-t-0 border-r-0 border-l-0 focus:outline-none border-black px-4 py-2 md:my-0 my-2"
         />
@@ -102,6 +183,7 @@ const Form = () => {
           name="qualification"
           onChange={(e) => handleChange(e)}
           id=""
+          value={formData.qualification}
           placeholder="*Qualification"
           className="w-full border border-t-0 border-r-0 border-l-0 focus:outline-none border-black px-4 py-2 md:my-0 my-2"
         />
@@ -110,40 +192,70 @@ const Form = () => {
           id=""
           onChange={(e) => handleChange(e)}
           placeholder="*Select Position"
+          value={formData.position}
           required
           className="w-full border bg-white text-gray-700 border-t-0 border-r-0 border-l-0 focus:outline-none border-black px-4 py-2 md:my-0 my-2"
         >
           <option value="">-- *Select Position</option>
-          <option value="one">one</option>
-          <option value="two">two</option>
-          <option value="three">three</option>
+          <option value="PPC Specialist">PPC Specialist</option>
+          <option value="DSP Specialist">DSP Specialist</option>
+          <option value="Full Stack Developer">Full Stack Developer</option>
+          <option value="Search Advertising Manager">
+            Search Advertising Manager
+          </option>
         </select>
         <input
           type="number"
           name="experience"
           id=""
+          value={formData.experience}
           onChange={(e) => handleChange(e)}
           placeholder="*Years of Experience"
           className="w-full border border-t-0 border-r-0 border-l-0 focus:outline-none border-black px-4 py-2 md:my-0 my-2"
         />
         <input
           type="file"
-          name="file"
-          onChange={(e) => handleChange(e)}
+          name="imgSrc"
+          onChange={(e) => handleFileChange(e)}
+          ref={fileInputRef}
           id=""
-          accept="image/png,image/jpg , image/jpeg"
-          className="w-full border-t-0 border-r-0 border-l-0 focus:outline-none border-black px-4 py-2 md:my-0 my-2"
+          multiple
+          accept="image/*"
+          className=" w-full border border-t-0 border-r-0 border-l-0 focus:outline-none border-black px-4 py-2 md:my-0 my-2"
         />
       </div>
 
-      <button
-        onClick={(e) => {
-          handleSubmit(e);
-        }}
-        className="my-10 w-[200px] py-3 md:py-2 border-2 border-primary rounded-[30px] md:h-[45px] mb-5 block mx-auto "
+      {!disable && (
+        <button
+          onClick={(e) => {
+            handleSubmit(e);
+          }}
+          className="my-10 w-[200px] py-3 md:py-2 border-2 border-primary rounded-[30px] md:h-[45px] mb-5 block mx-auto "
+        >
+          Submit
+        </button>
+      )}
+      {disable && (
+        <button className="my-10 w-[200px] py-3 md:py-2 border-2 border-primary rounded-[30px] md:h-[45px] mb-5 block mx-auto ">
+          Uploading file {progresspercent} %
+        </button>
+      )}
+
+      <Snackbar
+        anchorOrigin={{ vertical: "top", horizontal: "right" }}
+        open={open}
+        autoHideDuration={6000}
+        onClose={() => setOpen(false)}
+        key={"top" + "right"}
       >
-        Submit
-      </button>
+        <Alert
+          onClose={() => setOpen(false)}
+          severity="success"
+          sx={{ width: "100%" }}
+        >
+          Your response has been submitted
+        </Alert>
+      </Snackbar>
     </div>
   );
 };

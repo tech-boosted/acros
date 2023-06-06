@@ -1,19 +1,33 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
+import { postMiddleware } from "../middleware";
+import Snackbar from "@mui/material/Snackbar";
+import MuiAlert from "@mui/material/Alert";
 
 const Connect = () => {
+  const [open, setOpen] = React.useState(false);
   const [formData, setFormData] = useState({
+    category: "General",
     name: "",
     email: "",
     phoneNumber: "",
     city: "",
     qualification: "",
+    type: "General",
     position: "",
     experience: "",
     file: "",
-    website:"",
-    description:""
+    website: "",
+    description: "",
   });
   const [formError, setFormError] = useState({});
+
+
+  const Alert = React.forwardRef(function Alert(props, ref) {
+    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+  });
+
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -25,13 +39,35 @@ const Connect = () => {
     setFormError(errors);
   };
 
-  // useEffect(() => {
-  //   if (Object.keys(formError).length === 0) {
-  //     console.log(formData);
-  //   } else {
-  //     console.log(formError);
-  //   }
-  // }, [formError]);
+  useEffect(() => {
+    const callback = (res) => {
+      setOpen(true);
+      console.log(res.data.success);
+      setFormData({
+        category: "General",
+        name: "",
+        email: "",
+        phoneNumber: "",
+        city: "",
+        qualification: "",
+        position: "",
+        experience: "",
+        file: "",
+        website: "",
+        description: "",
+      });
+      setFormError({});
+    };
+    if (Object.keys(formError).length === 0) {
+      if (formData.email.length !== 0) {
+        console.log(formData);
+        postMiddleware("/form/new", formData, callback, true);
+      }
+      console.log(formData);
+    } else {
+      console.log(formError);
+    }
+  }, [formError]);
 
   const validate = (values) => {
     const errors = {};
@@ -48,7 +84,6 @@ const Connect = () => {
     if (!values.phoneNumber) {
       errors.main = "*Please fill all the required fields";
     }
- 
 
     return errors;
   };
@@ -61,7 +96,7 @@ const Connect = () => {
       <p className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-medium mb-10">
         Schedule a Meeting with the Experts
       </p>
-        <p className="text-red-500">{formError.main}</p>
+      <p className="text-red-500">{formError.main}</p>
       <div className="md:flex flex-cols justify-between">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4 w-full">
           <input
@@ -71,7 +106,6 @@ const Connect = () => {
             onChange={(e) => {
               handleChange(e);
             }}
-
             id=""
             placeholder="*Your Name"
             className="w-full border border-t-0 border-r-0 border-l-0 focus:outline-none border-black px-4 py-2 md:my-0 my-2"
@@ -83,7 +117,6 @@ const Connect = () => {
             onChange={(e) => {
               handleChange(e);
             }}
-
             id=""
             placeholder="*Email"
             className="w-full border border-t-0 border-r-0 border-l-0 focus:outline-none border-black px-4 py-2 md:my-0 my-2"
@@ -95,18 +128,38 @@ const Connect = () => {
             onChange={(e) => {
               handleChange(e);
             }}
-
             id=""
             placeholder="*Phone Number"
             className="w-full border border-t-0 border-r-0 border-l-0 focus:outline-none border-black px-4 py-2 md:my-0 my-2"
           />
           <div>
-            <button onClick={(e)=>{handleSubmit(e)}} className="w-[200px] py-3 md:py-2 border-2 border-primary rounded-[30px] md:h-[45px] mb-5 m-auto ">
+            <button
+              onClick={(e) => {
+                handleSubmit(e);
+              }}
+              className="w-[200px] py-3 md:py-2 border-2 border-primary rounded-[30px] md:h-[45px] mb-5 m-auto "
+            >
               Submit
             </button>
           </div>
         </div>
       </div>
+
+      <Snackbar
+        anchorOrigin={{ vertical: "top", horizontal: "right" }}
+        open={open}
+        autoHideDuration={6000}
+        onClose={() => setOpen(false)}
+        key={"top" + "right"}
+      >
+        <Alert
+          onClose={() => setOpen(false)}
+          severity="success"
+          sx={{ width: "100%" }}
+        >
+          Your response has been submitted
+        </Alert>
+      </Snackbar>
     </div>
   );
 };

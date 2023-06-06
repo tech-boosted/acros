@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color:#aa00ff #d8abee ;
+}
+
+*::-webkit-scrollbar-track {
+  background: #d8abee;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #d8abee;
+  border-radius: 14px;
+  border: 3px solid #aa00ff;
+}
+
 body {
   font-family: "Satoshi Variable Regular", Sans-serif !important;
   margin: 0;
@@ -17,32 +37,26 @@ body {
 .slide-track {
   animation: scroll 40s linear infinite;
 }
-.slide-track2{
+.slide-track2 {
   animation: scroll2 25s linear infinite;
-
 }
 
-
 @keyframes scroll {
-  0%{
-    transform:translateX(0);
+  0% {
+    transform: translateX(0);
   }
-  100%{
-    transform:translateX(calc(-9*250px));
-
+  100% {
+    transform: translateX(calc(-9 * 250px));
   }
 }
 @keyframes scroll2 {
-  0%{
-    transform:translateX(0);
+  0% {
+    transform: translateX(0);
   }
-  100%{
-    transform:translateX(calc(-5*240px));
-
+  100% {
+    transform: translateX(calc(-5 * 240px));
   }
 }
-
-
 
 @font-face {
   font-family: "Satoshi Variable Light";

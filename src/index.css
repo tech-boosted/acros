@@ -8,7 +8,7 @@
 
 * {
   scrollbar-width: thin;
-  scrollbar-color:#aa00ff #d8abee ;
+  scrollbar-color: #aa00ff #d8abee;
 }
 
 *::-webkit-scrollbar-track {
@@ -21,10 +21,14 @@
   border-radius: 14px;
   border: 3px solid #aa00ff;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Satoshi Variable Regular", Sans-serif !important;
   margin: 0;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -40,7 +44,9 @@ body {
 .slide-track2 {
   animation: scroll2 25s linear infinite;
 }
-
+.bannerImg {
+  mix-blend-mode: screen;
+}
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -82,7 +88,7 @@ body {
 }
 
 .font-satoshi-bold {
-  font-family: "Satoshi Variable Bold";
+  font-family: "Satoshi Variable Bold" !important;
 }
 
 @font-face {

@@ -10,7 +10,6 @@ const FormPage = () => {
   const [forms, setForms] = useState([]);
   const [showTable, setShowTable] = useState(true);
 
-
   useEffect(() => {
     const callback = (res) => {
       setForms(res.data.formData);
@@ -18,6 +17,8 @@ const FormPage = () => {
     setShowTable(true);
     getMiddleware("/form/all", callback, true);
   }, [showTable]);
+
+ 
 
   return (
     <div>
@@ -38,6 +39,11 @@ const FormPage = () => {
                 <table className="min-w-full leading-normal">
                   <thead>
                     <tr>
+                      <th
+                        className={`break-words px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider`}
+                      >
+                        Date
+                      </th>
                       <th
                         className={`break-words px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider`}
                       >
@@ -78,6 +84,11 @@ const FormPage = () => {
                   <tbody>
                     {forms.map((item, index) => (
                       <tr>
+                        <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                          <p className="text-gray-900 whitespace-no-wrap">
+                            {item.createdAt}
+                          </p>
+                        </td>
                         <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                           <span className="relative inline-block px-3 py-1 font-semibold text-blue-600 leading-tight">
                             <span

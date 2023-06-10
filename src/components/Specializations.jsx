@@ -2,7 +2,7 @@ import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 const Specializations = () => {
   return (
-    <div className="w-full text-desc-custom mt-20 mb-10">
+    <div className="w-full h-fit text-desc-custom mt-20 mb-10">
       <h2 className="md:text-title-custom text-title-custom-mv mb-4 font-satoshi-bold">Specialization</h2>
       <p className="mb-4">Unleashing your brand potential</p>
       <p className="">

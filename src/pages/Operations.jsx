@@ -23,8 +23,8 @@ import AdsLogo4 from "../assests/acros-media/Advertising-Platform-Expertise-4.pn
 import AdsLogo5 from "../assests/acros-media/Advertising-Platform-Expertise-5.png";
 import AdsLogo6 from "../assests/acros-media/Advertising-Platform-Expertise-6.png";
 
-import Testimonials from "../components/Testimonials";
-import WorkWithUs from "../components/WorkWithUs";
+import Testimonials from "../components/Section5";
+import WorkWithUs from "../components/Section10";
 import Connect from "../components/Connect";
 
 const Operations = () => {
@@ -163,7 +163,9 @@ const Operations = () => {
             Flexible Scalability
           </h2>
           <p>
-            Client can choose to increase or decrease the size of your operations flexibility with no over complicated procedures or cost structures.
+            Client can choose to increase or decrease the size of your
+            operations flexibility with no over complicated procedures or cost
+            structures.
           </p>
         </div>
         <div className="flex-col">
@@ -171,7 +173,9 @@ const Operations = () => {
             Proven Track Record
           </h2>
           <p>
-70% of our current clients are with us for more than 8 years. We are consistently and reliably adding value to leading global advertising agencies since 12+ years.
+            70% of our current clients are with us for more than 8 years. We are
+            consistently and reliably adding value to leading global advertising
+            agencies since 12+ years.
           </p>
         </div>
         <div className="flex-col">
@@ -179,7 +183,8 @@ const Operations = () => {
             Rapid Scalability
           </h2>
           <p>
-            Our robust forecasting system enables our clients with optimum level of readiness and deployment of faster engagement timeframes.
+            Our robust forecasting system enables our clients with optimum level
+            of readiness and deployment of faster engagement timeframes.
           </p>
         </div>
       </div>
@@ -237,7 +242,6 @@ const Operations = () => {
           <img src={AdsLogo6} alt="xp strategy" className=" block m-auto" />
         </div>
       </div>
-
 
       <Connect />
     </div>

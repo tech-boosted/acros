@@ -22,7 +22,6 @@ import logo13 from "../assests/acros-media/Frame-142.jpg";
 import logo14 from "../assests/acros-media/Reckitt-Logo-1.png";
 import logo15 from "../assests/acros-media/Frame-145.jpg";
 
-
 import EcommerceLogo1 from "../assests/acros-media/E-Commerce-Platform-Expertise-1.png";
 import EcommerceLogo2 from "../assests/acros-media/E-Commerce-Platform-Expertise-2.png";
 import EcommerceLogo3 from "../assests/acros-media/E-Commerce-Platform-Expertise-3.png";
@@ -30,13 +29,12 @@ import EcommerceLogo4 from "../assests/acros-media/E-Commerce-Platform-Expertise
 import EcommerceLogo5 from "../assests/acros-media/E-Commerce-Platform-Expertise-5.png";
 import EcommerceLogo6 from "../assests/acros-media/E-Commerce-Platform-Expertise-6.png";
 
-import AdsLogo1 from "../assests/acros-media/Advertising-Platform-Expertise-1.png"
-import AdsLogo2 from "../assests/acros-media/Advertising-Platform-Expertise-2.png"
-import AdsLogo3 from "../assests/acros-media/Advertising-Platform-Expertise-3.png"
-import AdsLogo4 from "../assests/acros-media/Advertising-Platform-Expertise-4.png"
-import AdsLogo5 from "../assests/acros-media/Advertising-Platform-Expertise-5.png"
-import AdsLogo6 from "../assests/acros-media/Advertising-Platform-Expertise-6.png"
-
+import AdsLogo1 from "../assests/acros-media/Advertising-Platform-Expertise-1.png";
+import AdsLogo2 from "../assests/acros-media/Advertising-Platform-Expertise-2.png";
+import AdsLogo3 from "../assests/acros-media/Advertising-Platform-Expertise-3.png";
+import AdsLogo4 from "../assests/acros-media/Advertising-Platform-Expertise-4.png";
+import AdsLogo5 from "../assests/acros-media/Advertising-Platform-Expertise-5.png";
+import AdsLogo6 from "../assests/acros-media/Advertising-Platform-Expertise-6.png";
 
 // import Slider from "../components/Slider";
 
@@ -48,7 +46,9 @@ const Partners = () => {
         <p>E-Commerce Operations Partner</p>
       </div>
       <div className="my-10 text-center ">
-        <span className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold ">Trusted By</span>
+        <span className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold ">
+          Trusted By
+        </span>
         <p className=" mt-8">
           With a reputation for excellence, we’re the trusted
         </p>
@@ -67,10 +67,22 @@ const Partners = () => {
           alt="pie analysis"
           className="w-[226px] block m-auto"
         />
-        <img src={Trustedlogo3} alt="sidle" className="w-[107px] block m-auto" />
-        <img src={Trustedlogo4} alt="tetramind" className="w-[171px] block m-auto" />
+        <img
+          src={Trustedlogo3}
+          alt="sidle"
+          className="w-[107px] block m-auto"
+        />
+        <img
+          src={Trustedlogo4}
+          alt="tetramind"
+          className="w-[171px] block m-auto"
+        />
         <img src={Trustedlogo5} alt="wake" className="w-[117px] block m-auto" />
-        <img src={Trustedlogo6} alt="xp strategy" className="w-[128px] block m-auto" />
+        <img
+          src={Trustedlogo6}
+          alt="xp strategy"
+          className="w-[128px] block m-auto"
+        />
       </div>
 
       {/* Slider is the automatic carousel thing*/}
@@ -124,7 +136,6 @@ const Partners = () => {
         </div>
       </div>
 
-
       <div className="w-full text-center my-20">
         <h2 className="md:text-title-custom text-title-custom-mv font-satoshi-bold mb-8">
           E-Commerce Platform Expertise
@@ -163,6 +174,9 @@ const Partners = () => {
           Multi-platform ad management for optimal results.
           <br />
           Drive results with our advertising platform mastery.
+          <br />A group of technologies that marketers leverage to conduct{" "}
+          <br />
+          and improve their marketing activities.
         </p>
 
         <div className="my-10 w-full bg-gradient-to-r from-[#aa00ff] from-73% to-[#0044ff] rounded-[30px] grid md:grid-cols-6 grid-cols-1  md:justify-center gap-8 px-5 items-center">
@@ -171,19 +185,11 @@ const Partners = () => {
             alt="clever click 360"
             className=" block m-auto"
           />
-          <img
-            src={AdsLogo2}
-            alt="pie analysis"
-            className=" block m-auto"
-          />
+          <img src={AdsLogo2} alt="pie analysis" className=" block m-auto" />
           <img src={AdsLogo3} alt="sidle" className="block m-auto" />
           <img src={AdsLogo4} alt="tetramind" className=" block m-auto" />
           <img src={AdsLogo5} alt="wake" className="block m-auto" />
-          <img
-            src={AdsLogo6}
-            alt="xp strategy"
-            className=" block m-auto"
-          />
+          <img src={AdsLogo6} alt="xp strategy" className=" block m-auto" />
         </div>
       </div>
     </div>

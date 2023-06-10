@@ -1,9 +1,9 @@
 import React from "react";
 
-const WorkWithUs = () => {
+const Section10 = () => {
   return (
-    <div className="w-full md:mt-[130px] mt-[60px] text-desc-custom">
-      <div className="rounded-[30px] md:p-[50px] p-[20px] md:h-[55vh] h-fit text-white w-full bg-gradient-to-r from-[#A422E5] to-[#0044ff]">
+    <div className="md:w-full w-[90%] mx-auto md:px-[10%]  text-desc-custom ">
+      <div className="bg-gradient-to-tr from-[#0e6968]  via-[#25153d]  to-[#000] to-[80%]  w-full h-fit px-12 py-10  rounded-[30px] text-white  text-desc-custom">
         <section className="flex justify-between items-center">
           <div>
             <p className=" md:text-title-custom text-title-custom-mv font-bold">
@@ -50,4 +50,4 @@ const WorkWithUs = () => {
   );
 };
 
-export default WorkWithUs;
+export default Section10;

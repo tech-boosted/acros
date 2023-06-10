@@ -1,12 +1,12 @@
 import React from "react";
-import FindUsOn from "../components/Contact/FindUsOn";
-import AlternateForm from "../components/Contact/AlternateForm";
+import Section1 from "../components/Contact/Section1";
+import Section2 from "../components/Contact/Section2";
 
 const Contact = () => {
   return (
     <div>
-      <FindUsOn />
-      <AlternateForm/>
+      <Section1 />
+      <Section2 />
     </div>
   );
 };

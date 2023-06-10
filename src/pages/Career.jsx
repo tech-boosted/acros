@@ -1,19 +1,18 @@
-import React from 'react'
-import IntroBanner from '../components/Career/IntroBanner'
-import Openings from '../components/Career/Openings'
-import Perks from '../components/Career/Perks'
-import Form from "../components/Career/Form"
+import React from "react";
+import Section1 from "../components/Career/Section1";
+import Section2 from "../components/Career/Section2";
+import Section3 from "../components/Career/Section3";
+import Section4 from "../components/Career/Section4";
 
 const Career = () => {
   return (
     <div>
-        <IntroBanner/>
-        <Openings/>
-        <Perks/>
-        <Form/>
-        {/* <CareerForm/> */}
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
     </div>
-  )
-}
+  );
+};
 
-export default Career
+export default Career;

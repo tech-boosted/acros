@@ -50,7 +50,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: "1px solid rgba(0, 0, 0, .125)",
 }));
 
-export default function Openings() {
+export default function Section2() {
   const [expanded, setExpanded] = React.useState("panel1");
   const [careerOpenings, setCareerOpenings] = useState([]);
 
@@ -67,13 +67,13 @@ export default function Openings() {
   }, []);
 
   return (
-    <div className="w-full my-10 h-fit p-5 flex flex-col items-center justify-center text-desc-custom">
+    
+    <div className="w-full my-10 px-[10%] h-fit p-5 flex flex-col items-center justify-center text-desc-custom">
       <div className="w-full my-10">
         <h2 className="md:text-title-custom text-title-custom-mv mb-10 text-left font-satoshi-bold">
           Learn About Us
         </h2>
         <div className="w-full text-right mb-10">
-          <span>/about/</span>
           <p className="mt-6">
             We’re a group of passionate and creative individuals who are on a
             mission to make your life easier and <br /> more enjoyable. We

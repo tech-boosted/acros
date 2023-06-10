@@ -12,7 +12,7 @@ export const postMiddleware = (url, data, callback, auth) => {
     if (res?.data?.success) {
       callback(res);
     } else {
-      if (res.status === 401) {
+      if (res?.status === 401) {
         localStorage.removeItem("token");
         window.location.replace("/sign-in");
       }
@@ -44,7 +44,7 @@ export const putMiddleware = (url, data, callback, auth) => {
     if (res?.data?.success) {
       callback(res);
     } else {
-      if (res.status === 401) {
+      if (res?.status === 401) {
         localStorage.removeItem("token");
         window.location.replace("/sign-in");
         alert("Unathorization");
@@ -76,7 +76,7 @@ export const getMiddleware = (url, callback, auth) => {
     if (res?.data?.success) {
       callback(res);
     } else {
-      if (res.status === 401) {
+      if (res?.status === 401) {
         localStorage.removeItem("token");
         window.location.replace("/sign-in");
       }
@@ -105,7 +105,7 @@ export const deleteMiddleware = (url, callback, auth) => {
     if (res?.data?.success) {
       callback(res);
     } else {
-      if (res.status === 401) {
+      if (res?.status === 401) {
         localStorage.removeItem("token");
         window.location.replace("/sign-in");
       }

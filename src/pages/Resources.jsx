@@ -1,12 +1,12 @@
-import React from 'react'
-import InsightsBanner from '../components/Resources/InsightsBanner'
+import React from "react";
+import Section1 from "../components/Resources/Section1";
 
-const Resources = ({blogs,articles,cs}) => {
+const Resources = ({ blogs, articles, cs }) => {
   return (
     <div>
-      <InsightsBanner blogs={blogs} articles={articles} cs={cs} />
+      <Section1 blogs={blogs} articles={articles} cs={cs} />
     </div>
-  )
-}
+  );
+};
 
-export default Resources
+export default Resources;

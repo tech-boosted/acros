@@ -1,9 +1,9 @@
 import React from "react";
 
-const Values = () => {
+const Section3 = () => {
   return (
-    <div className="w-full md:h-screen h-fit flex items-center text-desc-custom">
-      <div className="h-fit rounded-[30px] bg-gradient-to-r from-[#AA00FF] to-[#0044FF] py-8 px-12 text-white">
+    <div className="w-full h-fit flex items-center text-desc-custom ">
+      <div className="h-fit  bg-gradient-to-tr from-green-300 via-cyan-300 to-cyan-500 py-8  text-black px-[10%]">
         <div>
           <h2 className="font-satoshi-bold text-title-custom md:text-right text-left mb-10">Our Values</h2>
           <p className=" mb-10">
@@ -11,7 +11,7 @@ const Values = () => {
             innovative <br /> marketing solutions.
           </p>
         </div>
-        <div className="grid md:grid-cols-4 grid-cols-1 gap-8 text-[19px]">
+        <div className="grid md:grid-cols-4 grid-cols-1 gap-8 text-[19px] mb-16">
           <div className="flex-col ">
             <p className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-medium mb-4">Integrity</p>
             <p className="text-desc-custom ">
@@ -51,4 +51,4 @@ const Values = () => {
   );
 };
 
-export default Values;
+export default Section3;

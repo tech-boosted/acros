@@ -1,13 +1,13 @@
 import React from "react";
 import stars from "../assests/acros-media/starts.png";
-const Testimonials = () => {
+const Section5 = () => {
   return (
-    <div className="my-10 w-full text-center text-desc-custom">
+    <div className="my-10 w-[92%] rounded-[30px] px-10 h-fit bg-gradient-to-tr from-green-300 via-cyan-300 to-cyan-500 mx-auto py-10  text-center text-desc-custom ">
       <h2 className="md:text-title-custom text-title-custom-mv font-bold mb-10">
         Innovative Solutions, Exceptional Service: <br />
         What Our Clients Are Saying About Acros
       </h2>
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+      <div className="grid h-fit md:grid-cols-2 grid-cols-1 gap-4">
         <div className="flex-col justify-around items-center  mt-5">
           <div className="w-full my-4">
             <img src={stars} className="m-auto block " alt="stars" />
@@ -65,7 +65,9 @@ const Testimonials = () => {
           <div className="w-full my-4">
             <img src={stars} className="m-auto block " alt="stars" />
           </div>
-          <h2 className="text-subtitle-custom-mv md:text-subtitle-custom  mb-4">“Visionary Thinker”</h2>
+          <h2 className="text-subtitle-custom-mv md:text-subtitle-custom  mb-4">
+            “Visionary Thinker”
+          </h2>
           <p className=" mb-4">
             I've known Czar for several years now. He's one of the clearest
             thinkers I know and is able to articulate how the multitude of
@@ -81,4 +83,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Section5;

@@ -46,7 +46,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: "1px solid rgba(0, 0, 0, .125)",
 }));
 
-const Specializations = () => {
+const Section2 = () => {
   const [expanded, setExpanded] = React.useState("PPC Ads");
 
   const handleChange = (panel) => (event, newExpanded) => {
@@ -54,7 +54,7 @@ const Specializations = () => {
   };
 
   return (
-    <div className="w-full text-desc-custom mt-20 mb-10">
+    <div className="w-full text-desc-custom my-10 px-[10%]">
       <h2 className="md:text-title-custom text-title-custom-mv mb-4 font-satoshi-bold">
         Specialization
       </h2>
@@ -64,7 +64,7 @@ const Specializations = () => {
         commerce advertising to drive sales and increase revenue.
       </p>
 
-      <div className="my-10 mb-20">
+      <div className="mt-10">
         {agencySpecificationsArr.map((item, index) => (
           <Accordion
             expanded={expanded === item.key}
@@ -94,4 +94,4 @@ const Specializations = () => {
   );
 };
 
-export default Specializations;
+export default Section2;

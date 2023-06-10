@@ -1,12 +1,12 @@
 import React from "react";
 
-const Perks = () => {
+const Section3 = () => {
   return (
-    <div className="bg-gradient-to-r from-[#AA00FF] to-[#0044FF]  w-full h-fit px-12 py-10  rounded-[30px] text-white mt-16 text-desc-custom">
-      <h2 className="mb-10 md:text-title-custom text-title-custom-mv font-satoshi-bold">
+    <div className="bg-gradient-to-tr from-[#0e6968]  via-[#25153d]  to-[#000] to-[80%]  w-[80%] h-fit px-12 py-10  rounded-[30px] text-white my-10 text-desc-custom mx-auto">
+      <h2 className="text-center mb-10 md:text-title-custom text-title-custom-mv font-satoshi-bold">
         Perks
       </h2>
-      <p className="text-right">
+      <p className="text-center">
         We are building a neo gen culture at Acros. With our empathetic and{" "}
         <br /> entrepreneurial practices, we are breaking all the moulds of
         corporate structure and <br /> creating a fluid workplace where
@@ -67,4 +67,4 @@ const Perks = () => {
   );
 };
 
-export default Perks;
+export default Section3;

@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 import Career from "./pages/Career";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Services from "./pages/Services";
+import Agency from "./pages/Agency";
 import Operations from "./pages/Operations";
 import WrittenContent from "./components/Content/WrittenContent";
 import Technology from "./pages/Technology";
@@ -85,15 +85,18 @@ function App() {
 
   return (
     <Router>
-      <div className="container md:w-[80vw] m-auto w-[90vw] block">
+      <div className="container w-screen">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<Contact />} />
-          <Route path="/resources" element={<Resources blogs={blogs} articles={articles} cs={cs} />} />
+          <Route
+            path="/resources"
+            element={<Resources blogs={blogs} articles={articles} cs={cs} />}
+          />
           <Route path="/career" element={<Career />} />
-          <Route path="/agency" element={<Services />} />
+          <Route path="/agency" element={<Agency />} />
           <Route path="/operations" element={<Operations />} />
           <Route path="/technology" element={<Technology />} />
 
@@ -107,7 +110,7 @@ function App() {
           {getCategoryRoutes("Articles")}
           {getCategoryRoutes("CaseStudies")}
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );

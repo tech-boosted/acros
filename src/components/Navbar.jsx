@@ -24,7 +24,7 @@ const Navbar = () => {
   const renderMobileList = () => {
     if (open) {
       return (
-        <ul className="absolute w-full h-[400px]   flex-col pt-5 bg-white items-center z-[999]  transition-all duration-500 ease-in ">
+        <ul className="absolute left-0 w-full overflow-x-hidden px-10 h-[400px]   flex-col pt-5 bg-white items-center z-[999]  transition-all duration-500 ease-in ">
           {Links.map((link) => (
             <Link
               to={link.link}
@@ -136,8 +136,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full z-50 ">
-      <div className="md:flex items-center justify-between bg-white py-5 ">
+    <div className="w-screen absolute top-0">
+      <div className=" md:flex items-center justify-between bg-transparent my-6 px-12">
         <div className="cursor-pointer flex items-center">
           <Link to="/">
             <img src={navlogo} alt="Across logo" className="w-3/4" />
@@ -148,7 +148,7 @@ const Navbar = () => {
         <ul className="hidden md:flex md:items-center md:pb-0 md:static md:z-auto z-[10] w-full md:w-auto md:pl-0 transition-all duration-500 ease-in">
           {/* 🔥🔥 services rendering as it contains dropdown on hover */}
           <li
-            className="relative bg-white md:ml-8 "
+            className="relative bg-transparent md:ml-8 "
             onMouseOver={() => {
               setDropdown("block");
             }}
@@ -228,7 +228,7 @@ const Navbar = () => {
 
               `}
           >
-            <li className="bg-white md:ml-8">{"About us"}</li>
+            <li className="bg-transparent md:ml-8">{"About us"}</li>
           </Link>
           <Link
             to={"/resources"}
@@ -241,7 +241,7 @@ const Navbar = () => {
 
               `}
           >
-            <li className="bg-white md:ml-8">{"Resources"}</li>
+            <li className="bg-transparent md:ml-8">{"Resources"}</li>
           </Link>
           <Link
             to={"/career"}
@@ -254,7 +254,7 @@ const Navbar = () => {
 
               `}
           >
-            <li className="bg-white md:ml-8">{"Career"}</li>
+            <li className="bg-transparent md:ml-8">{"Career"}</li>
           </Link>
 
           <Link
@@ -268,7 +268,7 @@ const Navbar = () => {
 
               `}
           >
-            <li className="bg-white md:ml-8">{"Contact"}</li>
+            <li className="bg-transparent md:ml-8">{"Contact"}</li>
           </Link>
         </ul>
 

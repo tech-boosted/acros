@@ -25,7 +25,6 @@ function App() {
 
   useEffect(() => {
     const callback = (res) => {
-      console.log(res);
       let tempArticle = res.data.resources.filter((item) => {
         return item.type === "Article";
       });
@@ -40,8 +39,6 @@ function App() {
       setBlogs(tempBlog);
       setCS(tempCS);
 
-      console.log(tempArticle);
-      console.log(tempBlog);
     };
     getMiddleware("/resource/all", callback, false);
   }, []);

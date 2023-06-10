@@ -32,7 +32,6 @@ const Section4 = () => {
 
   const handleFileChange = (e) => {
     setDisable(true);
-    console.log(e.target.files[0]);
     const file = e.target?.files[0];
 
     if (!file) {

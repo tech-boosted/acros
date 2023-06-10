@@ -77,7 +77,6 @@ const Admin = () => {
                 alert(res.data.message);
                 navigate("/sign-in");
 
-                console.log(res.data.message);
               };
               postMiddleware("/logout", {}, callback, true);
             }}

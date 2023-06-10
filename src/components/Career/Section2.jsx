@@ -61,7 +61,6 @@ export default function Section2() {
   useEffect(() => {
     const callback = (res) => {
       setCareerOpenings(res.data.careers);
-      console.log(res.data.careers);
     };
     getMiddleware("/career/all", callback, false);
   }, []);

@@ -40,7 +40,6 @@ const Connect = () => {
   useEffect(() => {
     const callback = (res) => {
       setOpen(true);
-      console.log(res.data.success);
       setFormData({
         category: "General",
         name: "",
@@ -58,10 +57,8 @@ const Connect = () => {
     };
     if (Object.keys(formError).length === 0) {
       if (formData.email.length !== 0) {
-        console.log(formData);
         postMiddleware("/form/new", formData, callback, true);
       }
-      console.log(formData);
     } else {
       console.log(formError);
     }

@@ -48,7 +48,6 @@ const Career = () => {
     navigate("/admin/career/update");
     window.scroll(0, 0);
   };
-  console.log(location.pathname.includes("/update"));
   return (
     <div>
       <Routes>

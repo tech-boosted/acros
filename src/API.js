@@ -4,7 +4,7 @@ export const post = (url, data, headers, callback) => {
   axios
     .post(url, data, { headers: headers })
     .then((res) => {
-      console.log(res);
+      // console.log(res);
       callback(res);
     })
     .catch((e) => {
@@ -15,7 +15,7 @@ export const post = (url, data, headers, callback) => {
 
 export const put = (url,data,headers,callback)=>{
     axios.put(url,data,{headers:headers}).then((res)=>{
-        console.log(res);
+        // console.log(res);
         callback(res);
     }).catch((e)=>{
         console.log("Error occured in api : ",e.response);
@@ -27,7 +27,7 @@ export const get = (url, headers, callback) => {
   axios
     .get(url, { headers: headers })
     .then((res) => {
-      console.log(res);
+      // console.log(res);
 
       callback(res);
     })
@@ -40,7 +40,7 @@ export const del = (url, headers, callback) => {
   axios
     .delete(url, { headers: headers })
     .then((res) => {
-      console.log(res);
+      // console.log(res);
 
       callback(res);
     })

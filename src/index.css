@@ -32,7 +32,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.banner-bg {
+  -webkit-mask-image: url("https://res.cloudinary.com/dfwvu60ef/image/upload/v1686670308/20230613_210035_y2svik.png");
+  mask-image: url("https://res.cloudinary.com/dfwvu60ef/image/upload/v1686670308/20230613_210035_y2svik.png");
+  -webkit-mask-size: 100%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 70%;
+}
 :root {
   --title: 112px;
   --subtitle: 32px;

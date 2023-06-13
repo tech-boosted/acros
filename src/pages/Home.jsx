@@ -13,12 +13,14 @@ import Section10 from "../components/Section10";
 import Section11 from "../components/Section11";
 import BrandGrid from "../components/BrandGrid";
 import Banner from "../components/Banner";
+import Banner3 from "./Banner3";
 
 const Home = () => {
   return (
     <div>
       {/* <Banner /> */}
-      <Section1 />
+      {/* <Section1 /> */}
+      <Banner3/>
       <Section2 />
       <BrandGrid />
       <Section3 />

@@ -6,7 +6,6 @@ import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
 import Career from "./pages/Career";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Agency from "./pages/Agency";
 import Operations from "./pages/Operations";
 import WrittenContent from "./components/Content/WrittenContent";
@@ -17,7 +16,7 @@ import SignIn from "./components/Admin/SignIn";
 import { useEffect } from "react";
 import { useState } from "react";
 import { getMiddleware } from "./middleware";
-import Temp from "./pages/Temp";
+import Banner3 from "./pages/Banner3";
 
 function App() {
   const [articles, setArticles] = useState([]);
@@ -96,7 +95,7 @@ function App() {
           <Route path="/agency" element={<Agency />} />
           <Route path="/operations" element={<Operations />} />
           <Route path="/technology" element={<Technology />} />
-          <Route path="/temp" element={<Temp />} />
+          <Route path="/temp" element={<Banner3 />} />
 
           <Route element={<Protected />}>
             <Route path="/admin/*" element={<Admin />} />

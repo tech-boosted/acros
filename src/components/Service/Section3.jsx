@@ -17,7 +17,7 @@ import AdsLogo6 from "../../assests/acros-media/Advertising-Platform-Expertise-6
 
 const Section3 = () => {
   return (
-    <div>
+    <div className="w-screen">
       <div className="flex md:flex-row flex-col gap-4 justify-between h-fit my-10 px-[10%] w-full ">
         <div className="md:w-[40%] w-full">
           <h2 className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
@@ -32,7 +32,7 @@ const Section3 = () => {
           <h2></h2>
           <p></p>
         </div>
-        <div className="h-fit md:w-[40%] w-full grid grid-cols-3 gap-4 gap-y-4 ">
+        <div className="h-fit md:w-[40%] w-fit grid grid-cols-3 gap-4 gap-y-4 ">
           <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px]">
             <img src={TechStackLogo1} alt="" />
           </div>

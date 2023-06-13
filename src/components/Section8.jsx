@@ -16,7 +16,7 @@ import EcommerceLogo6 from "../assests/acros-media/E-Commerce-Platform-Expertise
 
 const Section8 = () => {
   return (
-    <div className="flex md:flex-row flex-col w-full px-[4%] justify-between gap-10 my-10 ">
+    <div className="flex md:flex-row flex-col w-screen px-[4%] justify-between gap-10 my-10 ">
 
     <div className="md:w-[45%] w-full text-white rounded-[30px] h-fit bg-gradient-to-br from-[#1de5e2] from-40% via-[#6196e8] via-60% to-[#955aec] px-10   py-10">
       <div className="w-fit grid grid-cols-3 gap-4 gap-y-4 mx-auto">

@@ -3,7 +3,7 @@ import img1 from "../../assests/tech-media/product platform fit light.png";
 import img2 from "../../assests/tech-media/product platform fit dark.png";
 const PlatformProductFit = () => {
   return (
-    <div className="w-full text-desc-custom py-10 text-center">
+    <div className="w-screen px-[10%] text-desc-custom py-10 text-center">
       <h2 className="uppercase font-satoshi-bold md:text-title-custom text-title-custom-mv">
         platform-product fit
       </h2>

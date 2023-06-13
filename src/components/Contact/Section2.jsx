@@ -89,8 +89,7 @@ const Section2 = () => {
   };
 
   return (
-    <div>
-
+    <div className="w-screen">
       <div className="flex w-[92%] rounded-[30px] my-10  h-fit mx-auto px-[10%] gap-4  items-center bg-[#e2e2e2]">
         <div className=" text-start my-10 w-[60%]">
           <h2 className="text-title-custom-mv md:text-title-custom font-satoshi-bold">

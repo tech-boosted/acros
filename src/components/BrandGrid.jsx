@@ -17,53 +17,56 @@ import logo15 from "../assests/acros-media/truskin-logo.png";
 
 const BrandGrid = () => {
   return (
+    <div className="w-screen">
+
     <div className="w-[80%] mx-auto grid md:grid-cols-5 md:grid-row-3  grid-cols-1 my-10 ">
-    <div className="border-2 border-gray-800  md:border-t-0 md:border-r-0 border-b-0 flex justify-center items-center p-3">
-      <img src={logo1} alt="mattle" />
+      <div className="border-2 border-gray-800  md:border-t-0 md:border-r-0 border-b-0 flex justify-center items-center p-3">
+        <img src={logo1} alt="mattle" />
+      </div>
+      <div className="border-2 border-gray-800  md:border-t-0 md:border-r-0 border-b-0 flex justify-center items-center p-3">
+        <img src={logo2} alt="mattle" />
+      </div>
+      <div className="border-2 border-gray-800  md:border-t-0 md:border-r-0 border-b-0 flex justify-center items-center p-3">
+        <img src={logo3} alt="mattle" />
+      </div>
+      <div className="border-2 border-gray-800  md:border-t-0 md:border-r-0 border-b-0 flex justify-center items-center p-3">
+        <img src={logo4} alt="mattle" />
+      </div>
+      <div className="border-2 border-gray-800  md:border-t-0  border-b-0 flex justify-center items-center p-3">
+        <img src={logo5} alt="mattle" />
+      </div>
+      <div className="border-2 border-gray-800   md:border-r-0 border-b-0 flex justify-center items-center p-3">
+        <img src={logo6} alt="mattle" />
+      </div>
+      <div className="border-2 border-gray-800   md:border-r-0 border-b-0 flex justify-center items-center p-3">
+        <img src={logo7} alt="mattle" />
+      </div>
+      <div className="border-2 border-gray-800  md:border-r-0 border-b-0 flex justify-center items-center p-3">
+        <img src={logo8} alt="mattle" />
+      </div>
+      <div className="border-2 border-gray-800   md:border-r-0 border-b-0 flex justify-center items-center p-3">
+        <img src={logo9} alt="mattle" />
+      </div>
+      <div className="border-2 border-gray-800   border-b-0 flex justify-center items-center p-3">
+        <img src={logo10} alt="mattle" />
+      </div>
+      <div className="border-2 border-gray-800   md:border-r-0 border-b-0 flex justify-center items-center p-3">
+        <img src={logo11} alt="mattle" />
+      </div>
+      <div className="border-2 border-gray-800   md:border-r-0 border-b-0 flex justify-center items-center p-3">
+        <img src={logo12} alt="mattle" />
+      </div>
+      <div className="border-2 border-gray-800   md:border-r-0 border-b-0 flex justify-center items-center p-3">
+        <img src={logo13} alt="mattle" />
+      </div>
+      <div className="border-2 border-gray-800   md:border-r-0 border-b-0 flex justify-center items-center p-3">
+        <img src={logo14} alt="mattle" />
+      </div>
+      <div className="border-2 border-gray-800    md:border-b-0 flex justify-center items-center p-3">
+        <img src={logo15} alt="mattle" />
+      </div>
     </div>
-    <div className="border-2 border-gray-800  md:border-t-0 md:border-r-0 border-b-0 flex justify-center items-center p-3">
-      <img src={logo2} alt="mattle" />
     </div>
-    <div className="border-2 border-gray-800  md:border-t-0 md:border-r-0 border-b-0 flex justify-center items-center p-3">
-      <img src={logo3} alt="mattle" />
-    </div>
-    <div className="border-2 border-gray-800  md:border-t-0 md:border-r-0 border-b-0 flex justify-center items-center p-3">
-      <img src={logo4} alt="mattle" />
-    </div>
-    <div className="border-2 border-gray-800  md:border-t-0  border-b-0 flex justify-center items-center p-3">
-      <img src={logo5} alt="mattle" />
-    </div>
-    <div className="border-2 border-gray-800   md:border-r-0 border-b-0 flex justify-center items-center p-3">
-      <img src={logo6} alt="mattle" />
-    </div>
-    <div className="border-2 border-gray-800   md:border-r-0 border-b-0 flex justify-center items-center p-3">
-      <img src={logo7} alt="mattle" />
-    </div>
-    <div className="border-2 border-gray-800  md:border-r-0 border-b-0 flex justify-center items-center p-3">
-      <img src={logo8} alt="mattle" />
-    </div>
-    <div className="border-2 border-gray-800   md:border-r-0 border-b-0 flex justify-center items-center p-3">
-      <img src={logo9} alt="mattle" />
-    </div>
-    <div className="border-2 border-gray-800   border-b-0 flex justify-center items-center p-3">
-      <img src={logo10} alt="mattle" />
-    </div>
-    <div className="border-2 border-gray-800   md:border-r-0 border-b-0 flex justify-center items-center p-3">
-      <img src={logo11} alt="mattle" />
-    </div>
-    <div className="border-2 border-gray-800   md:border-r-0 border-b-0 flex justify-center items-center p-3">
-      <img src={logo12} alt="mattle" />
-    </div>
-    <div className="border-2 border-gray-800   md:border-r-0 border-b-0 flex justify-center items-center p-3">
-      <img src={logo13} alt="mattle" />
-    </div>
-    <div className="border-2 border-gray-800   md:border-r-0 border-b-0 flex justify-center items-center p-3">
-      <img src={logo14} alt="mattle" />
-    </div>
-    <div className="border-2 border-gray-800    md:border-b-0 flex justify-center items-center p-3">
-      <img src={logo15} alt="mattle" />
-    </div>
-  </div>
   );
 };
 

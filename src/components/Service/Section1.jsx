@@ -2,7 +2,7 @@ import React from "react";
 
 const Section1 = () => {
   return (
-    <div className="w-full h-fit text-desc-custom">
+    <div className="w-screen h-fit text-desc-custom">
       <div className="h-fit w-[92%] mx-auto  rounded-[30px] bg-bottom bg-cover bg-[url('https://res.cloudinary.com/dfwvu60ef/image/upload/v1686145258/earth_horizontal_adqh3a.jpg')] py-8 px-12 md:mt-[10%] mt-[20%] text-white">
         <div className="h-[60%] font-satoshi-bold text-right mb-10 text-title-custom">
           <p>Agency Partners</p>

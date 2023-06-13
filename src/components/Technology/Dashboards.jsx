@@ -7,7 +7,7 @@ import Slider from "./Slider";
 
 const Dashboards = () => {
   return (
-    <div className="w-full text-desc-custom">
+    <div className="w-screen text-desc-custom">
       {/* 🌻🌻 unified dashboard */}
       <div className="text-center text-desc-custom mt-0">
         <h2 className="uppercase font-satoshi-bold text-title-custom-mv md:text-title-custom ">
@@ -22,7 +22,7 @@ const Dashboards = () => {
           Overview to improve conversions.
         </p>
 
-        <div className="flex relative w-full mt-28 mb-10  justify-between">
+        <div className="flex relative w-full px-[10%] mt-28 mb-10  justify-between">
           <img
             src={img1}
             className="drop-shadow-3xl relative w-[40%] object-contain"
@@ -45,7 +45,7 @@ const Dashboards = () => {
      <Slider/>
 
       {/* 🌻🌻 dedicated view */}
-      <div className="w-full flex md:flex-row flex-col-reverse items-center md:h-[80vh] h-fit">
+      <div className="w-screen px-[10%] flex md:flex-row flex-col-reverse items-center md:h-[80vh] h-fit">
         <div className="md:w-[35%] w-full text-center p-4">
           <h2 className="md:text-title-custom text-title-custom-mv uppercase mb-10 font-satoshi-bold">
             Dedicated view
@@ -70,7 +70,7 @@ const Dashboards = () => {
       </div>
 
       {/* 🌻🌻 sku view */}
-      <div className="w-full flex md:flex-row flex-col items-center md:h-[80vh] h-fit">
+      <div className="w-screen px-[10%] flex md:flex-row flex-col items-center md:h-[80vh] h-fit">
         <div className="md:w-[65%] w-full">
           <img src={img4} alt="SKU view" className="drop-shadow-3xl" />
         </div>

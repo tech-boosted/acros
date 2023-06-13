@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Route, Routes, useLocation, useNavigate } from "react-router";
 import CareerUpdateForm from "./CareerUpdateForm";
@@ -24,7 +23,6 @@ const Career = () => {
       setResources(res.data.careers);
     };
 
-
     getMiddleware("/career/all", callback, true);
   }, []);
 
@@ -33,7 +31,6 @@ const Career = () => {
       alert(res.data.message);
     };
     deleteMiddleware(`/career/${id}`, callback, true);
-   
   };
 
   const handleUpdate = (item) => {

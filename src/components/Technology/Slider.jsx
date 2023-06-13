@@ -2,7 +2,7 @@ import React from "react";
 
 const Slider = () => {
   return (
-    <div className="slider w-[100%] gap-8 m-auto flex text-center my-10 relative overflow-hidden ">
+    <div className="slider w-screen gap-8 mx-[10%] m-auto flex text-center my-10 relative overflow-hidden ">
       <div className="slide-track2 flex w-[2400px]">
         <div className="w-[240px] ">
           <h2 className="text-title-custom font-satoshi-bold ">12+</h2>

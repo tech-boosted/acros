@@ -2,7 +2,7 @@ import React from "react";
 
 const Section3 = () => {
   return (
-    <div className="w-full h-fit flex items-center text-desc-custom ">
+    <div className="w-screen h-fit flex items-center text-desc-custom ">
       <div className="h-fit  bg-gradient-to-tr from-green-300 via-cyan-300 to-cyan-500 py-8  text-black px-[10%]">
         <div>
           <h2 className="font-satoshi-bold text-title-custom md:text-right text-left mb-10">Our Values</h2>

@@ -16,8 +16,8 @@ import logo14 from "../assests/acros-media/Frame-134.jpg";
 import logo15 from "../assests/acros-media/truskin-logo.png";
 const Slider = () => {
   return (
-    <div>
-      <div className="slider  overflow-hidden h-[250px] m-auto relative w-full grid place-items-center">
+    <div className="w-screen ">
+      <div className="mx-auto slider  overflow-hidden h-[250px] m-auto relative w-full grid place-items-center">
         <div className="slide-track flex w-[calc(250px*18)] ">
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img

@@ -84,7 +84,7 @@ const Connect = () => {
   };
 
   return (
-    // <div className="w-full text-desc-customv">
+    <div className="w-screen text-desc-customv">
     <div className="flex w-[92%] mx-auto rounded-[30px] mb-10 h-fit px-10  gap-4  items-center bg-[#e2e2e2]">
       <div className=" text-start  w-[60%]">
         <h2 className="md:text-title-custom text-title-custom-mv font-satoshi-bold mb-6">
@@ -166,6 +166,7 @@ const Connect = () => {
           Your response has been submitted
         </Alert>
       </Snackbar>
+    </div>
     </div>
   );
 };

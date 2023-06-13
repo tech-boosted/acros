@@ -32,7 +32,7 @@ const Operations = () => {
     <div>
       <Expertise />
 
-      <div className="h-fit my-10">
+      <div className="w-screen px-[10%] h-fit my-10">
         <div className="h-[60%] flex  flex-col">
           <div className="uppercase text-title-custom-mv md:text-title-custom  font-satoshi-bold w-full">
             hire a pod, <br />
@@ -83,7 +83,7 @@ const Operations = () => {
         </div>
       </div>
 
-      <div className="w-full h-fit text-center my-10">
+      <div className="w-screen px-[10%] h-fit text-center my-10">
         <h2 className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
           Specialization
         </h2>
@@ -111,7 +111,7 @@ const Operations = () => {
         </div>
       </div>
 
-      <div className="w-full text-desc-custom my-10">
+      <div className="w-screen px-[10%] text-desc-custom my-10">
         <div className="my-10 text-center ">
           <span className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold ">
             Trusted By
@@ -148,7 +148,7 @@ const Operations = () => {
       <Testimonials />
       <WorkWithUs />
 
-      <div className="w-full my-10 grid md:grid-cols-4 grid-cols-1 text-desc-custom gap-4">
+      <div className="w-screen px-[10%] my-10 grid md:grid-cols-4 grid-cols-1 text-desc-custom gap-4">
         <div className="flex-col">
           <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold mb-6">
             Immense Talent Pool
@@ -189,7 +189,7 @@ const Operations = () => {
         </div>
       </div>
 
-      <div className="w-full text-center my-20">
+      <div className="w-screen px-[10%] text-center my-20">
         <h2 className="md:text-title-custom text-title-custom-mv font-satoshi-bold mb-8">
           E-Commerce Platform Expertise
         </h2>
@@ -219,7 +219,7 @@ const Operations = () => {
         </div>
       </div>
 
-      <div className="w-full text-center my-20">
+      <div className="w-screen px-[10%] text-center my-20">
         <h2 className="md:text-title-custom text-title-custom-mv font-satoshi-bold mb-8">
           Advertising Platform Expertise
         </h2>

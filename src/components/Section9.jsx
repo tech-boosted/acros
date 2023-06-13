@@ -16,7 +16,7 @@ import TechStackLogo7 from "../assests/acros-media/TechStack-7.png";
 
 const Section9 = () => {
   return (
-    <div className="flex md:flex-row flex-col w-full px-[4%] justify-between gap-10 my-10 ">
+    <div className="flex md:flex-row flex-col w-screen px-[4%] justify-between gap-10 my-10 ">
 
     <div className="md:w-[65%] w-full text-white rounded-[30px] h-fit bg-gradient-to-tr from-[#ff9022] from-25% via-50%   via-[#bb65da]  to-[#7034fc] to-65% px-10   py-10">
       <div className="w-fit grid grid-cols-3 gap-4 gap-y-4 mx-auto">

@@ -1,43 +1,60 @@
 import React, { useState } from "react";
 import PriceCard from "./PriceCard";
 
-import {FaInstagram,FaTwitter,FaPinterest,FaLinkedin,FaTiktok,FaShopify,FaFacebook} from "react-icons/fa"
+import {
+  FaInstagram,
+  FaTwitter,
+  FaPinterest,
+  FaLinkedin,
+  FaTiktok,
+  FaShopify,
+  FaFacebook,
+} from "react-icons/fa";
 
 const Plans = () => {
   const [inputValue, setInputValue] = useState(1);
-  const[monthly,setMonthly] = useState("bg-brand-white  text-brand-500 border-r-[3px] border-brand-500 border-[3px]");
-  const[yearly,setYearly] = useState("border-[3px] border-l-0 border-gray-500 text-gray-700");
+  const [monthly, setMonthly] = useState(
+    "bg-brand-white  text-brand-500 border-r-[3px] border-brand-500 border-[3px]"
+  );
+  const [yearly, setYearly] = useState(
+    "border-[3px] border-l-0 border-gray-500 text-gray-700"
+  );
 
-  const[cycle,setCycle] = useState("Monthly");
+  const [cycle, setCycle] = useState("Monthly");
 
-  const handleClick = (value)=>{
-    if(value === "Monthly"){
-        if(monthly === "bg-brand-white  text-brand-500 border-r-[3px] border-brand-500 border-[3px]"){
-            // setMonthly("border-[3px] border-gray-500 text-gray-700 border-r-0")
-
-        }
-        else{
-            setMonthly("bg-brand-white  text-brand-500 border-r-[3px] border-brand-500 border-[3px]")
-            setCycle("Monthly");
-            setYearly("border-[3px] border-gray-500 text-gray-700 border-l-0");
-
-        }
+  const handleClick = (value) => {
+    if (value === "Monthly") {
+      if (
+        monthly ===
+        "bg-brand-white  text-brand-500 border-r-[3px] border-brand-500 border-[3px]"
+      ) {
+        // setMonthly("border-[3px] border-gray-500 text-gray-700 border-r-0")
+      } else {
+        setMonthly(
+          "bg-brand-white  text-brand-500 border-r-[3px] border-brand-500 border-[3px]"
+        );
+        setCycle("Monthly");
+        setYearly("border-[3px] border-gray-500 text-gray-700 border-l-0");
+      }
+    } else {
+      if (
+        yearly ===
+        "bg-brand-white text-brand-500 border-r-[3px] border-brand-500 border-[3px]"
+      ) {
+        // setYearly("border-[3px] border-gray-500 text-gray-700 border-l-0")
+      } else {
+        setYearly(
+          "bg-brand-white text-brand-500 border-r-[3px] border-brand-500 border-[3px]"
+        );
+        setCycle("Yearly");
+        setMonthly("border-[3px] border-gray-500 text-gray-700 border-r-0");
+      }
     }
-    else{
-        if(yearly === "bg-brand-white text-brand-500 border-r-[3px] border-brand-500 border-[3px]"){
-            // setYearly("border-[3px] border-gray-500 text-gray-700 border-l-0")
-        }
-        else{
-            setYearly("bg-brand-white text-brand-500 border-r-[3px] border-brand-500 border-[3px]");
-            setCycle("Yearly");
-            setMonthly("border-[3px] border-gray-500 text-gray-700 border-r-0");
-        }
-    }
-  }
+  };
 
   return (
     <div>
-      <section className="mt-5 rounded-[20px]  bg-white ">
+      <section className="w-screen px-[10%] mt-5 rounded-[20px]  bg-white ">
         <div className="mx-auto py-8 ">
           <div className="flex md:flex-row flex-col w-full justify-between mx-auto mb-8  text-center lg:mb-12">
             <h2 className="md:w-[40%] md:text-title-custom text-title-custom-mv font-satoshi-bold">
@@ -76,34 +93,38 @@ const Plans = () => {
                 </div>
 
                 <div className="flex mt-4 text-xl gap-2">
-                    <FaFacebook/>
-                    <FaInstagram/>
-                    <FaTwitter/>
-                    <FaPinterest/>
-                    <FaLinkedin/>
-                    <FaShopify/>
-                    <FaTiktok/>
+                  <FaFacebook />
+                  <FaInstagram />
+                  <FaTwitter />
+                  <FaPinterest />
+                  <FaLinkedin />
+                  <FaShopify />
+                  <FaTiktok />
                 </div>
               </div>
 
               <div className="flex flex-col items-center justify-center">
-              <p className="font-satoshi-medium">
-                Select Billing Cycle</p>
+                <p className="font-satoshi-medium">Select Billing Cycle</p>
                 <div className="flex h-[45px] mt-2">
-                {/* border-gray-500 border-[3px] border-r-0   text-gray-500*/}
-                <button className={`${monthly} rounded-l-md font-satoshi-bold  px-5 py-2 text-base font-medium transition duration-200 active:bg-brand-700/5`} onClick={()=>handleClick("Monthly")}>
-                  Monthly
-                </button>
-                <button className={` ${yearly} font-satoshi-bold rounded-r-md  px-5 py-2 text-base font-medium  transition duration-200  active:bg-brand-700/5`} onClick={()=>handleClick("Yearly")}>
-                  Yearly
-                </button>
+                  {/* border-gray-500 border-[3px] border-r-0   text-gray-500*/}
+                  <button
+                    className={`${monthly} rounded-l-md font-satoshi-bold  px-5 py-2 text-base font-medium transition duration-200 active:bg-brand-700/5`}
+                    onClick={() => handleClick("Monthly")}
+                  >
+                    Monthly
+                  </button>
+                  <button
+                    className={` ${yearly} font-satoshi-bold rounded-r-md  px-5 py-2 text-base font-medium  transition duration-200  active:bg-brand-700/5`}
+                    onClick={() => handleClick("Yearly")}
+                  >
+                    Yearly
+                  </button>
                 </div>
 
                 <div className="mt-4 bg-cyan-400 text-black font-satoshi-bold px-4 py-1 rounded-md">
-                    Save 2 months with yearly billing 🎉
+                  Save 2 months with yearly billing 🎉
                 </div>
               </div>
-
             </div>
           </div>
 

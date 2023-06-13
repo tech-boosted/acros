@@ -4,7 +4,7 @@ import stars from "../../assests/acros-media/starts.png";
 export const Section4 = () => {
   return (
     <>
-    <div className="w-full h-fit px-[10%] py-10 ">
+    <div className="w-screen h-fit px-[10%] py-10 ">
        <h2 className="text-title-custom font-satoshi-bold ">We are Acros</h2>
         <p className="">
           We are a team of ex-Amazon, Google and Meta executives who make a
@@ -14,7 +14,7 @@ export const Section4 = () => {
           business growth across multiple channels.
         </p>
     </div>
-    <div className="w-full h-fit px-[10%] bg-gradient-to-r from-[#00112B] from-0% to-[#000103] to-50% text-white py-10 mb-10">
+    <div className="w-screen h-fit px-[10%] bg-gradient-to-r from-[#00112B] from-0% to-[#000103] to-50% text-white py-10 mb-10">
        
       <div className="">
 

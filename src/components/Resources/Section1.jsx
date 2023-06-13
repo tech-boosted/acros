@@ -26,7 +26,7 @@ const Section1 = ({ blogs, articles, cs }) => {
 
   return (
     <div>
-      <div className="h-fit w-full bg-[url('https://res.cloudinary.com/dfwvu60ef/image/upload/v1686093632/bkg_1_bjjncw.jpg')] py-4 px-[10%]  text-black  md:mt-24 mt-[20%]" >
+      <div className="h-fit w-screen bg-[url('https://res.cloudinary.com/dfwvu60ef/image/upload/v1686093632/bkg_1_bjjncw.jpg')] py-4 px-[10%]  text-black  md:mt-24 mt-[20%]" >
         <h2 className="mb-10 md:text-title-custom text-title-custom-mv font-satoshi-bold">
           Insightful Digital Buzz
         </h2>
@@ -77,7 +77,7 @@ const Section1 = ({ blogs, articles, cs }) => {
       </div>
 
       {showArticle && (
-        <div className=" px-[10%] grid md:grid-cols-2  grid-cols-1 gap-8  m-auto  my-10">
+        <div className="w-screen  px-[10%] grid md:grid-cols-2  grid-cols-1 gap-8  m-auto  my-10">
           {articles.map((item, index) => (
             <div>
               <Link to={`/articles/0${index + 1}`} key={index}>
@@ -103,7 +103,7 @@ const Section1 = ({ blogs, articles, cs }) => {
       )}
 
       {showBlogs && (
-        <div className=" px-[10%] grid md:grid-cols-2  grid-cols-1 gap-8  m-auto  my-10">
+        <div className="w-screen px-[10%] grid md:grid-cols-2  grid-cols-1 gap-8  m-auto  my-10">
         {blogs.map((item, index) => (
             <div>
               <Link to={`/blogs/0${index + 1}`} key={index}>
@@ -129,7 +129,7 @@ const Section1 = ({ blogs, articles, cs }) => {
       )}
 
       {showCaseStudies && (
-        <div className=" px-[10%] grid md:grid-cols-2  grid-cols-1 gap-8  m-auto  my-10">
+        <div className="w-screen px-[10%] grid md:grid-cols-2  grid-cols-1 gap-8  m-auto  my-10">
         {cs.map((item, index) => (
             <div>
               <Link to={`/caseStudies/0${index + 1}`} key={index}>

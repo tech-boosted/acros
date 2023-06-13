@@ -124,7 +124,7 @@ const Section4 = () => {
   };
 
   return (
-    <>
+    <div className="w-screen">
       <div className="flex w-[92%] h-fit mx-auto rounded-[30px] gap-4 px-10 py-10 mb-10 items-center bg-[#e2e2e2]">
         <div className=" text-start  w-[60%]">
           <h2 className="text-left text-title-custom-mv md:text-title-custom-mv font-satoshi-bold mt-10">
@@ -246,7 +246,7 @@ const Section4 = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

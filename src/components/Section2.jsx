@@ -2,7 +2,7 @@ import React from "react";
 
 const Section2 = () => {
   return (
-    <div className=" w-full  py-10 h-fit mx-auto px-[10%] gap-4  items-center bg-[#e2e2e2]">
+    <div className=" w-screen  py-10 h-fit mx-auto px-[10%] gap-4  items-center bg-[#e2e2e2]">
       <p className="font-satoshi-bold md:text-subtitle-custom ">
         Acros is world's leading E-commerce Adverstising Agency. <br /> Seasoned
         partners with 12+ years of experience and $10 <br /> billion advertising

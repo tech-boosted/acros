@@ -54,7 +54,7 @@ const Section2 = () => {
   };
 
   return (
-    <div className="w-full text-desc-custom my-10 px-[10%]">
+    <div className="w-screen text-desc-custom my-10 px-[10%]">
       <h2 className="md:text-title-custom text-title-custom-mv mb-4 font-satoshi-bold">
         Specialization
       </h2>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Section2 = () => {
   return (
-    <div>
+    <div className="w-screen">
       <div className="h-fit py-[90px] bg-[#e2e2e2] px-[10%]">
         <div className="h-[60%] flex md:flex-row flex-col">
           <div className="text-title-custom-mv md:text-title-custom  font-satoshi-bold w-[50%]">

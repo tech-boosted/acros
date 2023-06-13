@@ -17,6 +17,7 @@ import SignIn from "./components/Admin/SignIn";
 import { useEffect } from "react";
 import { useState } from "react";
 import { getMiddleware } from "./middleware";
+import Temp from "./pages/Temp";
 
 function App() {
   const [articles, setArticles] = useState([]);
@@ -38,7 +39,6 @@ function App() {
       setArticles(tempArticle);
       setBlogs(tempBlog);
       setCS(tempCS);
-
     };
     getMiddleware("/resource/all", callback, false);
   }, []);
@@ -82,8 +82,8 @@ function App() {
 
   return (
     <Router>
+      <Navbar />
       <div className="container w-screen">
-        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
@@ -96,6 +96,7 @@ function App() {
           <Route path="/agency" element={<Agency />} />
           <Route path="/operations" element={<Operations />} />
           <Route path="/technology" element={<Technology />} />
+          <Route path="/temp" element={<Temp />} />
 
           <Route element={<Protected />}>
             <Route path="/admin/*" element={<Admin />} />
@@ -107,8 +108,8 @@ function App() {
           {getCategoryRoutes("Articles")}
           {getCategoryRoutes("CaseStudies")}
         </Routes>
-        {/* <Footer /> */}
       </div>
+      {/* <Footer /> */}
     </Router>
   );
 }

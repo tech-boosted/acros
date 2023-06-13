@@ -2,7 +2,7 @@ import React from "react";
 
 const Section6 = () => {
   return (
-    <div>
+    <div className="w-screen">
   
 
       <div className=" flex items-center justify-center text-desc-custom md:w-[80%] w-[90%] px-20 rounded-[30px] mx-auto text-white  bg-gradient-to-tr from-[#ff9022] from-25% via-50%   via-[#bb65da]  to-[#7034fc] to-65%">

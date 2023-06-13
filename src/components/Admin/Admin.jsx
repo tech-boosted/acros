@@ -20,7 +20,7 @@ const Admin = () => {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div className="w-screen px-[10%]">
       <h2 className="text-title-custom font-satoshi-bold my-10 text-center">
         Admin Portal
       </h2>

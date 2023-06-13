@@ -67,7 +67,7 @@ export default function Section2() {
 
   return (
     
-    <div className="w-full my-10 px-[10%] h-fit p-5 flex flex-col items-center justify-center text-desc-custom">
+    <div className="w-screen my-10 px-[10%] h-fit p-5 flex flex-col items-center justify-center text-desc-custom">
       <div className="w-full my-10">
         <h2 className="md:text-title-custom text-title-custom-mv mb-10 text-left font-satoshi-bold">
           Learn About Us

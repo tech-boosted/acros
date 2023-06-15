@@ -7,14 +7,14 @@ const Tabs = ({arr}) => {
     <div className="w-full h-fit text-desc-custom my-10">
 
       <div>
-        <h2 className="text-right my-10 md:text-subtitle-custom text-subtitle-custom-mv font-satoshi-bold">
+        {/* <h2 className="my-10 md:text-subtitle-custom text-subtitle-custom-mv font-satoshi-bold">
           Capabilities
-        </h2>
+        </h2> */}
         <div className="flex md:flex-row flex-col-reverse w-full justify-between ">
-          <div className="md:w-[45%] w-full md:h-[220px] h-fit md:m-auto mt-10 bg-gradient-to-r from-[#AA00FF] to-[#0044FF] py-8 px-12 rounded-[30px]">
+          <div className="md:w-[45%] w-full h-fit md:mx-auto bg-gradient-to-r from-[#AA00FF] to-[#0044FF] py-8 px-12 rounded-[30px]">
             <p className="text-white">{arr[data].desc}</p>
           </div>
-          <div className="md:w-[50%] w-full  flex flex-col justify-start items-end">
+          <div className="md:w-[50%] w-full  flex flex-col justify-start items-center">
             {arr.map((item, index) => (
               <div
                 key={index}

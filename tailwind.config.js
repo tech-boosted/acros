@@ -11,9 +11,13 @@ module.exports = {
         ]
       },
       fontSize: {
+        "title-extra-large": "60px",
+        "title-large": "50px",
         "title-custom": "44px",
+        "title-basic": "40px",
         "subtitle-custom": "25px",
         "desc-custom": "18px",
+        "desc-basic": "16px",
         "title-custom-mv": "35px",
         "subtitle-custom-mv": "22px",
       },

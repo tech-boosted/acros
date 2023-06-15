@@ -23,126 +23,126 @@ const Slider = () => {
             <img
               src={logo1}
               alt="mattle"
-              className="w-full transition transform delay-200 hover:translate-z-[20px]"
+              className="w-full transition transform delay-200 hover:translate-z-[20px] grayscale"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
               src={logo2}
               alt="mattle"
-              className="w-full transition transform delay-200 hover:translate-z-[20px]"
+              className="w-full transition transform delay-200 hover:translate-z-[20px] grayscale"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
               src={logo3}
               alt="mattle"
-              className="w-full transition transform delay-200 hover:translate-z-[20px]"
+              className="w-full transition transform delay-200 hover:translate-z-[20px] grayscale"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
               src={logo4}
               alt="mattle"
-              className="w-full transition transform delay-200 hover:translate-z-[20px]"
+              className="w-full transition transform delay-200 hover:translate-z-[20px] grayscale"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
               src={logo5}
               alt="mattle"
-              className="w-full transition transform delay-200 hover:translate-z-[20px]"
+              className="w-full transition transform delay-200 hover:translate-z-[20px] grayscale"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
               src={logo6}
               alt="mattle"
-              className="w-full transition transform delay-200 hover:translate-z-[20px]"
+              className="w-full transition transform delay-200 hover:translate-z-[20px] grayscale"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
               src={logo7}
               alt="mattle"
-              className="w-full transition transform delay-200 hover:translate-z-[20px]"
+              className="w-full transition transform delay-200 hover:translate-z-[20px] grayscale"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
               src={logo8}
               alt="mattle"
-              className="w-full transition transform delay-200 hover:translate-z-[20px]"
+              className="w-full transition transform delay-200 hover:translate-z-[20px] grayscale"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
               src={logo9}
               alt="mattle"
-              className="w-full transition transform delay-200 hover:translate-z-[20px]"
+              className="w-full transition transform delay-200 hover:translate-z-[20px] grayscale"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
               src={logo10}
               alt="mattle"
-              className="w-full transition transform delay-200 hover:translate-z-[20px]"
+              className="w-full transition transform delay-200 hover:translate-z-[20px] grayscale"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
               src={logo11}
               alt="mattle"
-              className="w-full transition transform delay-200 hover:translate-z-[20px]"
+              className="w-full transition transform delay-200 hover:translate-z-[20px] grayscale"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
               src={logo12}
               alt="mattle"
-              className="w-full transition transform delay-200 hover:translate-z-[20px]"
+              className="w-full transition transform delay-200 hover:translate-z-[20px] grayscale"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
               src={logo13}
               alt="mattle"
-              className="w-full transition transform delay-200 hover:translate-z-[20px]"
+              className="w-full transition transform delay-200 hover:translate-z-[20px] grayscale"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
               src={logo14}
               alt="mattle"
-              className="w-full transition transform delay-200 hover:translate-z-[20px]"
+              className="w-full transition transform delay-200 hover:translate-z-[20px] grayscale"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
               src={logo15}
               alt="mattle"
-              className="w-full transition transform delay-200 hover:translate-z-[20px]"
+              className="w-full transition transform delay-200 hover:translate-z-[20px] grayscale"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
               src={logo4}
               alt="mattle"
-              className="w-full transition transform delay-200 hover:translate-z-[20px]"
+              className="w-full transition transform delay-200 hover:translate-z-[20px] grayscale"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
               src={logo5}
               alt="mattle"
-              className="w-full transition transform delay-200 hover:translate-z-[20px]"
+              className="w-full transition transform delay-200 hover:translate-z-[20px] grayscale"
             />
           </div>
           <div className="slide h-[200px] w-[250px] flex items-center p-[15px] ">
             <img
               src={logo6}
               alt="mattle"
-              className="w-full transition transform delay-200 hover:translate-z-[20px]"
+              className="w-full transition transform delay-200 hover:translate-z-[20px] grayscale"
             />
           </div>
         </div>

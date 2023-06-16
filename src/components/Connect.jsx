@@ -85,7 +85,7 @@ const Connect = () => {
 
   return (
     <div className="w-screen text-desc-customv">
-      <div className="flex w-[92%] mx-auto rounded-[30px] mb-10 h-fit px-10  gap-4  items-center bg-[#e2e2e2]">
+      <div className="flex w-[92%] mx-auto rounded-[30px] mb-10 h-fit px-16 py-16 gap-4  items-center bg-[#e2e2e2]">
         <div className=" text-start  w-[60%]">
           <h2 className="md:text-title-custom text-title-custom-mv font-satoshi-bold mb-6">
             Let's talk
@@ -127,7 +127,7 @@ const Connect = () => {
                 }}
                 id=""
                 placeholder="*Phone Number"
-                className="w-full bg-inherit	 px-4 py-2 md:my-0 my-2"
+                className="w-full bg-inherit px-4 py-2 md:my-0 my-2"
               />
               <div>
                 <button
@@ -139,18 +139,16 @@ const Connect = () => {
                   Submit
                 </button>
               </div>
-
-            
             </div>
           </div>
         </div>
 
         <div className="w-[40%]">
-          <img
-            src="https://res.cloudinary.com/dfwvu60ef/image/upload/v1686098723/flat-design-illustration-customer-support_23-2148887720-removebg-preview_fqoow7.png"
-            alt=""
-            className=""
-          />
+          {/* <img
+          src="https://res.cloudinary.com/dfwvu60ef/image/upload/v1686098723/flat-design-illustration-customer-support_23-2148887720-removebg-preview_fqoow7.png"
+          alt=""
+          className=""
+        /> */}
         </div>
 
         <Snackbar

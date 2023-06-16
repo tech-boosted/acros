@@ -18,16 +18,15 @@ import AdsLogo6 from "../../assests/acros-media/Advertising-Platform-Expertise-6
 const Section3 = () => {
   return (
     <div className="w-screen">
-      <div className="flex md:flex-row flex-col gap-4 justify-between h-fit my-10 px-[10%] w-full ">
+      <div className="flex md:flex-row flex-col gap-4 justify-between h-fit my-24 px-[10%] w-full ">
         <div className="md:w-[40%] w-full">
-          <h2 className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
+          <p className="md:text-title-large text-title-custom-mv font-satoshi-bold leading-snug ">
             We work with leading Advertising Platform Expertise.
-          </h2>
-          <p className="md:text-desc-custom font-satoshi-medium mt-10">
+          </p>
+          <p className="md:text-desc-custom font-satoshi-bold mt-10 ">
             {" "}
             With a reputation for excellence, we’re the trusted
             <br /> e-commerce operations partner for businesses of all sizes.
-           
           </p>
           <h2></h2>
           <p></p>
@@ -54,17 +53,14 @@ const Section3 = () => {
          
         </div>
       </div>
-      <div className="flex md:flex-row flex-col gap-4 justify-between h-fit my-10 px-[10%] w-full ">
+      <div className="flex md:flex-row flex-col gap-4 justify-between h-fit my-28 px-[10%] w-full ">
         <div className="md:w-[40%] w-full">
-          <h2 className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
+          <p className="md:text-title-large text-title-custom-mv font-satoshi-bold leading-snug ">
             We work with well
             maintained Tech Stack.
-          </h2>
-          <p className="md:text-desc-custom font-satoshi-medium mt-10">
-            {" "}
-           
-            <br />A group of technologies that marketers leverage to conduct{" "}
-            <br />
+          </p>
+          <p className="md:text-desc-custom font-satoshi-bold mt-10">
+            A group of technologies that marketers leverage to conduct
             and improve their marketing activities.
           </p>
           <h2></h2>

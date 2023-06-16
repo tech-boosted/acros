@@ -54,17 +54,16 @@ const Section2 = () => {
   };
 
   return (
-    <div className="w-screen text-desc-custom my-10 px-[10%]">
+    <div className="w-screen text-desc-custom bg-[#e2e2e2] my-10 px-[10%] py-20">
       <h2 className="md:text-title-custom text-title-custom-mv mb-4 font-satoshi-bold">
         Specialization
       </h2>
-      <p className="mb-4">Unleashing your brand potential</p>
-      <p className="">
-        Our team has extensive experience in building and optimizing e- <br />{" "}
-        commerce advertising to drive sales and increase revenue.
+      <p className="mb-12 font-satoshi-medium">Unleashing your brand potential
+        <br />
+        Our team has extensive experience in building and optimizing e-commerce<br /> advertising to drive sales and increase revenue.
       </p>
 
-      <div className="mt-10">
+      <div className="py-8">
         {agencySpecificationsArr.map((item, index) => (
           <Accordion
             expanded={expanded === item.key}

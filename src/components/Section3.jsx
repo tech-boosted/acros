@@ -3,11 +3,11 @@ import React from "react";
 const Section3 = () => {
   return (
     <div className="w-screen">
-      <div className="pt-10 my-10 md:px-[10%] px-[5%]">
-        <h2 className="text-center md:text-title-custom text-title-custom-mv font-semibold mb-20">
+      <div className="pt-10 md:w-[92vw] my-10 md:px-[4%] px-[5%]">
+        <h2 className="text-center md:text-title-custom w-[92vw] text-title-custom-mv font-semibold mb-20">
           Scale your E-Commerce Advertising with Trusted Partners
         </h2>
-        <div className="rounded-[30px] md:p-[50px] p-[30px] h-fit text-white w-full bg-gradient-to-br from-[#1de5e2] from-40% via-[#6196e8] via-60% to-[#955aec] text-desc-custom">
+        <div className="rounded-[30px] md:p-[50px] p-[30px] h-fit text-white w-[92vw] bg-gradient-to-br from-[#1de5e2] from-40% via-[#6196e8] via-60% to-[#955aec] text-desc-custom">
           <section className="flex justify-between items-center">
             <div>
               <p className=" md:text-title-custom text-title-custom-mv font-satoshi-bold">

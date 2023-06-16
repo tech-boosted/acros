@@ -5,7 +5,7 @@ const Section6 = () => {
     <div className="w-screen">
   
 
-      <div className=" flex items-center justify-center text-desc-custom md:w-[80%] w-[90%] px-20 rounded-[30px] mx-auto text-white  bg-gradient-to-tr from-[#ff9022] from-25% via-50%   via-[#bb65da]  to-[#7034fc] to-65%">
+      <div className=" flex items-center justify-center text-desc-custom md:w-[92%] w-[90%] px-20 rounded-[30px] mx-auto text-white  bg-gradient-to-tr from-[#ff9022] from-25% via-50%   via-[#bb65da]  to-[#7034fc] to-65%">
         <div className="my-[120px] w-full  text-right">
           <h1 className="md:text-title-custom text-title-custom-mv mb-8 font-satoshi-bold">
             Our Impact

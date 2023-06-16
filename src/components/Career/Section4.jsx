@@ -29,6 +29,7 @@ const Section4 = () => {
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
   });
   const fileInputRef = useRef(null);
+  const inputNumberRef = useRef(null);
 
   const handleFileChange = (e) => {
     setDisable(true);
@@ -89,8 +90,11 @@ const Section4 = () => {
         website: "",
         description: "",
       });
-      if (fileInputRef.current) {
+      if (fileInputRef.current ) {
         fileInputRef.current.value = null;
+      }
+      if(inputNumberRef.current){
+        inputNumberRef.current.value = null;
       }
 
       setFormError({});
@@ -161,6 +165,7 @@ const Section4 = () => {
               type="number"
               name="phoneNumber"
               onChange={(e) => handleChange(e)}
+              ref={inputNumberRef}
               id=""
               value={formData.phoneNumber}
               placeholder="*Phone Number"
@@ -245,6 +250,22 @@ const Section4 = () => {
             className=""
           />
         </div>
+
+        <Snackbar
+          anchorOrigin={{ vertical: "top", horizontal: "right" }}
+          open={open}
+          autoHideDuration={6000}
+          onClose={() => setOpen(false)}
+          key={"top" + "right"}
+        >
+          <Alert
+            onClose={() => setOpen(false)}
+            severity="success"
+            sx={{ width: "100%" }}
+          >
+            Your response has been submitted
+          </Alert>
+        </Snackbar>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 const Expertise = () => {
   return (
-    <div className="w-[90vw] mx-[10%]  h-fit  my-20 flex md:flex-row flex-col  items-center md:text-desc-custom text-[12px]">
+    <div className="w-[92vw] mx-auto  h-fit  my-20 flex md:flex-row flex-col  items-center md:text-desc-custom text-[12px]">
       <div className="h-fit w-full rounded-[30px] bg-gradient-to-r from-[#AA00FF] to-[#0044FF] py-8 md:px-12 px-4 text-white">
         <div className="h-[60%] font-bold md:text-title-custom text-title-custom-mv font-satoshi-bold">
           <p>

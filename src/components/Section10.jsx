@@ -2,7 +2,7 @@ import React from "react";
 
 const Section10 = () => {
   return (
-    <div className="md:w-screen w-[90%] mx-auto md:px-[10%]  text-desc-custom ">
+    <div className="md:w-[92vw] w-[90%] mx-auto  text-desc-custom ">
       <div className="bg-gradient-to-tr from-[#0e6968]  via-[#25153d]  to-[#000] to-[80%]  w-full h-fit px-12 py-10  rounded-[30px] text-white  text-desc-custom">
         <section className="flex justify-between items-center">
           <div>

@@ -82,7 +82,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div className="container w-screen">
+      <div className="container w-screen text-desc-custom font-satoshi-regular">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />

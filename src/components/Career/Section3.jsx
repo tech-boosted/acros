@@ -3,7 +3,7 @@ import React from "react";
 const Section3 = () => {
   return (
     <div className="w-screen">
-      <div className="bg-gradient-to-tr from-[#0e6968]  via-[#25153d]  to-[#000] to-[80%]  w-[80%] h-fit px-12 py-10  rounded-[30px] text-white my-10 text-desc-custom mx-auto">
+      <div className="bg-gradient-to-tr from-[#0e6968]  via-[#25153d]  to-[#000] to-[80%]  w-[92%] h-fit px-12 py-10  rounded-[30px] text-white my-10 text-desc-custom mx-auto">
         <h2 className="text-center mb-10 md:text-title-custom text-title-custom-mv font-satoshi-bold">
           Perks
         </h2>

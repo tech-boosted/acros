@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { useEffect } from "react";
 import { postMiddleware } from "../../middleware";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
 
 const Section2 = () => {
+  const inputNumberRef = useRef(null);
   const [open, setOpen] = React.useState(false);
   const Alert = React.forwardRef(function Alert(props, ref) {
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -53,6 +54,9 @@ const Section2 = () => {
         website: "",
         description: "",
       });
+      if (inputNumberRef.current) {
+        inputNumberRef.current.value = null;
+      }
       setFormError({});
     };
     if (Object.keys(formError).length === 0) {
@@ -134,6 +138,7 @@ const Section2 = () => {
               name="phoneNumber"
               value={formData.phonNumber}
               id=""
+              ref={inputNumberRef}
               onChange={(e) => {
                 handleChange(e);
               }}

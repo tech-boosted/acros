@@ -30,11 +30,10 @@ const Navbar = () => {
             <Link
               to={link.link}
               className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium                 
-             ${
-               activeRoute(link.link) === true
-                 ? " text-primary"
-                 : "font-medium text-slate-950"
-             }
+             ${activeRoute(link.link) === true
+                  ? " text-primary"
+                  : "font-medium text-slate-950"
+                }
 `}
             >
               <li
@@ -65,11 +64,10 @@ const Navbar = () => {
             >
               <li
                 className={` hover:bg-white px-8 py-2 hover:text-purple-700
-                              ${
-                                activeRoute("/agency") === true
-                                  ? " text-primary bg-white"
-                                  : "font-medium text-white"
-                              }
+                              ${activeRoute("/agency") === true
+                    ? " text-primary bg-white"
+                    : "font-medium text-white"
+                  }
               
               `}
               >
@@ -82,11 +80,10 @@ const Navbar = () => {
               </li>
               <li
                 className={` hover:bg-white px-8 py-2 hover:text-purple-700
-                              ${
-                                activeRoute("/operations") === true
-                                  ? " text-primary bg-white"
-                                  : "font-medium text-white"
-                              }
+                              ${activeRoute("/operations") === true
+                    ? " text-primary bg-white"
+                    : "font-medium text-white"
+                  }
               
               `}
               >
@@ -99,11 +96,10 @@ const Navbar = () => {
               </li>
               <li
                 className={` hover:bg-white px-8 py-2 hover:text-purple-700
-                              ${
-                                activeRoute("/technology") === true
-                                  ? " text-primary bg-white"
-                                  : "font-medium text-white"
-                              }
+                              ${activeRoute("/technology") === true
+                    ? " text-primary bg-white"
+                    : "font-medium text-white"
+                  }
               
               `}
               >
@@ -148,7 +144,7 @@ const Navbar = () => {
 
         <ul className="hidden md:flex md:items-center md:pb-0 md:static md:z-auto z-[10] w-full md:w-auto md:pl-0 transition-all duration-500 ease-in z-9999">
           {/* 🔥🔥 services rendering as it contains dropdown on hover */}
-          <li
+          {/* <li
             className="relative bg-transparent md:ml-8 "
             onMouseOver={() => {
               setDropdown("block");
@@ -216,15 +212,31 @@ const Navbar = () => {
                 </li>
               </Link>
             </ul>
-          </li>
+          </li> */}
+
+          <Link
+            to={"/agency"}
+            className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
+              ${activeRoute("/agency") === true
+                ? " text-primary"
+                : "font-medium text-slate-950"
+              }
+
+              `}
+          >
+            <li
+              className={`bg-transparent md:ml-8 ${agencyStyle}`}
+            >
+              Agency
+            </li>
+          </Link>
 
           <Link
             to={"/about-us"}
             className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
-              ${
-                activeRoute("/about-us") === true
-                  ? " text-primary"
-                  : "font-medium text-slate-950"
+              ${activeRoute("/about-us") === true
+                ? " text-primary"
+                : "font-medium text-slate-950"
               }
 
               `}
@@ -234,10 +246,9 @@ const Navbar = () => {
           <Link
             to={"/resources"}
             className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
-              ${
-                activeRoute("/resources") === true
-                  ? " text-primary"
-                  : "font-medium text-slate-950"
+              ${activeRoute("/resources") === true
+                ? " text-primary"
+                : "font-medium text-slate-950"
               }
 
               `}
@@ -247,10 +258,9 @@ const Navbar = () => {
           <Link
             to={"/career"}
             className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
-              ${
-                activeRoute("/career") === true
-                  ? " text-primary"
-                  : "font-medium text-slate-950"
+              ${activeRoute("/career") === true
+                ? " text-primary"
+                : "font-medium text-slate-950"
               }
 
               `}
@@ -261,10 +271,9 @@ const Navbar = () => {
           <Link
             to={"/contact-us"}
             className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
-              ${
-                activeRoute("/contact-us") === true
-                  ? " text-primary"
-                  : "font-medium text-slate-950"
+              ${activeRoute("/contact-us") === true
+                ? " text-primary"
+                : "font-medium text-slate-950"
               }
 
               `}

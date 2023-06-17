@@ -2,7 +2,7 @@ import React from "react";
 import video from "../assests/hero-video.mp4";
 const Banner3 = () => {
   return (
-    <div className="flex flex-col h-fit  w-screen">
+    <div className="flex flex-col h-fit mt-10 w-screen">
       <div className="">
         <video
           src={video}

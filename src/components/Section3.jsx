@@ -8,14 +8,14 @@ const Section3 = () => {
           Scale your E-Commerce Advertising with Trusted Partners
         </h2>
         <div className="flex rounded-[30px]  h-fit text-white w-[92vw] bg-gradient-to-br from-[#1de5e2] from-40% via-[#6196e8] via-60% to-[#955aec] text-desc-custom">
-          <div className="w-[60%] md:p-[50px] p-[30px]">
+          <div className="w-[60%] md:p-24 p-[30px]">
             <section className="flex justify-between items-center ">
               <p className=" text-title-large font-satoshi-bold">
                 Multi-Channel Advertising Partners
               </p>
             </section>
             <div>
-              <p className="mb-7 mt-10">
+              <p className="mb-5 mt-10">
                 We offer Managed Advertising-Operations Services for brands and
                 agencies.
               </p>

@@ -20,6 +20,7 @@ const Navbar = () => {
     return location.pathname.includes(routeName);
   };
 
+  const agencyStyle = activeRoute('/agency') ? 'text-white' : "";
 
   const renderMobileList = () => {
     if (open) {
@@ -137,7 +138,7 @@ const Navbar = () => {
 
   return (
     <div className="w-screen absolute top-0">
-      <div className=" md:flex items-center justify-between bg-transparent my-6 px-12">
+      <div className=" md:flex items-center justify-between bg-transparent my-10 px-12">
         <div className="cursor-pointer flex items-center">
           <Link to="/">
             <img src={navlogo} alt="Across logo" className="w-3/4" />
@@ -145,7 +146,7 @@ const Navbar = () => {
         </div>
         {renderIcon()}
 
-        <ul className="hidden md:flex md:items-center md:pb-0 md:static md:z-auto z-[10] w-full md:w-auto md:pl-0 transition-all duration-500 ease-in">
+        <ul className="hidden md:flex md:items-center md:pb-0 md:static md:z-auto z-[10] w-full md:w-auto md:pl-0 transition-all duration-500 ease-in z-9999">
           {/* 🔥🔥 services rendering as it contains dropdown on hover */}
           <li
             className="relative bg-transparent md:ml-8 "
@@ -156,7 +157,7 @@ const Navbar = () => {
               setDropdown("hidden");
             }}
           >
-            <span className="text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium cursor-pointer flex items-center">
+            <span className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium cursor-pointer flex items-center ${agencyStyle}`}>
               Services <RiArrowDropDownFill className="text-2xl" />
             </span>
 
@@ -168,7 +169,7 @@ const Navbar = () => {
                 className="hover:text-primary duration-200 font-satoshi-medium"
               >
                 <li
-                  className={` hover:bg-white px-8 py-2 hover:text-purple-700
+                  className={` hover:bg-white px-8 py-2 hover:text-purple-700 ${agencyStyle}
                               ${
                                 activeRoute("/agency") === true
                                   ? " text-primary bg-white"
@@ -185,7 +186,7 @@ const Navbar = () => {
                 className=" hover:text-primary  duration-200 font-satoshi-medium"
               >
                 <li
-                  className={` hover:bg-white px-8 py-2 hover:text-purple-700
+                  className={` hover:bg-white px-8 py-2 hover:text-purple-700 ${agencyStyle}
                               ${
                                 activeRoute("/operations") === true
                                   ? " text-primary bg-white"
@@ -202,7 +203,7 @@ const Navbar = () => {
                 className=" hover:text-primary  duration-200 font-satoshi-medium"
               >
                 <li
-                  className={` hover:bg-white px-8 py-2 hover:text-purple-700
+                  className={` hover:bg-white px-8 py-2 hover:text-purple-700 ${agencyStyle}
                               ${
                                 activeRoute("/other") === true
                                   ? " text-primary bg-white"
@@ -228,7 +229,7 @@ const Navbar = () => {
 
               `}
           >
-            <li className="bg-transparent md:ml-8">{"About us"}</li>
+            <li className={`bg-transparent md:ml-8 ${agencyStyle}`}>{"About us"}</li>
           </Link>
           <Link
             to={"/resources"}
@@ -241,7 +242,7 @@ const Navbar = () => {
 
               `}
           >
-            <li className="bg-transparent md:ml-8">{"Resources"}</li>
+            <li className={`bg-transparent md:ml-8 ${agencyStyle}`}>{"Resources"}</li>
           </Link>
           <Link
             to={"/career"}
@@ -254,7 +255,7 @@ const Navbar = () => {
 
               `}
           >
-            <li className="bg-transparent md:ml-8">{"Career"}</li>
+            <li className={`bg-transparent md:ml-8 ${agencyStyle}`}>{"Career"}</li>
           </Link>
 
           <Link
@@ -268,7 +269,7 @@ const Navbar = () => {
 
               `}
           >
-            <li className="bg-transparent md:ml-8">{"Contact"}</li>
+            <li className={`bg-transparent md:ml-8 ${agencyStyle}`}>{"Contact"}</li>
           </Link>
         </ul>
 

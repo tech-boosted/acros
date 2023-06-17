@@ -119,7 +119,7 @@ const Section2 = () => {
               onChange={(e) => {
                 handleChange(e);
               }}
-              placeholder="*Your Name"
+              placeholder="Your Name*"
               className="py-3 px-5 focus:outline-none border-gray-800 bg-inherit"
             />
             <input
@@ -130,7 +130,7 @@ const Section2 = () => {
               onChange={(e) => {
                 handleChange(e);
               }}
-              placeholder="*Email"
+              placeholder="Email*"
               className="py-3 px-5 focus:outline-none border-gray-800 bg-inherit"
             />
             <input
@@ -142,7 +142,7 @@ const Section2 = () => {
               onChange={(e) => {
                 handleChange(e);
               }}
-              placeholder="*Phone Number"
+              placeholder="Phone Number*"
               className="py-3 px-5 focus:outline-none border-gray-800 bg-inherit"
             />
 

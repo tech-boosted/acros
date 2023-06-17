@@ -104,7 +104,7 @@ const Connect = () => {
                   handleChange(e);
                 }}
                 id=""
-                placeholder="*Your Name"
+                placeholder="Your Name*"
                 className="w-full bg-inherit px-4 py-2 md:my-0 my-2"
               />
               <input
@@ -115,7 +115,7 @@ const Connect = () => {
                   handleChange(e);
                 }}
                 id=""
-                placeholder="*Email"
+                placeholder="Email*"
                 className="w-full bg-inherit px-4 py-2 md:my-0 my-2"
               />
               <input
@@ -126,7 +126,7 @@ const Connect = () => {
                   handleChange(e);
                 }}
                 id=""
-                placeholder="*Phone Number"
+                placeholder="Phone Number*"
                 className="w-full bg-inherit px-4 py-2 md:my-0 my-2"
               />
               <div>

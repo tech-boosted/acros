@@ -1,16 +1,16 @@
 import React from "react";
 const Section1 = () => {
   return (
-    <div className="w-screen h-[80vh] flex items-end justify-center bg-cover bg-[url('https://res.cloudinary.com/dfwvu60ef/image/upload/v1686093632/bkg_1_bjjncw.jpg')] ">
+    <div className="w-screen h-fit flex items-end justify-center bg-cover bg-[url('https://res.cloudinary.com/dfwvu60ef/image/upload/v1686093632/bkg_1_bjjncw.jpg')] ">
 
-      <div className=" w-[60%]   my-auto h-[60%] justify-center gap-8 flex-col flex items-center">
+      <div className=" md:w-[60%] w-full px-10 mb-10   my-auto h-[60%] justify-center gap-8 flex-col flex items-center mt-24">
 
         <p className="text-title-extra-large font-satoshi-bold">We are {" "}
-          <span className="bg-white">
+          <div className="bg-white">
             <span style={{color:'red', marginRight: '1px', display: 'inline-block'}}>&nbsp;</span>
             Acros
             <span style={{color:'red', marginRight: '1px', display: 'inline-block'}}>&nbsp;</span>
-          </span>
+          </div>
         </p>
         <p className="font-satoshi-medium text-subtitle-custom leading-relaxed text-center">
           We are a team of ex-Amazon, Google and Meta executives who make a

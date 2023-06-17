@@ -18,7 +18,7 @@ const Section8 = () => {
   return (
     <div className="flex md:flex-row flex-col w-screen px-[4%] justify-between gap-10 my-10 ">
 
-    <div className="md:w-[45%] w-full text-white rounded-[30px] h-fit bg-gradient-to-br from-[#1de5e2] from-40% via-[#6196e8] via-60% to-[#955aec] md:px-10 px-4   py-10">
+    <div className="md:w-[45%] w-full text-white rounded-[30px] h-fit bg-gradient-to-br from-[#1de5e2] from-40% via-[#6196e8] via-60% to-[#955aec] md:px-10 px-4 mt-28  py-10">
       <div className="md:w-fit  grid grid-cols-3 md:gap-4  gap-y-4 mx-auto ">
         <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black bg-opacity-40 rounded-[200px] flex items-center justify-center px-[10px]">
           <img
@@ -63,7 +63,7 @@ const Section8 = () => {
           />
         </div>
       </div>
-      <h2 className="text-left md:text-title-custom text-title-custom-mv font-satoshi-bold mt-10 mb-6">Advertising Platform Expertise</h2>
+      <h2 className="text-left text-title-large font-satoshi-bold mt-10 mb-6">Advertising Platform Expertise</h2>
       <p className="text-left text-desc-custom ">
         Multi-platform ad management for optimal result. <br /> Drive results
         with our advertising platform mastery.
@@ -118,7 +118,7 @@ const Section8 = () => {
           />
         </div>
       </div>
-      <h2 className="text-left md:text-title-custom text-title-custom-mv font-satoshi-bold mt-10 mb-6">E-commerce Platform Expertise</h2>
+      <h2 className="text-left text-title-large font-satoshi-bold mt-10 mb-6">E-commerce Platform Expertise</h2>
       <p className="text-left text-desc-custom ">
       Maximize your online potential with our e-commerce platform expertise.
       </p>

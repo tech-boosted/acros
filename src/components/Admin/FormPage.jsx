@@ -18,7 +18,9 @@ const FormPage = () => {
     getMiddleware("/form/all", callback, true);
   }, [showTable]);
 
- 
+  const dateFormat = (val) => {
+   return val.toString().split("T")[0];
+  };
 
   return (
     <div>
@@ -86,7 +88,7 @@ const FormPage = () => {
                       <tr>
                         <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                           <p className="text-gray-900 whitespace-no-wrap">
-                            {item.createdAt}
+                            {dateFormat(item.createdAt)}
                           </p>
                         </td>
                         <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">

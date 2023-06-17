@@ -11,7 +11,7 @@ const Tabs = ({arr}) => {
           Capabilities
         </h2> */}
         <div className="flex md:flex-row flex-col-reverse w-full justify-between ">
-          <div className="md:w-[45%] w-full h-fit md:mx-auto bg-gradient-to-r from-[#AA00FF] to-[#0044FF] py-8 px-12 rounded-[30px]">
+          <div className="md:w-[45%] w-full h-fit md:mx-auto bg-gradient-to-r from-[#AA00FF] to-[#0044FF] py-8 mt-10 px-12 rounded-[30px]">
             <p className="text-white">{arr[data].desc}</p>
           </div>
           <div className="md:w-[50%] w-full  flex flex-col justify-start items-center">

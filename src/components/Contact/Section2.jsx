@@ -94,13 +94,13 @@ const Section2 = () => {
 
   return (
     <div className="w-screen">
-      <div className="flex w-[92%] rounded-[30px] my-10  h-fit mx-auto px-[10%] gap-4  items-center bg-[#e2e2e2]">
-        <div className=" text-start my-10 w-[60%]">
-          <h2 className="text-title-custom-mv md:text-title-custom font-satoshi-bold">
+      <div className="flex w-[92%] rounded-[30px] my-10  h-fit mx-auto  gap-4  items-center bg-[#e2e2e2]">
+        <div className=" text-start my-10 w-[55%] px-16">
+          <h2 className="text-title-large font-satoshi-bold">
             {" "}
             Alternatively
           </h2>
-          <p className="text-subtitle-custom-mv md:text-subtitle-custom">
+          <p className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-medium mt-2 mb-10">
             Connect with us by simply filling a form. This will allow us to know
             more about yourself and your brand.
           </p>
@@ -180,11 +180,11 @@ const Section2 = () => {
             </button>
           </div>
         </div>
-        <div className="w-[40%]">
+        <div className="w-[45%] flex items-end self-end ">
           <img
-            src="https://res.cloudinary.com/dfwvu60ef/image/upload/v1686098723/flat-design-illustration-customer-support_23-2148887720-removebg-preview_fqoow7.png"
+            src="https://www.charle.co.uk/media/images/getintouchphones.png"
             alt=""
-            className=""
+            className="object-contain w-full "
           />
         </div>
       </div>

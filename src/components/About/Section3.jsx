@@ -2,8 +2,8 @@ import React from "react";
 
 const Section3 = () => {
   return (
-    <div className="w-screen h-fit flex items-center text-desc-custom ">
-      <div className="h-fit  bg-gradient-to-tr from-green-300 via-cyan-300 to-cyan-500 py-32 text-black px-[18%]">
+    <div className="w-screen h-fit flex items-center text-desc-custom overflow-x-hidden">
+      <div className="h-fit  bg-gradient-to-tr from-green-300 via-cyan-300 to-cyan-500 py-32 text-black md:px-[18%] px-10">
         
           {/* <h2 className="font-satoshi-bold text-title-custom md:text-left text-left mb-10">Our Values</h2> */}
           <p className=" mb-16 text-center font-satoshi-bold text-title-large tracking-tight leading-snug">

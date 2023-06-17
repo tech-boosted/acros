@@ -6,7 +6,7 @@ const Section10 = () => {
       <div className="bg-gradient-to-tr from-[#0e6968]  via-[#25153d]  to-[#000] to-[80%]  w-full h-fit px-12 py-10  rounded-[30px] text-white  text-desc-custom">
         <section className="flex justify-between items-center">
           <div>
-            <p className=" md:text-title-custom text-title-custom-mv font-bold">
+            <p className=" text-title-large font-bold">
               Work With Us
             </p>
           </div>

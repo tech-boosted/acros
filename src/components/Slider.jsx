@@ -14,6 +14,7 @@ import logo12 from "../assests/acros-media/Frame-142.jpg";
 import logo13 from "../assests/acros-media/Frame-140.jpg";
 import logo14 from "../assests/acros-media/Frame-134.jpg";
 import logo15 from "../assests/acros-media/truskin-logo.png";
+
 const Slider = () => {
   return (
     <div className="w-screen ">

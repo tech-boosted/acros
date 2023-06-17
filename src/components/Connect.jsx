@@ -85,9 +85,9 @@ const Connect = () => {
 
   return (
     <div className="w-screen text-desc-customv">
-      <div className="flex w-[92%] mx-auto rounded-[30px] mb-10 h-fit px-16 py-16 gap-4  items-center bg-[#e2e2e2]">
+      <div className="flex md:flex-row flex-col md:w-[92%] w-[100%] mx-auto rounded-[30px] mb-10 h-fit md:px-16 py-16   gap-4  items-center bg-[#e2e2e2]">
         <div className=" text-start  w-[60%]">
-          <h2 className="md:text-title-custom text-title-custom-mv font-satoshi-bold mb-6">
+          <h2 className="text-title-large font-satoshi-bold mb-6">
             Let's talk
           </h2>
           <p className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-medium mb-10">

@@ -3,11 +3,13 @@ import React from "react";
 const Section6 = () => {
   return (
     <div className="w-screen">
-  
+      <div className=" flex items-center justify-center text-desc-custom md:w-[92%] w-[90%]  rounded-[30px] mx-auto text-white  bg-gradient-to-tr from-[#ff9022] from-25% via-50%   via-[#bb65da]  to-[#7034fc] to-65%">
+        <div className="w-[40%] ">
+          <img src="https://www.charle.co.uk/media/images/home/candyhomepage.png" alt="candy image" className="w-[500px] object-contain" />
+        </div>
 
-      <div className=" flex items-center justify-center text-desc-custom md:w-[92%] w-[90%] px-20 rounded-[30px] mx-auto text-white  bg-gradient-to-tr from-[#ff9022] from-25% via-50%   via-[#bb65da]  to-[#7034fc] to-65%">
-        <div className="my-[120px] w-full  text-right">
-          <h1 className="md:text-title-custom text-title-custom-mv mb-8 font-satoshi-bold">
+        <div className="my-[120px] w-[60%]  text-left px-20">
+          <h1 className="text-title-large mb-8 font-satoshi-bold">
             Our Impact
           </h1>
           <p className="text-subtitle-custom-mv md:text-subtitle-custom mb-4">
@@ -19,7 +21,7 @@ const Section6 = () => {
           </div>
           <div className="grid md:grid-cols-4 gap-4  grid-cols-1 text-center">
             <div>
-              <h1 className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
+              <h1 className="text-title-large font-satoshi-bold">
                 $2B
               </h1>
               <p className="font-satoshi-medium">
@@ -27,7 +29,7 @@ const Section6 = () => {
               </p>
             </div>
             <div>
-              <h1 className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
+              <h1 className="text-title-large font-satoshi-bold">
                 14x
               </h1>
               <p className="font-satoshi-medium">
@@ -35,7 +37,7 @@ const Section6 = () => {
               </p>
             </div>
             <div>
-              <h1 className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
+              <h1 className="text-title-large font-satoshi-bold">
                 50+
               </h1>
               <p className="font-satoshi-medium">
@@ -43,7 +45,7 @@ const Section6 = () => {
               </p>
             </div>
             <div>
-              <h1 className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
+              <h1 className="text-title-large font-satoshi-bold">
                 45%
               </h1>
               <p className="font-satoshi-medium">

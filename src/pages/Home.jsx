@@ -14,15 +14,17 @@ import Section11 from "../components/Section11";
 import BrandGrid from "../components/BrandGrid";
 import Banner from "../components/Banner";
 import Banner3 from "./Banner3";
+import Slider from "../components/Slider";
 
 const Home = () => {
   return (
     <div>
       {/* <Banner /> */}
       {/* <Section1 /> */}
-      <Banner3/>
+      <Banner3 />
       <Section2 />
-      <BrandGrid />
+      {/* <BrandGrid /> */}
+      <Slider />
       <Section3 />
       <Section4 />
       <Section5 />

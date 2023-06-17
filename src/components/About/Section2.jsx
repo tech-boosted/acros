@@ -3,7 +3,7 @@ import React from "react";
 const Section2 = () => {
   return (
     <div className="w-screen">
-      <div className="h-fit py-[90px] bg-[#e2e2e2] px-[15%]">
+      <div className="h-fit py-[90px] bg-[#e2e2e2] md:px-[15%] px-10">
 
         <div className="w-full mb-10 flex items-center font-satoshi-bold text-title-basic tracking-tight leading-snug">
           We’re passionate about helping businesses succeed in the fast-paced world of e-commerce. Our team of experts is dedicated to

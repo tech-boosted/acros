@@ -16,9 +16,9 @@ import TechStackLogo7 from "../assests/acros-media/TechStack-7.png";
 
 const Section9 = () => {
   return (
-    <div className="flex md:flex-row flex-col w-screen px-[4%] justify-between gap-10 my-10 ">
+    <div className="flex md:flex-row flex-col w-screen px-[4%] justify-between gap-10 my-10 leading-snug ">
 
-    <div className="md:w-[65%] w-full text-white rounded-[30px] h-fit bg-gradient-to-tr from-[#ff9022] from-25% via-50%   via-[#bb65da]  to-[#7034fc] to-65% md:px-10  px-4  py-10">
+    <div className="md:w-[65%] w-full text-white rounded-[30px] h-fit bg-gradient-to-tr from-[#ff9022] from-25% via-50%   via-[#bb65da]  to-[#7034fc] to-65% md:px-10  px-4 mt-28 py-10">
       <div className="md:w-fit  grid grid-cols-3 gap-4 gap-y-4 mx-auto">
         <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black bg-opacity-40 rounded-[200px] flex items-center justify-center px-[10px]">
           <img
@@ -63,7 +63,7 @@ const Section9 = () => {
           />
         </div>
       </div>
-      <h2 className="text-left md:text-title-custom text-title-custom-mv font-satoshi-bold mt-10 mb-6">Trusted By</h2>
+      <h2 className="text-left text-title-large font-satoshi-bold mt-10 mb-6">Trusted By</h2>
       <p className="text-left text-desc-custom ">
       We Are The World’s Leading 
         E-Commerce Operations Partner
@@ -118,7 +118,7 @@ const Section9 = () => {
           />
         </div>
       </div>
-      <h2 className="text-left md:text-title-custom text-title-custom-mv font-satoshi-bold mt-10 mb-6">Tech Stack</h2>
+      <h2 className="text-left text-title-large font-satoshi-bold mt-10 mb-6">Tech Stack</h2>
       <p className="text-left text-desc-custom ">
       A group of technologies that marketers leverage to conduct <br />
         and improve their marketing activities.      </p>

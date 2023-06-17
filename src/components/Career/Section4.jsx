@@ -129,12 +129,12 @@ const Section4 = () => {
 
   return (
     <div className="w-screen">
-      <div className="flex w-[92%] h-fit mx-auto rounded-[30px] gap-4 px-10 py-10 mb-10 items-center bg-[#e2e2e2]">
-        <div className=" text-start  w-[60%]">
-          <h2 className="text-left text-title-custom-mv md:text-title-custom-mv font-satoshi-bold mt-10">
+      <div className="flex w-[92%] rounded-[30px] my-10  h-fit mx-auto  gap-4  items-center bg-[#e2e2e2]">
+      <div className=" text-start my-10 w-[55%] px-16">
+          <h2 className="text-left text-title-large font-satoshi-bold "> 
             Help Us Know You Better
           </h2>
-          <p className="mt-2 mb-10">
+          <p className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-medium mb-10 mt-2">
             If you are as passionate as our team of enthusiasts, you have <br />{" "}
             come to the right place.
           </p>
@@ -243,11 +243,11 @@ const Section4 = () => {
             )}
           </div>
         </div>
-        <div className="w-[40%]">
+        <div className="w-[45%] flex items-end self-end ">
           <img
-            src="https://res.cloudinary.com/dfwvu60ef/image/upload/v1686098723/flat-design-illustration-customer-support_23-2148887720-removebg-preview_fqoow7.png"
+            src="https://www.charle.co.uk/media/images/getintouchphones.png"
             alt=""
-            className=""
+            className="object-contain w-full "
           />
         </div>
 

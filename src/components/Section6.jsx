@@ -12,10 +12,9 @@ const Section6 = () => {
           <h1 className="text-title-large mb-8 font-satoshi-bold">
             Our Impact
           </h1>
-          <p className="text-subtitle-custom-mv md:text-subtitle-custom mb-4">
-            Empowering your success with our passion
-          </p>
-          <div className=" mb-8">
+      
+          <div className="text-desc-custom mb-8">
+            <p> Empowering your success with our passion</p>
             <p>Expertise and dedication led to unparalleled success in 2022.</p>
             <p>Expand your brand with accelerated growth strategies.</p>
           </div>

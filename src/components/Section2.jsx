@@ -2,10 +2,10 @@ import React from "react";
 
 const Section2 = () => {
   return (
-    <div className=" w-screen  py-10 h-fit mx-auto px-[10%] gap-4  items-center bg-[#e2e2e2] text-title-basic tracking-tight leading-snug">
+    <div className=" w-screen   h-fit mx-auto px-[10%] py-[6%] gap-4  items-center bg-[#e2e2e2] text-title-basic tracking-tight leading-snug">
       <p className="font-satoshi-bold  ">
-        Acros is world's leading E-commerce Adverstising Agency. <br /> Seasoned
-        partners with 12+ years of experience and $10 <br /> billion advertising
+        Acros is world's leading E-commerce Adverstising Agency.  Seasoned
+        partners with 12+ years of experience and $10 billion advertising
         revenue generation across channels.
       </p>
 

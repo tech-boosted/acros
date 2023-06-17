@@ -15,7 +15,7 @@ import AdsLogo4 from "../../assests/acros-media/Advertising-Platform-Expertise-4
 import AdsLogo5 from "../../assests/acros-media/Advertising-Platform-Expertise-5.png";
 import AdsLogo6 from "../../assests/acros-media/Advertising-Platform-Expertise-6.png";
 
-const Section3 = () => {
+const   Section3 = () => {
   return (
     <div className="w-screen">
       <div className="flex md:flex-row flex-col gap-4 justify-between h-fit my-24 px-[10%] w-full ">

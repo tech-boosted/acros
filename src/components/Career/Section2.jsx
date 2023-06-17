@@ -82,7 +82,7 @@ export default function Section2() {
           Current Openings
         </h2>
 
-        <div className="w-full text-title-basic font-satoshi-regular text-left mb-10">
+        <div className="w-full text-desc-custom font-satoshi-regular text-left mb-10">
           <p>
             Explore our current job opportunities and join our team of <br />{" "}
             passionate professionals.

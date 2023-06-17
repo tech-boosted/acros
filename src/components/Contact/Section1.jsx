@@ -5,7 +5,7 @@ import { FaFacebook } from "react-icons/fa";
 
 const Section1 = () => {
   return (
-    <div className="w-screen  h-fit  md:mt-24 mt-[20%] mb-10 flex md:flex-row flex-col  items-center md:text-desc-custom text-[12px]">
+    <div className="w-screen  h-fit  md:mt-32 mt-[20%] mb-10 flex md:flex-row flex-col  items-center md:text-desc-custom text-[12px]">
       <div className="h-fit w-full  bg-[url('https://res.cloudinary.com/dfwvu60ef/image/upload/v1686093632/bkg_1_bjjncw.jpg')] py-8  text-black ">
         <div className="h-[60%] pl-[10%] font-bold text-title-large  font-satoshi-bold">
           <p>

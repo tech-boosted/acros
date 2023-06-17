@@ -3,7 +3,7 @@ import React from "react";
 const Section10 = () => {
   return (
     <div className="md:w-[92vw] w-[90%] mx-auto  text-desc-custom ">
-      <div className="bg-gradient-to-tr from-[#0e6968]  via-[#25153d]  to-[#000] to-[80%]  w-full h-fit px-12 py-10  rounded-[30px] text-white  text-desc-custom">
+      <div className="bg-gradient-to-tr from-[#0e6968]  via-[#25153d]  to-[#000] to-[80%]  w-full h-fit px-[10%] py-[10%]  rounded-[30px] text-white  text-desc-custom">
         <section className="flex justify-between items-center">
           <div>
             <p className=" text-title-large font-bold">
@@ -19,7 +19,7 @@ const Section10 = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-4 grid-cols-1 gap-4 mt-10">
+        <div className="grid md:grid-cols-4 grid-cols-1 gap-4 mt-10 font-satoshi-bold">
           <div>
             <p className="">
               Hire to best agents and outsource your Advertising Operations to

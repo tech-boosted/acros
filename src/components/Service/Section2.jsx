@@ -54,7 +54,7 @@ const Section2 = () => {
   };
 
   return (
-    <div className="w-screen text-desc-custom bg-[#e2e2e2] my-10 px-[10%] py-20">
+    <div className="w-screen text-desc-custom bg-[#e2e2e2] mt-10 px-[10%] py-20">
       <h2 className="md:text-title-custom text-title-custom-mv mb-4 font-satoshi-bold">
         Specialization
       </h2>

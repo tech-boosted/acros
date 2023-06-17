@@ -33,15 +33,15 @@ const Section1 = () => {
         </div>
       </div>
 
-      <div className="w-full flex items-center justify-center text-desc-custom px-[10%]  my-24">
+      <div className="w-full flex md:flex-row flex-col items-center justify-center text-desc-custom px-[10%]  my-24">
         <div className=" w-full text-left">
           <div className="w-[70%]">
 
-            <p className="w-[80%] md:text-title-large text-title-custom-mv font-satoshi-bold mb-8 leading-snug tracking-tight">
+            <p className="md:w-[80%] w-full md:text-title-large text-title-custom-mv font-satoshi-bold mb-8 leading-snug tracking-tight">
               Your Ads managed by indegenous E-Commerce advertisers.
             </p>
 
-            <div className="w-[80%] mb-20">
+            <div className="md:w-[80%] w-full mb-20">
               <p className="font-satoshi-bold ">
                 A team of ex-Amazon, Google and Meta executives, who know the
                 machinery and balance of e-commerce and advertising. Indigenous
@@ -52,7 +52,7 @@ const Section1 = () => {
             </div>
           </div>
           <div className="bg-black text-white rounded-[30px]">
-            <div className="grid md:grid-row-4 gap-4  grid-cols-4 text-center px-8 ">
+            <div className="grid md:grid-row-4 grid-cols-1 gap-4  md:grid-cols-4 text-center px-8 ">
               <div className="text-center py-4 pb-8">
                 <p className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
                   $2B

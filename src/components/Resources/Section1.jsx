@@ -26,7 +26,7 @@ const Section1 = ({ blogs, articles, cs }) => {
 
   return (
     <div>
-      <div className="h-fit w-screen bg-[url('https://res.cloudinary.com/dfwvu60ef/image/upload/v1686093632/bkg_1_bjjncw.jpg')] py-10 px-[10%]  text-black  md:mt-24 mt-[20%]">
+      <div className="h-fit w-screen bg-[url('https://res.cloudinary.com/dfwvu60ef/image/upload/v1686093632/bkg_1_bjjncw.jpg')] py-10 px-[10%]  text-black  md:mt-32 mt-[20%]">
         <h2 className="mb-10 md:text-title-custom text-title-custom-mv font-satoshi-bold">
           Insightful Digital Buzz
         </h2>
@@ -84,6 +84,7 @@ const Section1 = ({ blogs, articles, cs }) => {
                 src={item.imgSrc}
                 alt="Article1"
                 className=" w-[700px] rounded-[30px]"
+                key={index}
               />
               <div className="absolute top-0 right-0 w-full h-full rounded-[30px] px-10 py-8 text-white bg-[#222f33b5] backdrop:blur-[55px] ">
                 <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
@@ -110,6 +111,8 @@ const Section1 = ({ blogs, articles, cs }) => {
                 <img
                   src={item.imgSrc}
                   alt="Article1"
+                  key={index}
+
                   className="w-full rounded-[30px]"
                 />
               </Link>
@@ -136,6 +139,8 @@ const Section1 = ({ blogs, articles, cs }) => {
                 <img
                   src={item.imgSrc}
                   alt="Article1"
+                  key={index}
+
                   className="w-full rounded-[30px]"
                 />
               </Link>

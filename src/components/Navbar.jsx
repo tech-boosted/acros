@@ -168,12 +168,12 @@ const Navbar = () => {
                 to={"/agency"}
                 className="hover:text-primary duration-200 font-satoshi-medium"
               >
-                <li
-                  className={` hover:bg-white px-8 py-2 hover:text-purple-700 ${agencyStyle}
+               <li
+                  className={` hover:bg-white px-8 py-2 hover:text-purple-700 
                               ${
                                 activeRoute("/agency") === true
-                                  ? " text-primary bg-white"
-                                  : "font-medium text-white"
+                                  ? "text-primary bg-white"
+                                  : "font-medium"
                               }
               
               `}
@@ -205,7 +205,7 @@ const Navbar = () => {
                 <li
                   className={` hover:bg-white px-8 py-2 hover:text-purple-700 ${agencyStyle}
                               ${
-                                activeRoute("/other") === true
+                                activeRoute("/technology") === true
                                   ? " text-primary bg-white"
                                   : "font-medium text-white"
                               }

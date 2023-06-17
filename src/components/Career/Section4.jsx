@@ -143,7 +143,7 @@ const Section4 = () => {
               name="name"
               id=""
               onChange={(e) => handleChange(e)}
-              placeholder="*Your Name"
+              placeholder="Your Name*"
               value={formData.name}
               className="w-full bg-inherit focus:outline-none px-4 py-2 md:my-0 my-2"
             />
@@ -154,7 +154,7 @@ const Section4 = () => {
               id=""
               onChange={(e) => handleChange(e)}
               value={formData.email}
-              placeholder="*Email"
+              placeholder="Email*"
               className="w-full bg-inherit focus:outline-none px-4 py-2 md:my-0 my-2"
             />
             <input
@@ -163,7 +163,7 @@ const Section4 = () => {
               onChange={(e) => handleChange(e)}
               id=""
               value={formData.phoneNumber}
-              placeholder="*Phone Number"
+              placeholder="Phone Number*"
               className="w-full bg-inherit focus:outline-none px-4 py-2 md:my-0 my-2"
             />
             <input

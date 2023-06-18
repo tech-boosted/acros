@@ -32,23 +32,24 @@ const   Section3 = () => {
           <p></p>
         </div>
         <div className="h-fit md:w-[40%] w-fit grid grid-cols-3 gap-4 gap-y-4 ">
-          <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
-            <img src={TechStackLogo1} alt="" />
+
+        <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
+            <img src={AdsLogo1} alt="" />
           </div>
           <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
-            <img src={TechStackLogo2} alt="" />
+            <img src={AdsLogo2} alt="" />
           </div>
           <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
-            <img src={TechStackLogo3} alt="" />
+            <img src={AdsLogo3} alt="" />
           </div>
           <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
-            <img src={TechStackLogo4} alt="" />
+            <img src={AdsLogo4} alt="" />
           </div>
           <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
-            <img src={TechStackLogo5} alt="" />
+            <img src={AdsLogo5} alt="" />
           </div>
           <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
-            <img src={TechStackLogo6} alt="" />
+            <img src={AdsLogo6} alt="" />
           </div>
          
         </div>
@@ -67,25 +68,27 @@ const   Section3 = () => {
           <p></p>
         </div>
         <div className="h-fit md:w-[40%] w-full grid grid-cols-3 gap-4   gap-y-4">
+
+        <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
+            <img src={TechStackLogo1} alt="" />
+          </div>
+          <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
+            <img src={TechStackLogo2} alt="" />
+          </div>
+          <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
+            <img src={TechStackLogo3} alt="" />
+          </div>
+          <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
+            <img src={TechStackLogo4} alt="" />
+          </div>
+          <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
+            <img src={TechStackLogo5} alt="" />
+          </div>
+          <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
+            <img src={TechStackLogo6} alt="" />
+          </div>
          
-          <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
-            <img src={AdsLogo1} alt="" />
-          </div>
-          <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
-            <img src={AdsLogo2} alt="" />
-          </div>
-          <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
-            <img src={AdsLogo3} alt="" />
-          </div>
-          <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
-            <img src={AdsLogo4} alt="" />
-          </div>
-          <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
-            <img src={AdsLogo5} alt="" />
-          </div>
-          <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
-            <img src={AdsLogo6} alt="" />
-          </div>
+
         </div>
       </div>
     </div>

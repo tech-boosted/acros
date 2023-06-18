@@ -29,8 +29,10 @@ const Home = () => {
       <Section4 />
       <Section5 />
       <Section6 />
-      <Section8 />
-      <Section9 />
+      <div className="flex md:w-screen">
+        <Section8 />
+        <Section9 />
+      </div>
       <Section10 />
       <Section11 />
       <Connect />

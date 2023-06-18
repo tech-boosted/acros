@@ -1,33 +1,34 @@
 import React from "react";
 import map from "../assests/acros-media/FINAL-MAP-1024x510.png";
+import { useNavigate } from "react-router";
+import strings from "../strings";
+
+const Strings = strings;
 
 const Section11 = () => {
+  console.log("Strings: ", Strings)
+  const navigate = useNavigate();
   return (
     <div className="w-screen">
       <div className="md:w-[92%] w-[90%] h-fit grid md:grid-cols-2 grid-cols-1 gap-10 text-white md:mx-[4%] mx-auto my-10">
         <div className="w-full md:h-full h-fit flex flex-col gap-10">
           <div className="w-full  h-fit bg-gradient-to-br from-[#cef76d] from-1%  via-[#66b636] via-40%  to-[#00e89e] to-80% rounded-[30px] px-10 py-24">
             <div className="font-satoshi-bold text-left mb-4 text-title-large">
-              <p>Agency Partners</p>
+              <p>{Strings.AGENCY}</p>
             </div>
             <div className="text-left flex-col  mt-4">
               <p className="">
-                Our adverstising agency companies throughbred e-commerce
-                Advertising Experts who can create conversion focused ad
-                campaigns and strategies that resonate with the e-commerce
-                target audience. They work with highly efficient customer
-                behaviour patterns, buyers mind mapping and decision influencing
-                tools to deliver gold-standard ROI.
+                {Strings.AGENCY_DESCRIPTION}
               </p>
 
-              <button className="my-4 bg-black  text-white rounded-lg py-2 px-3">
+              <button className="my-4 bg-black  text-white rounded-lg py-2 px-3" onClick={() => { navigate('/agency') }}>
                 Learn More.
               </button>
             </div>
           </div>
           <div className="w-full  h-fit bg-gradient-to-tr from-[#ff9022] from-25% via-50%   via-[#bb65da]  to-[#7034fc] to-65%     rounded-[30px] px-10 py-24">
             <div className="font-satoshi-bold text-left mb-4 text-title-large">
-              <p>Operations</p>
+              <p>{Strings.OPERATIONS}</p>
             </div>
             <div className="text-left flex-col  mt-4">
               <p className="">
@@ -36,7 +37,7 @@ const Section11 = () => {
                 all aspects of your ads, Freeing up your resources and time to
                 focus on your core business.
               </p>
-              <button className="my-4 bg-black  text-white rounded-lg py-2 px-3">
+              <button className="my-4 bg-black  text-white rounded-lg py-2 px-3" onClick={() => { navigate('/agency') }}>
                 Learn More.
               </button>
             </div>

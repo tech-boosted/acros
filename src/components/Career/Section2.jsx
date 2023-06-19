@@ -9,6 +9,7 @@ import { Button } from "@mui/material";
 import { useEffect } from "react";
 import { useState } from "react";
 import { getMiddleware } from "../../middleware";
+import strings from "../../strings";
 const parse = require("html-react-parser");
 
 const Accordion = styled((props) => (
@@ -69,23 +70,18 @@ export default function Section2() {
     <div className="w-screen mt-10  h-fit  flex flex-col items-center justify-center text-desc-custom ">
       <div className="w-full my-10 px-[10%] py-20 ">
         <p className=" font-satoshi-bold text-title-basic tracking-tight leading-snug">
-          We’re a group of passionate and creative individuals who are on a
-          mission to make your life easier and  more enjoyable. We believe
-          in hard work, laughter, and a good cup of coffee (or tea, if that’s
-          your thing). Get to know us better by checking out our story
-          and our team. Let’s grow together!
+         {strings.CAREER_SECTION_2_DESCRIPTION}
         </p>
       </div>
 
       <div className="w-screen mt-10 px-[10%] py-20 bg-[#e2e2e2]">
         <h2 className="text-title-large mb-10 text-left font-satoshi-bold ">
-          Current Openings
+          {strings.CAREER_SECTION_3_TITLE}
         </h2>
 
         <div className="w-full text-desc-custom font-satoshi-regular text-left mb-10">
           <p>
-            Explore our current job opportunities and join our team of <br />{" "}
-            passionate professionals.
+          {strings.CAREER_SECTION_3_DESCRIPTION}
           </p>
         </div>
 

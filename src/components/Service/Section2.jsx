@@ -6,6 +6,7 @@ import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Tabs from "../../utils/Tabs";
+import strings from "../../strings";
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -56,11 +57,12 @@ const Section2 = () => {
   return (
     <div className="w-screen text-desc-custom bg-[#e2e2e2] mt-10 px-[10%] py-20">
       <h2 className="md:text-title-custom text-title-custom-mv mb-4 font-satoshi-bold">
-        Specialization
+        {strings.AGENCY_SECTION_3_TITLE}{" "}
       </h2>
-      <p className="mb-12 font-satoshi-medium">Unleashing your brand potential
+      <p className="mb-12 font-satoshi-medium">
+        Unleashing your brand potential
         <br />
-        Our team has extensive experience in building and optimizing e-commerce<br /> advertising to drive sales and increase revenue.
+        {strings.AGENCY_SECTION_3_DESCRIPTION}{" "}
       </p>
 
       <div className="py-8">

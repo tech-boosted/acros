@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import strings from "../../strings";
 const Section1 = ({ blogs, articles, cs }) => {
   const [showArticle, setShowArticle] = useState(true);
   const [showBlogs, setShowBlogs] = useState(false);
@@ -28,12 +28,10 @@ const Section1 = ({ blogs, articles, cs }) => {
     <div>
       <div className="h-fit w-screen bg-[url('https://res.cloudinary.com/dfwvu60ef/image/upload/v1686093632/bkg_1_bjjncw.jpg')] py-10 px-[10%]  text-black  md:mt-32 mt-[20%]">
         <h2 className="mb-10 md:text-title-custom text-title-custom-mv font-satoshi-bold">
-          Insightful Digital Buzz
+          {strings.RESOURCE_SECTION_1_TITLE}{" "}
         </h2>
         <p className="font-satoshi-medium text-subtitle-custom leading-relaxed ">
-          Explore the world of advertising with our engaging and informative
-          blogs, offering valuable <br /> insights and inspiration for
-          businesses of all sizes.
+          {strings.RESOURCE_SECTION_1_DESCRIPTION}
         </p>
 
         <div className="tabs h-fit mt-10 w-full flex justify-start gap-4 items-center   md:mt-10 ">
@@ -112,7 +110,6 @@ const Section1 = ({ blogs, articles, cs }) => {
                   src={item.imgSrc}
                   alt="Article1"
                   key={index}
-
                   className="w-full rounded-[30px]"
                 />
               </Link>
@@ -140,7 +137,6 @@ const Section1 = ({ blogs, articles, cs }) => {
                   src={item.imgSrc}
                   alt="Article1"
                   key={index}
-
                   className="w-full rounded-[30px]"
                 />
               </Link>

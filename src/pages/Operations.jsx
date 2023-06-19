@@ -23,8 +23,8 @@ import AdsLogo4 from "../assests/acros-media/Advertising-Platform-Expertise-4.pn
 import AdsLogo5 from "../assests/acros-media/Advertising-Platform-Expertise-5.png";
 import AdsLogo6 from "../assests/acros-media/Advertising-Platform-Expertise-6.png";
 
-import Testimonials from "../components/Section5";
-import WorkWithUs from "../components/Section10";
+import Testimonials from "../components/Home/Section5";
+import WorkWithUs from "../components/Home/Section10";
 import Connect from "../components/Connect";
 
 const Operations = () => {

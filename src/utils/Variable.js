@@ -133,26 +133,7 @@ export const agencySpecificationsArr = [
         key: "Search Engine Ads",
         desc: "SEM ads are online ads displayed on search engine results pages (SERPs), driving targeted traffic and increasing visibility. Charged on a PPC basis, businesses pay only when users click on their ads, making it cost-effective.      ",
       },
-      {
-        key: "Advertising Reasearch and Development",
-        desc: "Creating effective strategies & tactics. Involves data-driven analysis of consumer behavior, trends & market research. Tests new ad formats, leverages advanced tech for optimal performance.       ",
-      },
-      {
-        key: "Campaign Measurement",
-        desc: "Campaign measurement is evaluating and studying the performance of advertising campaigns. It involves tracking metrics like impressions, clicks, conversions, and ROI to assess campaign success. Advertisers use campaign measurement to make data-driven decisions and optimize future campaigns.      ",
-      },
-      {
-        key: "Optimizations",
-        desc: "Optimization is the process of refining and improving advertising campaigns for better results. It involves studying data, making adjustments, and leveraging insights to optimize ad performance. Crucial for maximizing ad efficiency and effectiveness.      ",
-      },
-      {
-        key: "Diagnosis and TroubleShooting",
-        desc: "A crucial process that involves an in-depth analysis of campaign data, identification of performance issues and implementation of effective solutions to optimize campaign performance. This iterative process helps ensure that campaigns are aligned with their objectives and yield maximum results.      ",
-      },
-      {
-        key: "Campaign Forecasting and Reporting",
-        desc: "Data-driven analysis, trend analysis, and key metric reporting for optimizing ad performance. Enables ROI measurement, campaign effectiveness evaluation, and informed decision-making for future campaigns      ",
-      },
+     
     ],
   },
   {
@@ -188,23 +169,23 @@ export const agencySpecificationsArr = [
       "Seasoned advertisers with in-depth knowledge and proven results of DSP Ads for e-commerce.",
     capabilities: [
       {
-        key: "Media Buying",
+        key: "Amazon DSP",
         desc: "Media Buying is the purchasing advertising space or time on various media platforms and negotiating rates with publishers or media companies. It's a crucial component of a successful advertising campaign performance to maximize return on investment for clients.",
       },
       {
-        key: "Campaign Management",
+        key: "DV 360",
         desc: "Campaign management refers to the strategic planning, execution, and monitoring of marketing or advertising campaigns to achieve specific objectives. It involves overseeing the entire lifecycle of a campaign, from conceptualization and development to implementation and analysis",
       },
       {
-        key: "Trafficking",
+        key: "Facebook",
         desc: "Trafficking refers to the strategic planning, execution, and monitoring of marketing or advertising campaigns to achieve specific objectives. It involves overseeing the entire lifecycle of a campaign, from conceptualization and development to implementation and analysis",
       },
       {
-        key: "Conversion Strategising",
+        key: "Adroll",
         desc: "Conversion Strategising refers to the strategic planning, execution, and monitoring of marketing or advertising campaigns to achieve specific objectives. It involves overseeing the entire lifecycle of a campaign, from conceptualization and development to implementation and analysis",
       },
       {
-        key: "Partner Network Access",
+        key: "TradeDesk",
         desc: "Partner Network Access refers to the strategic planning, execution, and monitoring of marketing or advertising campaigns to achieve specific objectives. It involves overseeing the entire lifecycle of a campaign, from conceptualization and development to implementation and analysis",
       },
     ],
@@ -215,23 +196,27 @@ export const agencySpecificationsArr = [
       "Proficient media buyers to build synergy with PPC, Social, and DSP to maximize ROI",
     capabilities: [
       {
-        key: "Media Buying",
+        key: "Taboola",
         desc: "Media Buying is the purchasing advertising space or time on various media platforms and negotiating rates with publishers or media companies. It's a crucial component of a successful advertising campaign performance to maximize return on investment for clients.",
       },
       {
-        key: "Campaign Management",
+        key: "Outbrain",
         desc: "Campaign management refers to the strategic planning, execution, and monitoring of marketing or advertising campaigns to achieve specific objectives. It involves overseeing the entire lifecycle of a campaign, from conceptualization and development to implementation and analysis",
       },
       {
-        key: "Trafficking",
+        key: "Revcontent",
         desc: "Trafficking refers to the strategic planning, execution, and monitoring of marketing or advertising campaigns to achieve specific objectives. It involves overseeing the entire lifecycle of a campaign, from conceptualization and development to implementation and analysis",
       },
       {
-        key: "Conversion Strategising",
+        key: "Nativo",
         desc: "Conversion Strategising refers to the strategic planning, execution, and monitoring of marketing or advertising campaigns to achieve specific objectives. It involves overseeing the entire lifecycle of a campaign, from conceptualization and development to implementation and analysis",
       },
       {
-        key: "Partner Network Access",
+        key: "InMobi",
+        desc: "Partner Network Access refers to the strategic planning, execution, and monitoring of marketing or advertising campaigns to achieve specific objectives. It involves overseeing the entire lifecycle of a campaign, from conceptualization and development to implementation and analysis",
+      },
+      {
+        key: "And Many More ...",
         desc: "Partner Network Access refers to the strategic planning, execution, and monitoring of marketing or advertising campaigns to achieve specific objectives. It involves overseeing the entire lifecycle of a campaign, from conceptualization and development to implementation and analysis",
       },
     ],

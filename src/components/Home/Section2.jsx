@@ -1,12 +1,11 @@
 import React from "react";
+import strings from "../../strings";
 
 const Section2 = () => {
   return (
     <div className=" w-screen   h-fit mx-auto px-[10%] py-[6%] gap-4  items-center bg-[#e2e2e2] text-title-basic tracking-tight leading-snug">
       <p className="font-satoshi-bold  ">
-        Acros is world's leading E-commerce Adverstising Agency.  Seasoned
-        partners with 12+ years of experience and $10 billion advertising
-        revenue generation across channels.
+        {strings.HOME_SECTION_2_DESCRIPTION}
       </p>
 
       <button className="my-10 bg-black text-white text-desc-custom rounded-lg py-2 px-3">

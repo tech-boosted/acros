@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import { agencySpecificationsArr } from "../../utils/Variable";
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsChevronDoubleDown } from "react-icons/bs";
+import img1 from "../../assests/acros-media/specialization1.jpg";
+import img2 from "../../assests/acros-media/specialization2.jpg";
+import img3 from "../../assests/acros-media/specialization3.jpg";
+import img4 from "../../assests/acros-media/specialization4.jpg";
 
 const Specialization = () => {
   const [data, setData] = useState(0);
   const [specificationsIndex, setSpecificationsIndex] = useState(0);
   const [arr, setArr] = useState(agencySpecificationsArr[0]);
 
+  const [showArrow, setShowArrow] = useState(-1);
   const [showSection, setShowSection] = useState(false);
 
   const clickHandler = (index) => {
@@ -14,9 +19,11 @@ const Specialization = () => {
 
     if (showSection === true && agencySpecificationsArr[index] === arr) {
       setShowSection(false);
+      setShowArrow(-1);
     } else {
       setData(0);
       setShowSection(true);
+      setShowArrow(index);
     }
   };
 
@@ -35,54 +42,78 @@ const Specialization = () => {
         </p>
 
         <div className=" grid md:grid-cols-4 grid-cols-1 gap-8 text-white">
-          <div
-            className="  cursor-pointer bg-black bg-[url('https://www.charle.co.uk/work/billionaire-boys-club/images/thumbnail.jpg')] backdrop-opacity-70 bg-cover  rounded-[15px] h-[450px]  flex flex-col justify-end hover:transition-all ease-in-out hover:scale-105 duration-150  text-left hover:bg-opacity-90"
-            onClick={() => clickHandler(0)}
-          >
-            <div className="text-title-basic font-satoshi-bold px-10 text-left pt-[150px] bg-[#222f33b5] backdrop:blur-[55px] h-full w-[100%] rounded-[15px]">
+          <div className="  cursor-pointer bg-black bg-[url('https://www.charle.co.uk/work/billionaire-boys-club/images/thumbnail.jpg')] backdrop-opacity-70 bg-cover  rounded-[15px] h-[450px]  flex flex-col justify-end hover:transition-all ease-in-out hover:scale-105 duration-150  text-left hover:bg-opacity-90">
+            <div className="text-title-basic font-satoshi-bold px-10 text-left pt-[120px] bg-[#222f33b5] backdrop:blur-[55px] h-full w-[100%] rounded-[15px]">
               PPC Ads
               <p className="leading 10 tracking-wider text-desc-custom  mt-4">
                 Subject matter experts to have leverage in marketplace and D2C
                 PPC Ads.
               </p>
+              <button
+                onClick={() => clickHandler(0)}
+                className="text-white border border-white hover:bg-white hover:text-black active:bg-white font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              >
+                Click to Expand
+              </button>
+              {showArrow === 0 && (
+                <BsChevronDoubleDown className="text-3xl  mt-8 mx-auto animate-bounce" />
+              )}
             </div>
           </div>
 
-          <div
-            className="  cursor-pointer bg-black bg-[url('https://www.charle.co.uk/work/candy-kittens/images/thumbnail.jpg')] backdrop-opacity-70 bg-cover  rounded-[15px] h-[450px] md:mt-24 flex flex-col justify-end hover:transition-all ease-in-out hover:scale-105 duration-150  text-left hover:bg-opacity-90"
-            onClick={() => clickHandler(1)}
-          >
-            <div className="text-title-basic font-satoshi-bold px-10 text-left pt-[150px] bg-[#222f33b5] backdrop:blur-[55px] h-full w-[100%] rounded-[15px]">
+          <div className="  cursor-pointer bg-black bg-[url('https://www.charle.co.uk/work/candy-kittens/images/thumbnail.jpg')] backdrop-opacity-70 bg-cover  rounded-[15px] h-[450px] md:mt-24 flex flex-col justify-end hover:transition-all ease-in-out hover:scale-105 duration-150  text-left hover:bg-opacity-90">
+            <div className="text-title-basic font-satoshi-bold px-10 text-left pt-[70px] bg-[#222f33b5] backdrop:blur-[55px] h-full w-[100%] rounded-[15px]">
               Paid Social Ads
               <p className="leading 10 tracking-wider text-desc-custom  mt-4">
                 Skilled advertisers to leverage social media platforms to
                 increase sales and profitability.
               </p>
+              <button
+                onClick={() => clickHandler(1)}
+                className="text-white border border-white hover:bg-white hover:text-black active:bg-white font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              >
+                Read More
+              </button>
+              {showArrow === 1 && (
+                <BsChevronDoubleDown className="text-3xl  mt-4 mx-auto animate-bounce" />
+              )}
             </div>
           </div>
 
-          <div
-            className="  cursor-pointer bg-black bg-[url('https://www.charle.co.uk/work/hippeas/images/thumbnail.jpg')] bg-cover rounded-[15px] h-[450px] md:mt-14 flex flex-col justify-end hover:transition-all ease-in-out hover:scale-105 duration-150  text-left"
-            onClick={() => clickHandler(2)}
-          >
-            <div className="text-title-basic font-satoshi-bold px-10 text-left pt-[150px] bg-[#222f33b5] backdrop:blur-[55px] h-full w-[100%] rounded-[15px]">
+          <div className="  cursor-pointer bg-black bg-[url('https://www.charle.co.uk/work/hippeas/images/thumbnail.jpg')] bg-cover rounded-[15px] h-[450px] md:mt-14 flex flex-col justify-end hover:transition-all ease-in-out hover:scale-105 duration-150  text-left">
+            <div className="text-title-basic font-satoshi-bold px-10 text-left pt-[120px] bg-[#222f33b5] backdrop:blur-[55px] h-full w-[100%] rounded-[15px]">
               DSP Ads
               <p className="leading 10 tracking-wider text-desc-custom  mt-4">
                 Seasoned advertisers with in-depth knowledge and proven results
                 of DSP Ads for e-commerce.
               </p>
+              <button
+                onClick={() => clickHandler(2)}
+                className="text-white border border-white hover:bg-white hover:text-black active:bg-white font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              >
+                Read More
+              </button>
+              {showArrow === 2 && (
+                <BsChevronDoubleDown className="text-3xl font-satoshi-bold  mt-8 mx-auto animate-bounce" />
+              )}
             </div>
           </div>
-          <div
-            className="  cursor-pointer bg-black bg-[url('https://www.charle.co.uk/work/au-depart/images/thumbnail.jpg')] bg-cover rounded-[15px] h-[450px]  flex flex-col justify-end hover:transition-all ease-in-out hover:scale-105 duration-150  text-left"
-            onClick={() => clickHandler(3)}
-          >
-            <div className="text-title-basic font-satoshi-bold px-10 text-left pt-[150px] bg-[#222f33b5] backdrop:blur-[55px] h-full w-[100%] rounded-[15px]">
+          <div className="  cursor-pointer bg-black bg-[url('https://www.charle.co.uk/work/au-depart/images/thumbnail.jpg')] bg-cover rounded-[15px] h-[450px]  flex flex-col justify-end hover:transition-all ease-in-out hover:scale-105 duration-150  text-left">
+            <div className="text-title-basic font-satoshi-bold px-10 text-left pt-[120px] bg-[#222f33b5] backdrop:blur-[55px] h-full w-[100%] rounded-[15px]">
               Native Ads
               <p className="leading 10 tracking-wider text-desc-custom  mt-4">
                 Proficient media buyers to build synergy with PPC, Social, and
                 DSP to maximize RO
               </p>
+              <button
+                onClick={() => clickHandler(3)}
+                className="text-white border border-white hover:bg-white hover:text-black active:bg-white font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              >
+                Read More
+              </button>
+              {showArrow === 3 && (
+                <BsChevronDoubleDown className="text-3xl  mt-8 mx-auto animate-bounce" />
+              )}
             </div>
           </div>
         </div>
@@ -95,13 +126,13 @@ const Specialization = () => {
               {" "}
               {arr.key}
             </p>
-            <div className="flex md:flex-row flex-col-reverse w-full justify-between ">
-              <div className="md:w-[45%] w-full h-fit md:mx-auto bg-gradient-to-br from-cyan-400 via-red-400 to-gray-700 py-8 mt-10 px-12 rounded-[30px]">
+            <div className="flex md:flex-row flex-col-reverse w-full justify-center ">
+              {/* <div className="md:w-[45%] w-full h-fit md:mx-auto bg-gradient-to-br from-cyan-400 via-red-400 to-gray-700 py-8 mt-10 px-12 rounded-[30px]">
                 <p className="text-white font-satoshi-bold">
                   {arr.capabilities[data].desc}
                 </p>
-              </div>
-              <div className="md:w-[50%] w-full  flex flex-col justify-start items-center">
+              </div> */}
+              <div className="md:w-[40%] w-full  flex flex-col justify-start items-center">
                 {arr.capabilities.map((item, index) => (
                   <div
                     key={index}

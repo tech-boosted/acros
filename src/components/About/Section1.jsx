@@ -1,9 +1,10 @@
 import React from "react";
+import strings from "../../strings";
 const Section1 = () => {
   return (
     <div className="w-screen h-fit flex items-end justify-center bg-cover bg-[url('https://res.cloudinary.com/dfwvu60ef/image/upload/v1686093632/bkg_1_bjjncw.jpg')] ">
 
-      <div className=" md:w-[60%] w-full px-10 mb-10   my-auto h-[60%] justify-center gap-8 flex-col flex items-center pt-36 mb-28">
+      <div className=" md:w-[60%] w-full px-10    my-auto h-[60%] justify-center gap-8 flex-col flex items-center pt-36 mb-28">
 
         <p className="text-title-extra-large font-satoshi-bold">We are {" "}
           <div className="bg-white">
@@ -13,11 +14,7 @@ const Section1 = () => {
           </div>
         </p>
         <p className="font-satoshi-medium text-subtitle-custom leading-relaxed text-center">
-          We are a team of ex-Amazon, Google and Meta executives who make a
-          bigger impact in the e-commerce industry via thought
-          leadership and client servicing. A proven leader in the industry that 
-          believes in providing end-to-end advertising solutions for your
-          business growth across multiple channels.
+         {strings.ABOUT_SECTION_1_DESCRIPTION}
         </p>
       </div>
 

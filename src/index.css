@@ -59,7 +59,7 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-9 * 250px));
+    transform: translateX(calc(-9 * 150px));
   }
 }
 @keyframes scroll2 {

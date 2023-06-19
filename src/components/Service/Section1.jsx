@@ -1,9 +1,12 @@
 import React from "react";
+import strings from "../../strings";
+import Slider from "../Slider";
 
 const Section1 = () => {
   return (
     <div className="w-screen h-fit text-desc-custom">
-      <div className="h-fit 
+      <div
+        className="h-fit 
       pt-[200px]
       py-32 px-[10%] text-white
       bg-cover bg-no-repeat bg-right-bottom
@@ -11,80 +14,41 @@ const Section1 = () => {
       "
       >
         <div className="h-[100%] font-satoshi-bold text-left mb-8 text-title-large">
-          <p>Agency Partners</p>
+          <p>{strings.AGENCY_SECTION_1_TITLE}</p>
         </div>
         <div className="text-left flex-col justify-end gap-12 md:w-[50%]">
           <p className="mt-6 leading-relaxed font-satoshi-bold text-desc-custom">
-            Our adverstising agency companies throughbred e-commerce Advertising
-            Experts who can create conversion focused ad campaigns and
-            strategies that resonate with the e-commerce target audience. They
-            work with highly efficient customer behaviour patterns, buyers mind
-            mapping and decision influencing tools to deliver gold-standard ROI.
+            {strings.AGENCY_SECTION_1_DESCRIPTION}
           </p>
           <p className="mt-6 leading-relaxed font-satoshi-bold text-desc-custom">
-            Our adverstising agency companies throughbred e-commerce Advertising
-            Experts who can create
-            conversion focused ad campaigns and strategies that resonate with
-            the e-commerce target
-            audience. They work with highly efficient customer behaviour
-            patterns, buyers mind mapping and
-            decision influencing tools to deliver gold-standard ROI.
+            {strings.AGENCY_SECTION_1_DESCRIPTION}
           </p>
         </div>
       </div>
-
+      <Slider />
       <div className="w-full flex md:flex-row flex-col items-center justify-center text-desc-custom px-[10%]  my-24">
         <div className=" w-full text-left">
           <div className="w-[70%]">
-
             <p className="md:w-[80%] w-full md:text-title-large text-title-custom-mv font-satoshi-bold mb-8 leading-snug tracking-tight">
-              Your Ads managed by indegenous E-Commerce advertisers.
+              {strings.AGENCY_SECTION_2_TITLE}{" "}
             </p>
 
             <div className="md:w-[80%] w-full mb-20">
               <p className="font-satoshi-bold ">
-                A team of ex-Amazon, Google and Meta executives, who know the
-                machinery and balance of e-commerce and advertising. Indigenous
-                and thoroughbred advertising specialist drive your brand with
-                tailored strategies and effective tech stack. Expand your brand
-                with accelerated growth strategies.
+                {strings.AGENCY_SECTION_2_DESCRIPTION}
               </p>
             </div>
           </div>
           <div className="bg-black text-white rounded-[30px]">
             <div className="grid md:grid-row-4 grid-cols-1 gap-4  md:grid-cols-4 text-center px-8 ">
-              <div className="text-center py-4 pb-8">
-                <p className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
-                  $2B
-                </p>
-                <p className="font-satoshi-medium">
-                  Managed Portfolio Worth $2 Billion in 2022
-                </p>
-              </div>
-              <div className="text-center py-4 pb-8">
-                <p className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
-                  14x
-                </p>
-                <p className="font-satoshi-medium">
-                  Achieved Average ROAS of 14x in 2022
-                </p>
-              </div>
-              <div className="text-center py-4 pb-8">
-                <p className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
-                  50+
-                </p>
-                <p className="font-satoshi-medium">
-                  Proficient in 50+ Retail and Wholesale Categories
-                </p>
-              </div>
-              <div className="text-center py-4 pb-8">
-                <p className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
-                  45%
-                </p>
-                <p className="font-satoshi-medium">
-                  45% Increase in Profitability
-                </p>
-              </div>
+              {strings.AGENCY_SECTION_2_GRID.map((item, index) => (
+                <div className="text-center py-4 pb-8">
+                  <p className="md:text-title-custom text-title-custom-mv font-satoshi-bold">
+                    {item.TITLE}
+                  </p>
+                  <p className="font-satoshi-medium">{item.DESCRIPTION}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

@@ -29,7 +29,7 @@ const Home = () => {
       <Section4 />
       <Section5 />
       <Section6 />
-      <div className="flex md:flex-row flex-col ">
+      <div className="flex md:flex-row md:w-screen flex-col ">
         <Section8 />
         <Section9 />
       </div>

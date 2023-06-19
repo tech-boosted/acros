@@ -24,7 +24,7 @@ import strings from "../../strings";
 const Section8 = () => {
   return (
     <div className="flex flex-col md:w-[50%] w-[90%] mx-auto md:pr-[1%] md:pl-[4%] justify-between gap-10 my-10 ">
-      <div className="w-full text-white rounded-[30px] h-fit bg-gradient-to-br from-[#1de5e2] from-40% via-[#6196e8] via-60% to-[#955aec] md:px-10 px-4 md:mt-28 mx-auto py-10">
+      <div className="shadow-3xl w-full text-white rounded-[30px] h-fit bg-gradient-to-br from-[#1de5e2] from-40% via-[#6196e8] via-60% to-[#955aec] md:px-10 px-4 md:mt-28 mx-auto py-10">
         <div className="md:w-fit  grid grid-cols-3 md:gap-4  gap-y-4 mx-auto ">
           <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black bg-opacity-40 rounded-[200px] flex items-center justify-center px-[10px]">
             <img
@@ -79,7 +79,7 @@ const Section8 = () => {
           Learn More.
         </button>
       </div>
-      <div className="w-full text-white rounded-[30px] h-fit bg-gradient-to-tr from-[#ff9022] from-25% via-50%   via-[#bb65da]  to-[#7034fc] to-65% md:px-10  px-4 mt-0 py-10">
+      <div className=" shadow-3xl w-full text-white rounded-[30px] h-fit bg-gradient-to-tr from-[#ff9022] from-25% via-50%   via-[#bb65da]  to-[#7034fc] to-65% md:px-10  px-4 mt-0 py-10">
         <div className="md:w-fit  grid grid-cols-3 gap-4 gap-y-4 mx-auto">
           <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black bg-opacity-40 rounded-[200px] flex items-center justify-center px-[10px]">
             <img

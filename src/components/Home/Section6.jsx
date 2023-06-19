@@ -4,7 +4,7 @@ import logo from "../../assests/acros-media/section6.png";
 const Section6 = () => {
   return (
     <div className="w-screen">
-      <div className=" flex md:flex-row flex-col items-center justify-center text-desc-custom md:w-[92%] w-[90%]  rounded-[30px] mx-auto text-white  bg-gradient-to-tr from-[#ff9022] from-25% via-50%   via-[#bb65da]  to-[#7034fc] to-65%">
+      <div className="shadow-3xl mb-10 flex md:flex-row flex-col items-center justify-center text-desc-custom md:w-[92%] w-[90%]  rounded-[30px] mx-auto text-white  bg-gradient-to-tr from-[#ff9022] from-25% via-50%   via-[#bb65da]  to-[#7034fc] to-65%">
         <div className="w-[40%] ">
           <img
             src={logo}

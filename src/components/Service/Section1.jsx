@@ -10,11 +10,14 @@ const Section1 = () => {
       pt-[200px]
       py-32 px-[10%] text-white
       bg-cover bg-no-repeat bg-right-bottom
-       bg-[url('https://res.cloudinary.com/dfwvu60ef/image/upload/v1686145258/earth_horizontal_adqh3a.jpg')] 
+       bg-[url('https://firebasestorage.googleapis.com/v0/b/acros-resources.appspot.com/o/Acros-files%2Fearthbg.jpg?alt=media&token=ecbe34ca-d6fb-4724-a0ee-7216ac4e8df2')] 
       "
       >
-        <div className="h-[100%] font-satoshi-bold text-left mb-8 text-title-large">
+        <div className="h-[100%] font-satoshi-bold text-left  text-title-large">
           <p>{strings.AGENCY_SECTION_1_TITLE}</p>
+          <p className="text-title-basic MB-8">
+            {strings.AGENCY_SECTION_1_SUBTITLE}
+          </p>
         </div>
         <div className="text-left flex-col justify-end gap-12 md:w-[50%]">
           <p className="mt-6 leading-relaxed font-satoshi-bold text-desc-custom">

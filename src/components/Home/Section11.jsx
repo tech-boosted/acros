@@ -12,7 +12,7 @@ const Section11 = () => {
     <div className="w-screen">
       <div className="md:w-[92%] w-[90%] h-fit grid md:grid-cols-2 grid-cols-1 gap-10 text-white md:mx-[4%] mx-auto my-10">
         <div className="w-full md:h-full h-fit flex flex-col gap-10">
-          <div className="w-full  h-fit bg-gradient-to-br from-[#cef76d] from-1%  via-[#66b636] via-40%  to-[#00e89e] to-80% rounded-[30px] px-10 py-24">
+          <div className="shadow-3xl w-full  h-fit bg-gradient-to-br from-[#cef76d] from-1%  via-[#66b636] via-40%  to-[#00e89e] to-80% rounded-[30px] px-10 py-24">
             <div className="font-satoshi-bold text-left mb-4 text-title-large">
               <p>{Strings.HOME_SECTION_9_TITLE_1}</p>
             </div>
@@ -29,7 +29,7 @@ const Section11 = () => {
               </button>
             </div>
           </div>
-          <div className="w-full  h-fit bg-gradient-to-tr from-[#ff9022] from-25% via-50%   via-[#bb65da]  to-[#7034fc] to-65%     rounded-[30px] px-10 py-24">
+          <div className=" shadow-3xl w-full  h-fit bg-gradient-to-tr from-[#ff9022] from-25% via-50%   via-[#bb65da]  to-[#7034fc] to-65%     rounded-[30px] px-10 py-24">
             <div className="font-satoshi-bold text-left mb-4 text-title-large">
               <p>{Strings.HOME_SECTION_9_TITLE_2}</p>
             </div>
@@ -46,7 +46,7 @@ const Section11 = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-fit bg-gradient-to-br from-[#cef76d] from-1%  via-[#66b636] via-40%  to-[#00e89e] to-80% rounded-[30px] px-10 ">
+        <div className="shadow-3xl w-full h-fit bg-gradient-to-br from-[#cef76d] from-1%  via-[#66b636] via-40%  to-[#00e89e] to-80% rounded-[30px] px-10 ">
           <img src={map} alt="geographical map" className="mx-auto mt-10" />
           <div className=" flex items-center justify-center  ">
             <div className="my-16 w-full text-left">

@@ -3,7 +3,7 @@ import strings from "../../strings";
 const Section4 = () => {
   return (
     <div className="w-screen h-fit text-desc-custom ">
-      <div className="h-fit w-[92%] mx-auto  rounded-[30px] bg-bottom bg-cover bg-[url('https://res.cloudinary.com/dfwvu60ef/image/upload/v1686145258/earth_horizontal_adqh3a.jpg')] py-24 px-[5%]  text-white">
+      <div className="shadow-3xl h-fit w-[92%] mx-auto  rounded-[30px] bg-bottom bg-cover bg-[url('https://firebasestorage.googleapis.com/v0/b/acros-resources.appspot.com/o/Acros-files%2Fearthbg.jpg?alt=media&token=ecbe34ca-d6fb-4724-a0ee-7216ac4e8df2')] py-24 px-[5%]  text-white">
         <div className="h-[60%] font-satoshi-bold text-left mb-10 md:text-title-custom  text-title-custom-mv">
           <p>{strings.HOME_SECTION_4_TITLE}</p>
         </div>

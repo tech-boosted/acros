@@ -7,7 +7,7 @@ import strings from "../../strings";
 const Section1 = () => {
   return (
     <div className="w-screen  h-fit  md:mt-32 mt-[20%] mb-10 flex md:flex-row flex-col  items-center md:text-desc-custom text-[12px]">
-      <div className="h-fit w-full  bg-[url('https://res.cloudinary.com/dfwvu60ef/image/upload/v1686093632/bkg_1_bjjncw.jpg')] py-8  text-black ">
+      <div className="h-fit w-full  bg-[url('https://firebasestorage.googleapis.com/v0/b/acros-resources.appspot.com/o/Acros-files%2Fblue%20background.jpg?alt=media&token=2e85e984-90f7-43c4-893a-6a00910e9284')] py-8  text-black ">
         <div className="h-[60%] pl-[10%] font-bold text-title-large  font-satoshi-bold">
          <p>{strings.CONTACT_SECTION_1_TITLE}</p>
         </div>

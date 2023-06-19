@@ -5,7 +5,9 @@ const strings = {
   OPERATIONS: "Ads Operations Partners",
 
   //landing section
-  AGENCY_SECTION_1_TITLE: "Agency Partners",
+  AGENCY_SECTION_1_TITLE: "Advertising Agency for E-commerce Brands",
+  AGENCY_SECTION_1_SUBTITLE:
+    "World's leading and trusted E-commerce Advertising Agency.",
   AGENCY_SECTION_1_DESCRIPTION:
     "Our adverstising agency companies throughbred e-commerce Advertising Experts who can create conversion focused ad campaigns and strategies that resonate with the e-commerce target audience. They work with highly efficient customer behaviour patterns, buyers mind mapping and decision influencing tools to deliver gold-standard ROI.  ",
 

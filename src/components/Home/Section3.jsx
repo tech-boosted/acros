@@ -9,7 +9,7 @@ const Section3 = () => {
         <h2 className="text-center text-title-large font-satoshi-bold mb-20  w-[92vw]">
           Scale your E-Commerce Advertising with Trusted Partners
         </h2>
-        <div className="flex rounded-[30px]  h-fit text-black w-[92vw] bg-gradient-to-br from-[#1de5e2] from-40% via-[#6196e8] via-60% to-[#955aec] text-desc-custom">
+        <div className="shadow-3xl flex rounded-[30px]  h-fit text-black w-[92vw] bg-gradient-to-br from-[#1de5e2] from-40% via-[#6196e8] via-60% to-[#955aec] text-desc-custom">
           <div className="w-[60%] md:p-24 p-[30px]">
             <section className="flex justify-between items-center ">
               <p className=" text-title-large font-satoshi-bold">

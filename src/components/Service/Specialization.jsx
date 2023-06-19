@@ -42,8 +42,8 @@ const Specialization = () => {
         </p>
 
         <div className=" grid md:grid-cols-4 grid-cols-1 gap-8 text-white">
-          <div className="  cursor-pointer bg-black bg-[url('https://www.charle.co.uk/work/billionaire-boys-club/images/thumbnail.jpg')] backdrop-opacity-70 bg-cover  rounded-[15px] h-[450px]  flex flex-col justify-end hover:transition-all ease-in-out hover:scale-105 duration-150  text-left hover:bg-opacity-90">
-            <div className="text-title-basic font-satoshi-bold px-10 text-left pt-[120px] bg-[#222f33b5] backdrop:blur-[55px] h-full w-[100%] rounded-[15px]">
+          <div className="shadow-3xl cursor-pointer bg-black bg-[url('https://firebasestorage.googleapis.com/v0/b/acros-resources.appspot.com/o/Acros-files%2Fspecialization1.jpg?alt=media&token=709115d8-945c-46f8-b091-443cccd0cbab')] backdrop-opacity-70 bg-cover  rounded-[15px] h-[450px]  flex flex-col justify-end hover:transition-all ease-in-out hover:scale-105 duration-150  text-left hover:bg-opacity-90">
+            <div className="shadow-3xl text-title-basic font-satoshi-bold px-10 text-left pt-[120px] bg-[#222f33b5] backdrop:blur-[55px] h-full w-[100%] rounded-[15px]">
               PPC Ads
               <p className="leading 10 tracking-wider text-desc-custom  mt-4">
                 Subject matter experts to have leverage in marketplace and D2C
@@ -61,7 +61,7 @@ const Specialization = () => {
             </div>
           </div>
 
-          <div className="  cursor-pointer bg-black bg-[url('https://www.charle.co.uk/work/candy-kittens/images/thumbnail.jpg')] backdrop-opacity-70 bg-cover  rounded-[15px] h-[450px] md:mt-24 flex flex-col justify-end hover:transition-all ease-in-out hover:scale-105 duration-150  text-left hover:bg-opacity-90">
+          <div className="shadow-3xl  cursor-pointer bg-black bg-[url('https://firebasestorage.googleapis.com/v0/b/acros-resources.appspot.com/o/Acros-files%2Fspecialization2.jpg?alt=media&token=c51d0711-c52c-4d5f-95c4-045bdcd0531f')] backdrop-opacity-70 bg-cover  rounded-[15px] h-[450px] md:mt-24 flex flex-col justify-end hover:transition-all ease-in-out hover:scale-105 duration-150  text-left hover:bg-opacity-90">
             <div className="text-title-basic font-satoshi-bold px-10 text-left pt-[70px] bg-[#222f33b5] backdrop:blur-[55px] h-full w-[100%] rounded-[15px]">
               Paid Social Ads
               <p className="leading 10 tracking-wider text-desc-custom  mt-4">
@@ -80,7 +80,7 @@ const Specialization = () => {
             </div>
           </div>
 
-          <div className="  cursor-pointer bg-black bg-[url('https://www.charle.co.uk/work/hippeas/images/thumbnail.jpg')] bg-cover rounded-[15px] h-[450px] md:mt-14 flex flex-col justify-end hover:transition-all ease-in-out hover:scale-105 duration-150  text-left">
+          <div className=" shadow-3xl cursor-pointer bg-black bg-[url('https://firebasestorage.googleapis.com/v0/b/acros-resources.appspot.com/o/Acros-files%2Fspecialization3.jpg?alt=media&token=2eae8cd6-7152-4747-ac90-29a3e1ae08fb')] bg-cover rounded-[15px] h-[450px] md:mt-14 flex flex-col justify-end hover:transition-all ease-in-out hover:scale-105 duration-150  text-left">
             <div className="text-title-basic font-satoshi-bold px-10 text-left pt-[120px] bg-[#222f33b5] backdrop:blur-[55px] h-full w-[100%] rounded-[15px]">
               DSP Ads
               <p className="leading 10 tracking-wider text-desc-custom  mt-4">
@@ -98,7 +98,7 @@ const Specialization = () => {
               )}
             </div>
           </div>
-          <div className="  cursor-pointer bg-black bg-[url('https://www.charle.co.uk/work/au-depart/images/thumbnail.jpg')] bg-cover rounded-[15px] h-[450px]  flex flex-col justify-end hover:transition-all ease-in-out hover:scale-105 duration-150  text-left">
+          <div className="shadow-3xl  cursor-pointer bg-black bg-[url('https://firebasestorage.googleapis.com/v0/b/acros-resources.appspot.com/o/Acros-files%2Fspecialization4.jpg?alt=media&token=5643a72a-2c8f-4995-84a4-22c0b144e716')] bg-cover rounded-[15px] h-[450px]  flex flex-col justify-end hover:transition-all ease-in-out hover:scale-105 duration-150  text-left">
             <div className="text-title-basic font-satoshi-bold px-10 text-left pt-[120px] bg-[#222f33b5] backdrop:blur-[55px] h-full w-[100%] rounded-[15px]">
               Native Ads
               <p className="leading 10 tracking-wider text-desc-custom  mt-4">

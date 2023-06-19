@@ -26,7 +26,7 @@ const Section1 = ({ blogs, articles, cs }) => {
 
   return (
     <div>
-      <div className="h-fit w-screen bg-[url('https://res.cloudinary.com/dfwvu60ef/image/upload/v1686093632/bkg_1_bjjncw.jpg')] py-10 px-[10%]  text-black  md:mt-32 mt-[20%]">
+      <div className="h-fit w-screen bg-[url('https://firebasestorage.googleapis.com/v0/b/acros-resources.appspot.com/o/Acros-files%2Fblue%20background.jpg?alt=media&token=2e85e984-90f7-43c4-893a-6a00910e9284')] py-10 px-[10%]  text-black  md:mt-32 mt-[20%]">
         <h2 className="mb-10 md:text-title-custom text-title-custom-mv font-satoshi-bold">
           {strings.RESOURCE_SECTION_1_TITLE}{" "}
         </h2>

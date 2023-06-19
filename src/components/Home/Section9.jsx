@@ -26,7 +26,7 @@ import strings from "../../strings";
 const Section9 = () => {
   return (
     <div className="flex flex-col md:w-[50%] mx-auto w-[90%] md:pl-[1%] md:pr-[4%] gap-10 mb-10">
-      <div className="w-full text-white rounded-[30px] h-fit bg-gradient-to-br from-[#1de5e2] from-40% via-[#6196e8] via-60% to-[#955aec] md:px-10 px-4  py-10">
+      <div className="shadow-3xl w-full text-white rounded-[30px] h-fit bg-gradient-to-br from-[#1de5e2] from-40% via-[#6196e8] via-60% to-[#955aec] md:px-10 px-4  py-10">
         <div className="md:w-fit w-full grid grid-cols-3 gap-4 gap-y-4 mx-auto">
           <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black bg-opacity-40 rounded-[200px] flex items-center justify-center px-[10px]">
             <img
@@ -82,7 +82,7 @@ const Section9 = () => {
         </button>
       </div>
 
-      <div className="text-white rounded-[30px] h-fit bg-gradient-to-br from-[#1de5e2] from-40% via-[#6196e8] via-60% to-[#955aec] md:px-10 px-4   py-10">
+      <div className="shadow-3xl text-white rounded-[30px] h-fit bg-gradient-to-br from-[#1de5e2] from-40% via-[#6196e8] via-60% to-[#955aec] md:px-10 px-4   py-10">
         <div className="md:w-fit w-full grid grid-cols-3 gap-4 gap-y-4 mx-auto">
           <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black bg-opacity-40 rounded-[200px] flex items-center justify-center px-[10px]">
             <img

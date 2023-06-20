@@ -67,19 +67,19 @@ export default function Section2() {
   }, []);
 
   return (
-    <div className="w-screen mt-10  h-fit  flex flex-col items-center justify-center text-desc-custom ">
+    <div className="w-screen mt-10  h-fit  flex flex-col items-center justify-center md:text-desc-basic text-desc-basic-mv ">
       <div className="w-full my-10 px-[10%] py-20 ">
-        <p className=" font-satoshi-bold text-title-basic tracking-tight leading-snug">
+        <p className=" font-satoshi-bold md:text-title-basic text-title-basic-mv tracking-tight leading-snug">
          {strings.CAREER_SECTION_2_DESCRIPTION}
         </p>
       </div>
 
       <div className="w-screen mt-10 px-[10%] py-20 bg-[#e2e2e2]">
-        <h2 className="text-title-large mb-10 text-left font-satoshi-bold ">
+        <h2 className="md:text-title-large text-title-large-mv mb-10 text-left font-satoshi-bold ">
           {strings.CAREER_SECTION_3_TITLE}
         </h2>
 
-        <div className="w-full text-desc-custom font-satoshi-regular text-left mb-10">
+        <div className="w-full  font-satoshi-regular text-left mb-10">
           <p>
           {strings.CAREER_SECTION_3_DESCRIPTION}
           </p>
@@ -117,10 +117,10 @@ export default function Section2() {
                 >
                   {item.category}
                 </Button>
-                <div className="md:col-span-3 flex items-center md:my-0 my-4 justify-center md:text-subtitle-custom text-subtitle-custom-mv font-satoshi-bold">
+                <div className="md:col-span-3 flex items-center md:my-0 my-4 justify-center md:text-subtitle-basic text-subtitle-basic-mv font-satoshi-bold">
                   {item.position}
                 </div>
-                <div className="md:col-span-2 text-desc-custom">
+                <div className="md:col-span-2 ">
                   {item.shortDescription}
                 </div>
               </div>

@@ -6,14 +6,14 @@ import strings from "../../strings";
 
 const Section1 = () => {
   return (
-    <div className="w-screen  h-fit  md:mt-32 mt-[20%] mb-10 flex md:flex-row flex-col  items-center md:text-desc-custom text-[12px]">
+    <div className="w-screen  h-fit  md:mt-32 mt-[120px] mb-10 flex md:flex-row flex-col  items-center md:text-desc-basic text-desc-basic-mv ">
       <div className="h-fit w-full  bg-[url('https://firebasestorage.googleapis.com/v0/b/acros-resources.appspot.com/o/Acros-files%2Fblue%20background.jpg?alt=media&token=2e85e984-90f7-43c4-893a-6a00910e9284')] py-8  text-black ">
-        <div className="h-[60%] pl-[10%] font-bold text-title-large  font-satoshi-bold">
+        <div className="h-[60%] pl-[10%] font-bold md:text-title-large text-title-large-mv  font-satoshi-bold">
          <p>{strings.CONTACT_SECTION_1_TITLE}</p>
         </div>
         <div className="flex md:justify-end mx-[10%] pr-[10%]  md:gap-12 gap-6 md:mt-0 mt-10">
           <div className="flex-col">
-            <p className=" mb-6 font-satoshi-bold text-subtitle-custom">
+            <p className=" mb-6 font-satoshi-bold md:text-subtitle-basic text-subtitle-basic-mv">
               /Email us here/</p>
             <p className="cursor-pointer">
               <a href="mailto: hello@across.co" target="_blank">
@@ -22,12 +22,12 @@ const Section1 = () => {
             </p>
           </div>
           <div className="flex-col">
-          <p className=" mb-6 font-satoshi-bold text-subtitle-custom">
+          <p className=" mb-6 font-satoshi-bold md:text-subtitle-basic text-subtitle-basic-mv">
               /Call us here/</p>
             <p className="">+91 {"  "} 7093496194</p>
           </div>
           <div className="flex-col">
-          <p className=" mb-6 font-satoshi-bold text-subtitle-custom">
+          <p className=" mb-6 font-satoshi-bold md:text-subtitle-basic text-subtitle-basic-mv">
               /Find us on/</p>
 
             <a
@@ -37,7 +37,7 @@ const Section1 = () => {
               className="flex items-center gap-4  cursor-pointer  mb-2"
             >
               <FaFacebook className="text-center text-[22px]" />
-              {" Facebook"}
+              {/* {" Facebook"} */}
             </a>
             <a
               target="_blank"
@@ -45,7 +45,8 @@ const Section1 = () => {
               href="https://www.instagram.com/acros.advertising/"
               className="flex items-center gap-4  cursor-pointer  mb-2 "
             >
-              <BsInstagram className="text-center text-[22px] " /> {"Instagram"}
+              <BsInstagram className="text-center text-[22px] " /> 
+              {/* {"Instagram"} */}
             </a>
             <a
               target="_blank"
@@ -54,7 +55,7 @@ const Section1 = () => {
               className="flex items-center gap-4  cursor-pointer  mb-2"
             >
               <AiFillLinkedin className="text-center text-[22px] " />
-              {"LinkedIn"}
+              {/* {"LinkedIn"} */}
             </a>
           </div>
         </div>

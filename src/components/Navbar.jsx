@@ -1,39 +1,55 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { GrMenu, GrClose } from "react-icons/gr";
-import { RiArrowDropDownFill } from "react-icons/ri";
+import { MdClose} from "react-icons/md";
+import { HiMenu } from "react-icons/hi";
 import navlogo from "../assests/acros-media/across-nav-logo.png";
+import navlogowhite from "../assests/acros-media/white-footer-logo.png";
 
 const Navbar = () => {
-  const [dropdown, setDropdown] = useState("hidden");
-  const [dropdownMV, setDropdownMV] = useState("hidden");
+
   const Links = [
+    { name: "Agency", link: "/agency" },
     { name: "About Us", link: "/about-us" },
     { name: "Resources", link: "/resources" },
-    // { name: "Services", link: "/services" },
     { name: "Career", link: "/career" },
     { name: "Contact", link: "/contact-us" },
   ];
   const [open, setOpen] = useState(false);
   const location = useLocation();
   const activeRoute = (routeName) => {
-    return location.pathname.includes(routeName);
+    return location.pathname === routeName;
   };
 
-  const agencyStyle = activeRoute('/agency') ? 'text-white' : "";
+  const agencyStyle =
+    activeRoute("/agency") || activeRoute("/") ? "text-white" : "";
 
   const renderMobileList = () => {
     if (open) {
       return (
-        <ul className="absolute left-0 w-full overflow-x-hidden px-10 h-[400px]   flex-col pt-5 bg-white items-center z-[999]  transition-all duration-500 ease-in ">
+        <ul className="absolute left-0 top-0 w-full overflow-x-hidden px-10 h-[400px] text-white   flex-col pt-5 bg-[rgba(0,0,0,0.9)] items-center z-[999]  transition-all duration-500 ease-in ">
+          <li className=" w-full  text-right">
+            {" "}
+            <button
+              type="button"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              onClick={() => setOpen(!open)}
+            >
+              {open ? (
+                <MdClose className="text-4xl rounded-md text-white" />
+              ) : (
+                <HiMenu />
+              )}
+            </button>
+          </li>
           {Links.map((link) => (
             <Link
               to={link.link}
               className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium                 
-             ${activeRoute(link.link) === true
-                  ? " text-primary"
-                  : "font-medium text-slate-950"
-                }
+             ${
+               activeRoute(link.link) === true
+                 ? " text-primary"
+                 : "font-medium text-slate-950"
+             }
 `}
             >
               <li
@@ -45,73 +61,6 @@ const Navbar = () => {
               </li>
             </Link>
           ))}
-          <li
-            className="bg-white pt-2 transform transition-all ease-in-out mb-10"
-            onClick={() => {
-              dropdownMV === "hidden"
-                ? setDropdownMV("block")
-                : setDropdownMV("hidden");
-            }}
-          >
-            <span
-              className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium flex items-center
-              `}
-            >
-              Services <RiArrowDropDownFill className="text-2xl" />
-            </span>
-            <ul
-              className={`${dropdownMV} dropdown  text-white my-4 bg-primary shadow-xl w-[90%] h-fit rounded-lg  text-[16px] py-2`}
-            >
-              <li
-                className={` hover:bg-white px-8 py-2 hover:text-purple-700
-                              ${activeRoute("/agency") === true
-                    ? " text-primary bg-white"
-                    : "font-medium text-white"
-                  }
-              
-              `}
-              >
-                <Link
-                  to={"/agency"}
-                  className="hover:text-primary duration-200 font-satoshi-medium"
-                >
-                  Agency
-                </Link>
-              </li>
-              <li
-                className={` hover:bg-white px-8 py-2 hover:text-purple-700
-                              ${activeRoute("/operations") === true
-                    ? " text-primary bg-white"
-                    : "font-medium text-white"
-                  }
-              
-              `}
-              >
-                <Link
-                  to={"/operations"}
-                  className=" hover:text-primary  duration-200 font-satoshi-medium"
-                >
-                  Operations
-                </Link>
-              </li>
-              <li
-                className={` hover:bg-white px-8 py-2 hover:text-purple-700
-                              ${activeRoute("/technology") === true
-                    ? " text-primary bg-white"
-                    : "font-medium text-white"
-                  }
-              
-              `}
-              >
-                <Link
-                  to={"/technology"}
-                  className=" hover:text-primary  duration-200 font-satoshi-medium"
-                >
-                  Technology
-                </Link>
-              </li>
-            </ul>{" "}
-          </li>
         </ul>
       );
     }
@@ -123,10 +72,14 @@ const Navbar = () => {
       <div className="text-3xl absolute right-8 top-4 cursor-pointer md:hidden">
         <button
           type="button"
-          className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+          className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
           onClick={() => setOpen(!open)}
         >
-          {open ? <GrClose /> : <GrMenu />}
+          {open ? (
+            <></>
+          ) : (
+            <HiMenu className={`text-[40px] mt-4 ${agencyStyle}`} />
+          )}
         </button>
       </div>
     );
@@ -136,9 +89,15 @@ const Navbar = () => {
     <div className="w-screen absolute top-0">
       <div className=" md:flex items-center justify-between bg-transparent my-10 px-12">
         <div className="cursor-pointer flex items-center">
-          <Link to="/">
-            <img src={navlogo} alt="Across logo" className="w-3/4" />
-          </Link>
+          {!activeRoute("/agency") && !activeRoute("/") ? (
+            <Link to="/">
+              <img src={navlogo} alt="Across logo" className="w-3/4" />
+            </Link>
+          ) : (
+            <Link to="/">
+              <img src={navlogowhite} alt="Across logo" className="h-[30px]" />
+            </Link>
+          )}
         </div>
         {renderIcon()}
 
@@ -217,68 +176,77 @@ const Navbar = () => {
           <Link
             to={"/agency"}
             className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
-              ${activeRoute("/agency") === true
-                ? " text-primary"
-                : "font-medium text-slate-950"
+              ${
+                activeRoute("/agency") === true
+                  ? " text-primary"
+                  : "font-medium text-slate-950"
               }
 
               `}
           >
-            <li
-              className={`bg-transparent md:ml-8 ${agencyStyle}`}
-            >
-              Agency
-            </li>
+            <li className={`bg-transparent md:ml-8 ${agencyStyle}`}>Agency</li>
           </Link>
 
           <Link
             to={"/about-us"}
             className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
-              ${activeRoute("/about-us") === true
-                ? " text-primary"
-                : "font-medium text-slate-950"
+              ${
+                activeRoute("/about-us") === true
+                  ? " text-primary"
+                  : "font-medium text-slate-950"
               }
 
               `}
           >
-            <li className={`bg-transparent md:ml-8 ${agencyStyle}`}>{"About us"}</li>
+            <li className={`bg-transparent md:ml-8 ${agencyStyle}`}>
+              {"About us"}
+            </li>
           </Link>
           <Link
             to={"/resources"}
             className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
-              ${activeRoute("/resources") === true
-                ? " text-primary"
-                : "font-medium text-slate-950"
+              ${
+                activeRoute("/resources") === true
+                  ? " text-primary"
+                  : "font-medium text-slate-950"
               }
 
               `}
           >
-            <li className={`bg-transparent md:ml-8 ${agencyStyle}`}>{"Resources"}</li>
+            <li className={`bg-transparent md:ml-8 ${agencyStyle}`}>
+              {"Resources"}
+            </li>
           </Link>
           <Link
             to={"/career"}
             className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
-              ${activeRoute("/career") === true
-                ? " text-primary"
-                : "font-medium text-slate-950"
+              ${
+                activeRoute("/career") === true
+                  ? " text-primary"
+                  : "font-medium text-slate-950"
               }
 
               `}
           >
-            <li className={`bg-transparent md:ml-8 ${agencyStyle}`}>{"Career"}</li>
+            <li className={`bg-transparent md:ml-8 ${agencyStyle}`}>
+              {"Career"}
+            </li>
           </Link>
 
           <Link
             to={"/contact-us"}
             className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
-              ${activeRoute("/contact-us") === true
-                ? " text-primary"
-                : "font-medium text-slate-950"
+              ${
+                activeRoute("/contact-us") === true
+                  ? " text-primary"
+                  : "font-medium text-slate-950"
               }
 
               `}
           >
-            <li className={`bg-transparent md:ml-8 ${agencyStyle}`}>{"Contact"}</li>
+            <li className={`bg-transparent md:ml-8 ${agencyStyle}`}>
+              {"Contact"}
+            </li>
           </Link>
         </ul>
 

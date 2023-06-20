@@ -57,8 +57,8 @@ const Specifications = () => {
     <div>
       <div className="flex justify-around  h-fit">
         <div className="w-[60%] h-fit">
-          <div className="w-full text-desc-custom mt-20 mb-10">
-            <h2 className="md:text-title-custom text-title-custom-mv mb-4 font-satoshi-bold">
+          <div className="w-full md:text-desc-basic text-desc-basic-mv  mt-20 mb-10">
+            <h2 className="md:text-title-basic text-title-basic-mv mb-4 font-satoshi-bold">
               Specialization
             </h2>
             <p className="mb-4">Unleashing your brand potential</p>
@@ -79,10 +79,10 @@ const Specifications = () => {
                     id="panel1d-header"
                   >
                     <div className="grid h-fit md:grid-cols-2 grid-cols-1 my-4 md:pr-10 gap-0 items-center text-start">
-                      <div className="  md:text-subtitle-custom text-subtitle-custom-mv font-satoshi-bold  ">
+                      <div className="md:text-subtitle-basic text-subtitle-basic-mv font-satoshi-bold  ">
                         {item.key}
                       </div>
-                      <div className="   md:text-desc-custom text-desc-custom-mv  ">
+                      <div className="   md:text-desc-basic text-desc-basic-mv  ">
                         {item.description}
                       </div>
                     </div>
@@ -90,7 +90,7 @@ const Specifications = () => {
                   <AccordionDetails>
                     {/* <Tabs arr={item.capabilities} /> */}
                     <div>
-                      <h2 className="text-right my-4  md:text-subtitle-custom text-subtitle-custom-mv font-satoshi-bold">
+                      <h2 className="text-right my-4  md:text-subtitle-basic text-subtitle-basic-mv font-satoshi-bold">
                         Capabilities
                       </h2>
                         <div className="md:w-[50%] w-full mb-4 flex flex-col justify-start items-end">

@@ -93,14 +93,11 @@ const Section2 = () => {
   };
 
   return (
-    <div className="w-screen">
+    <div className="w-screen text-desc-basic-mv md:text-desc-basic">
       <div className="flex w-[92%] rounded-[30px] my-10  h-fit mx-auto  gap-4  items-center bg-[#e2e2e2]">
-        <div className=" text-start my-10 w-[55%] px-16">
-          <h2 className="text-title-large font-satoshi-bold">
-            {" "}
-            Alternatively
-          </h2>
-          <p className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-medium mt-2 mb-10">
+        <div className=" text-start my-10 md:w-[55%] w-full md:px-16 px-10">
+          <h2 className="text-title-large font-satoshi-bold"> Alternatively</h2>
+          <p className="md:text-subtitle-basic text-subtitle-basic-mv font-satoshi-medium mt-2 mb-10">
             Connect with us by simply filling a form. This will allow us to know
             more about yourself and your brand.
           </p>
@@ -180,7 +177,7 @@ const Section2 = () => {
             </button>
           </div>
         </div>
-        <div className="w-[45%] flex items-end self-end ">
+        <div className="md:block hidden w-[45%] items-end self-end ">
           <img
             src="https://www.charle.co.uk/media/images/getintouchphones.png"
             alt=""

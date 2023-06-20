@@ -4,7 +4,7 @@ import strings from "../../strings";
 
 export const Section4 = () => {
   return (
-    <div className="w-screen h-fit px-[10%] bg-gradient-to-r from-[#00112B] from-0% to-[#000103] to-50% text-white py-24 mb-10">
+    <div className="w-screen h-fit px-[10%] bg-gradient-to-r from-[#00112B] from-0% to-[#000103] to-50% text-white py-24 mb-10 text-desc-basic-mv md:text-desc-basic">
       <section className="flex justify-between items-center">
         <div>
           <p className=" md:text-title-custom text-title-custom-mv font-satoshi-bold">
@@ -40,7 +40,7 @@ export const Section4 = () => {
               <div className="w-full my-4">
                 <img src={stars} className="m-auto block " alt="stars" />
               </div>
-              <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold mb-4">
+              <h2 className="text-subtitle-basic-mv md:text-subtitle-basic font-satoshi-bold mb-4">
                 {item.TITLE}{" "}
               </h2>
               <p className=" mb-4 text-[#bfbfbf]">{item.TESTIMONY}</p>

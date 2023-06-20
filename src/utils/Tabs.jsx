@@ -4,7 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 const Tabs = ({arr}) => {
   const [data, setdata] = useState(0);
   return (
-    <div className="w-full h-fit text-desc-custom my-10">
+    <div className="w-full h-fit md:text-desc-basic text-desc-basic-mv my-10">
 
       <div>
         {/* <h2 className="my-10 md:text-subtitle-custom text-subtitle-custom-mv font-satoshi-bold">

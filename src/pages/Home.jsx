@@ -2,7 +2,6 @@ import React from "react";
 
 import Connect from "../components/Connect";
 import Section3 from "../components/Home/Section3";
-import Section1 from "../components/Section1";
 import Section2 from "../components/Home/Section2";
 import Section4 from "../components/Home/Section4";
 import Section6 from "../components/Home/Section6";
@@ -15,13 +14,14 @@ import Banner3 from "./Banner3";
 import Slider from "../components/Slider";
 import Section5 from "../components/Home/Section5";
 import Section10 from "../components/Home/Section10";
+import Section1 from "../components/Home/Section1";
 
 const Home = () => {
   return (
     <div>
       {/* <Banner /> */}
-      {/* <Section1 /> */}
-      <Banner3 />
+      <Section1 />
+      {/* <Banner3 /> */}
       <Section2 />
       {/* <BrandGrid /> */}
       <Slider />

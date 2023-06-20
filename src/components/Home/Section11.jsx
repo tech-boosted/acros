@@ -13,7 +13,7 @@ const Section11 = () => {
       <div className="md:w-[92%] w-[90%] h-fit grid md:grid-cols-2 grid-cols-1 gap-10 text-white md:mx-[4%] mx-auto my-10">
         <div className="w-full md:h-full h-fit flex flex-col gap-10">
           <div className="shadow-3xl w-full  h-fit bg-gradient-to-br from-[#cef76d] from-1%  via-[#66b636] via-40%  to-[#00e89e] to-80% rounded-[30px] px-10 py-24">
-            <div className="font-satoshi-bold text-left mb-4 text-title-large">
+            <div className="font-satoshi-bold text-left mb-4 md:text-title-large text-title-large-mv">
               <p>{Strings.HOME_SECTION_9_TITLE_1}</p>
             </div>
             <div className="text-left flex-col  mt-4">
@@ -30,7 +30,7 @@ const Section11 = () => {
             </div>
           </div>
           <div className=" shadow-3xl w-full  h-fit bg-gradient-to-tr from-[#ff9022] from-25% via-50%   via-[#bb65da]  to-[#7034fc] to-65%     rounded-[30px] px-10 py-24">
-            <div className="font-satoshi-bold text-left mb-4 text-title-large">
+            <div className="font-satoshi-bold text-left mb-4 md:text-title-large text-title-large-mv">
               <p>{Strings.HOME_SECTION_9_TITLE_2}</p>
             </div>
             <div className="text-left flex-col  mt-4">
@@ -50,10 +50,10 @@ const Section11 = () => {
           <img src={map} alt="geographical map" className="mx-auto mt-10" />
           <div className=" flex items-center justify-center  ">
             <div className="my-16 w-full text-left">
-              <h1 className="md:md:text-title-large text-title-large-mv mb-8 font-satoshi-bold">
+              <h1 className="md:text-title-large text-title-large-mv mb-8 font-satoshi-bold">
                 {strings.HOME_SECTION_9_TITLE_3}
               </h1>
-              <p className="text-subtitle-custom-mv md:text-subtitle-custom mb-8">
+              <p className="text-subtitle-basic-mv md:text-subtitle-basic mb-8">
                 {strings.HOME_SECTION_9_SUBTITLE}
               </p>
               <div className=" mb-8">

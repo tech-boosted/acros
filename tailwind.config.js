@@ -10,20 +10,25 @@ module.exports = {
           "0 45px 65px rgba(0, 0, 0, 0.15)",
         ],
       },
-      boxShadow:{
+      boxShadow: {
         "3xl": "0px 0px 80px 10px rgba(0,0,0,0.2)",
-        
       },
       fontSize: {
         "title-extra-large": "60px",
         "title-large": "50px",
         "title-custom": "44px",
         "title-basic": "40px",
-        "subtitle-custom": "25px",
-        "desc-custom": "18px",
-        "desc-basic": "16px",
-        "title-custom-mv": "35px",
-        "subtitle-custom-mv": "22px",
+        "subtitle-basic": "25px",
+        "desc-basic": "18px",
+
+        "title-extra-large-mv": "40px",
+        "title-large-mv": "35px",
+        "title-custom-mv": "28px",
+        "title-basic-mv": "24px",
+        "desc-basic-mv": "16px",
+        "subtitle-basic-mv": "22px",
+
+        // "title-custom-mv": "35px",
       },
     },
     colors: () => ({

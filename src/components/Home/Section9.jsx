@@ -71,10 +71,10 @@ const Section9 = () => {
             />
           </div>
         </div>
-        <h2 className="text-left text-title-large font-satoshi-bold mt-10 mb-6">
+        <h2 className="text-left md:text-title-large text-title-large-mv font-satoshi-bold mt-10 mb-6">
           {strings.HOME_SECTION_7_TITLE_2}
         </h2>
-        <p className="text-left text-desc-custom ">
+        <p className="text-left md:text-desc-basic text-desc-basic-mv  ">
           {strings.HOME_SECTION_7_DESCRIPTION_2}
         </p>
         <button className="my-4 bg-black  text-white rounded-lg py-2 px-3">
@@ -127,10 +127,10 @@ const Section9 = () => {
             />
           </div>
         </div>
-        <h2 className="text-left text-title-large font-satoshi-bold mt-10 mb-6">
+        <h2 className="text-left md:text-title-large text-title-large-mv font-satoshi-bold mt-10 mb-6">
           {strings.HOME_SECTION_7_TITLE_4}
         </h2>
-        <p className="text-left text-desc-custom ">
+        <p className="text-left md:text-desc-basic text-desc-basic-mv ">
           {strings.HOME_SECTION_7_DESCRIPTION_4}{" "}
         </p>
         <button className="my-4 bg-black  text-white rounded-lg py-2 px-3">

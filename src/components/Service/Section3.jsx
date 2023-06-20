@@ -18,14 +18,15 @@ import strings from "../../strings";
 
 const Section3 = () => {
   return (
-    <div className="w-screen">
+    <div className="w-screen md:text-desc-basic text-desc-basic-mv">
       <div className="flex md:flex-row flex-col gap-4 justify-between h-fit my-24 px-[10%] w-full ">
         <div className="md:w-[40%] w-full">
-          <p className="md:text-title-large text-title-custom-mv font-satoshi-bold leading-snug ">
-{strings.AGENCY_SECTION_4_TITLE_1}          </p>
-          <p className="md:text-desc-custom font-satoshi-bold mt-10 ">
+          <p className="md:text-title-large text-title-large-mv font-satoshi-bold leading-snug ">
+            {strings.AGENCY_SECTION_4_TITLE_1}{" "}
+          </p>
+          <p className=" font-satoshi-bold mt-10 ">
             {" "}
-          {strings.AGENCY_SECTION_4_DESCRIPTION_1}
+            {strings.AGENCY_SECTION_4_DESCRIPTION_1}
           </p>
           <h2></h2>
           <p></p>
@@ -33,7 +34,6 @@ const Section3 = () => {
         <div className="h-fit md:w-[40%] w-fit grid grid-cols-3 gap-4 gap-y-4 ">
           <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
             <img src={AdsLogo1} alt="" />
-           
           </div>
           <div className="md:w-[140px] md:h-[140px] w-[100px] h-[100px] bg-black flex items-center justify-center px-[10px] rounded-[18px]">
             <img src={AdsLogo2} alt="" />
@@ -54,12 +54,11 @@ const Section3 = () => {
       </div>
       <div className="flex md:flex-row flex-col gap-4 justify-between h-fit my-28 px-[10%] w-full ">
         <div className="md:w-[40%] w-full">
-          <p className="md:text-title-large text-title-custom-mv font-satoshi-bold leading-snug ">
-          {strings.AGENCY_SECTION_4_TITLE_2}          
+          <p className="md:text-title-large text-title-large-mv font-satoshi-bold leading-snug ">
+            {strings.AGENCY_SECTION_4_TITLE_2}
           </p>
-          <p className="md:text-desc-custom font-satoshi-bold mt-10">
-          {strings.AGENCY_SECTION_4_DESCRIPTION_2}
-
+          <p className=" font-satoshi-bold mt-10">
+            {strings.AGENCY_SECTION_4_DESCRIPTION_2}
           </p>
           <h2></h2>
           <p></p>

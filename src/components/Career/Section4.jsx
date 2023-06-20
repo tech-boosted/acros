@@ -130,18 +130,18 @@ const Section4 = () => {
   return (
     <div className="w-screen">
       <div className="flex w-[92%] rounded-[30px] my-10  h-fit mx-auto  gap-4  items-center bg-[#e2e2e2]">
-      <div className=" text-start my-10 w-[55%] px-16">
+      <div className="h-fit text-start my-10 md:w-[55%] w-full px-16">
           <h2 className="text-left text-title-large font-satoshi-bold "> 
             Help Us Know You Better
           </h2>
-          <p className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-medium mb-10 mt-2">
+          <p className="text-subtitle-basic-mv md:text-subtitle-basic font-satoshi-medium mb-10 mt-2">
             If you are as passionate as our team of enthusiasts, you have <br />{" "}
             come to the right place.
           </p>
 
           <p className="text-red-500 mb-4">{formError.main}</p>
 
-          <div className="h-fit grid md:grid-cols-2 grid-cols-1 md:gap-12 gap-4 md:gap-y-12">
+          <div className="h-fit grid md:grid-cols-2 grid-cols-2 md:gap-12 gap-4 md:gap-y-12">
             <input
               type="text"
               name="name"
@@ -243,7 +243,7 @@ const Section4 = () => {
             )}
           </div>
         </div>
-        <div className="w-[45%] flex items-end self-end ">
+        <div className="md:block hidden w-[45%]  items-end self-end ">
           <img
             src="https://www.charle.co.uk/media/images/getintouchphones.png"
             alt=""

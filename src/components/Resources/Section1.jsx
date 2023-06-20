@@ -26,11 +26,11 @@ const Section1 = ({ blogs, articles, cs }) => {
 
   return (
     <div>
-      <div className="h-fit w-screen bg-[url('https://firebasestorage.googleapis.com/v0/b/acros-resources.appspot.com/o/Acros-files%2Fblue%20background.jpg?alt=media&token=2e85e984-90f7-43c4-893a-6a00910e9284')] py-10 px-[10%]  text-black  md:mt-32 mt-[20%]">
-        <h2 className="mb-10 md:text-title-custom text-title-custom-mv font-satoshi-bold">
+      <div className="h-fit w-screen bg-[url('https://firebasestorage.googleapis.com/v0/b/acros-resources.appspot.com/o/Acros-files%2Fblue%20background.jpg?alt=media&token=2e85e984-90f7-43c4-893a-6a00910e9284')] py-10 px-[10%]  text-black  md:mt-32 mt-[120px]">
+        <h2 className="mb-10 md:text-title-basic text-title-basic-mv font-satoshi-bold">
           {strings.RESOURCE_SECTION_1_TITLE}{" "}
         </h2>
-        <p className="font-satoshi-medium text-subtitle-custom leading-relaxed ">
+        <p className="font-satoshi-medium text-subtitle-basic-mv md:text-subtitle-basic leading-relaxed ">
           {strings.RESOURCE_SECTION_1_DESCRIPTION}
         </p>
 
@@ -85,7 +85,7 @@ const Section1 = ({ blogs, articles, cs }) => {
                 key={index}
               />
               <div className="absolute top-0 right-0 w-full h-full rounded-[30px] px-10 py-8 text-white bg-[#222f33b5] backdrop:blur-[55px] ">
-                <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
+                <h2 className="text-subtitle-basic-mv md:text-subtitle-basic font-satoshi-bold my-4">
                   {item.title}
                 </h2>
                 <span className="text-[12px]  text-white">{item.date}</span>
@@ -113,7 +113,7 @@ const Section1 = ({ blogs, articles, cs }) => {
                   className="w-full rounded-[30px]"
                 />
               </Link>
-              <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
+              <h2 className="text-subtitle-basic-mv md:text-subtitle-basic font-satoshi-bold my-4">
                 {item.title}
               </h2>
               <span className="text-[12px]  text-gray-600">{item.date}</span>
@@ -140,7 +140,7 @@ const Section1 = ({ blogs, articles, cs }) => {
                   className="w-full rounded-[30px]"
                 />
               </Link>
-              <h2 className="text-subtitle-custom-mv md:text-subtitle-custom font-satoshi-bold my-4">
+              <h2 className="text-subtitle-basic-mv md:text-subtitle-basic font-satoshi-bold my-4">
                 {item.title}
               </h2>
               <span className="text-[12px]  text-gray-600">{item.date}</span>

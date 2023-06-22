@@ -18,7 +18,7 @@ import logo15 from "../assests/acros-media/truskin-logo.png";
 const Slider = () => {
   return (
     <div className="w-screen">
-      <h2 className="md:text-title-large text-title-large-mv font-satoshi-bold px-[10%] pt-10 text-center">We've worked with</h2>
+      <h2 className="md:text-subtitle-large text-subtitle-large-mv font-satoshi-bold px-[10%] pt-10 text-center">We've worked with</h2>
       <div className="mx-auto slider  overflow-hidden h-[250px] m-auto relative w-full grid place-items-center">
         <div className="slide-track flex w-[calc(220px*18)] ">
           <div className="slide h-[100px] w-[220px] flex items-center p-[15px] ">

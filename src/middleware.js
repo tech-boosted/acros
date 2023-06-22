@@ -8,7 +8,6 @@ export const postMiddleware = (url, data, callback, auth) => {
   let headers;
 
   let middlewareCallback = (res) => {
-    // console.log(res);
     if (res?.data?.success) {
       callback(res);
     } else {

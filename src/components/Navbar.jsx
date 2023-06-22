@@ -41,9 +41,10 @@ const Navbar = () => {
               )}
             </button>
           </li>
-          {Links.map((link) => (
+          {Links.map((link,index) => (
             <Link
               to={link.link}
+              key={index}
               className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium                 
              ${
                activeRoute(link.link) === true

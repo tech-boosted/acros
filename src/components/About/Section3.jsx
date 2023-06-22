@@ -13,12 +13,10 @@ const Section3 = () => {
           {strings.ABOUT_SECTION3_GRID.map((item, index) => (
             <div className="flex-col " key={index}>
               <p className="text-subtitle-basic-mv md:text-subtitle-basic font-satoshi-bold mb-3">
-                Integrity
+                {item.TITLE}
               </p>
               <p className="text-desc-basic-mv md:text-desc-basic font-satoshi-medium ">
-                Being honest, transparent, and ethical in all business dealings
-                are our top priority, We treat customers, employees, and
-                stakeholders with respect and fairness.
+                {item.DESCRIPTION}
               </p>
             </div>
           ))}

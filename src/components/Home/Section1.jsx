@@ -5,9 +5,9 @@ const Section1 = () => {
     <div className="w-screen flex md:flex-row flex-col-reverse bg-black">
       <div className="md:w-[50%] w-[80%] mx-auto md:h-screen ">
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/acros-resources.appspot.com/o/Acros-files%2F20230620_165751.png?alt=media&token=9dcef544-fb39-48cf-a0c0-0e30557e3bb1"
+          src="https://firebasestorage.googleapis.com/v0/b/acros-resources.appspot.com/o/Acros-files%2F20230620_195918%20(1).png?alt=media&token=a37308d9-f461-4664-862e-1b6221528e07"
           alt="the A team"
-          className="block mx-auto md:mt-[150px] mb-16 h-[60%]"
+          className="block mx-auto md:mt-[150px] mb-16 md:h-[60%] max-w-[70%]"
         />
       </div>
       <iframe

@@ -3,7 +3,7 @@ import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import { styled } from "@mui/material/styles";
-import { BsArrowRight, BsArrowUpRight } from "react-icons/bs";
+import {  BsArrowUpRight } from "react-icons/bs";
 import { agencySpecificationsArr } from "../../utils/Variable";
 
 const Accordion = styled((props) => (
@@ -101,7 +101,6 @@ const Specifications = () => {
                               onClick={() => setData(item.desc)}
                             >
                               <p className="font-satoshi-bold">{item.key}</p>
-                              <BsArrowRight className="transform hover:translate-x-2 transition-all delay-2 font-bold text-blue-700 text-[23px]" />
                             </div>
                           ))}
                         </div>

@@ -10,7 +10,7 @@ const Section5 = () => {
         </h2>
         <div className="md:w-[80%] w-full mx-auto grid h-fit md:grid-cols-2 grid-cols-1 gap-4">
           {strings.HOME_SECTION_5_GRID.map((item, index) => (
-            <div className="flex-col justify-around items-center  mt-5">
+            <div className="flex-col justify-around items-center  mt-5" key={index}>
               <div className="w-full my-4">
                 <img src={stars} className="m-auto block " alt="stars" />
               </div>

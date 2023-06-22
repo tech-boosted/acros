@@ -18,6 +18,7 @@ module.exports = {
         "title-large": "50px",
         "title-custom": "44px",
         "title-basic": "40px",
+        "subtitle-large": "35px",
         "subtitle-basic": "25px",
         "desc-basic": "18px",
 
@@ -25,10 +26,9 @@ module.exports = {
         "title-large-mv": "35px",
         "title-custom-mv": "28px",
         "title-basic-mv": "24px",
-        "desc-basic-mv": "16px",
+        "subtitle-large-mv": "25px",
         "subtitle-basic-mv": "22px",
-
-        // "title-custom-mv": "35px",
+        "desc-basic-mv": "16px",
       },
     },
     colors: () => ({

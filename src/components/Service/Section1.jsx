@@ -46,7 +46,7 @@ const Section1 = () => {
           <div className="bg-black text-white rounded-[30px]">
             <div className="grid md:grid-row-4 grid-cols-1 gap-4  md:grid-cols-4 text-center px-8 ">
               {strings.AGENCY_SECTION_2_GRID.map((item, index) => (
-                <div className="text-center py-4 pb-8">
+                <div className="text-center py-4 pb-8" key={index}>
                   <p className="md:text-title-basic text-title-basic-mv font-satoshi-bold">
                     {item.TITLE}
                   </p>

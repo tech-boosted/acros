@@ -18,7 +18,7 @@ const Section10 = () => {
 
         <div className="grid md:grid-cols-4 grid-cols-1 gap-4 mt-10 font-satoshi-bold">
           {strings.HOME_SECTION_8_GRID.map((item, index) => (
-            <div>
+            <div key={index}>
               <p className="">{item}</p>
             </div>
           ))}

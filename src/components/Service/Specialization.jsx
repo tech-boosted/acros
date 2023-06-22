@@ -139,11 +139,10 @@ const Specialization = () => {
                 {arr.capabilities.map((item, index) => (
                   <div
                     key={index}
-                    className="cursor-pointer flex md:w-[80%] w-full py-3   px-5   border-blue-700 border-b-[2px] items-center justify-between"
+                    className="cursor-pointer flex md:w-[50%] w-full py-3   px-5   border-blue-700 border-b-[2px] items-center justify-center"
                     onClick={() => setData(index)}
                   >
-                    <p className="font-satoshi-bold">{item.key}</p>
-                    <BsArrowRight className="transform hover:translate-x-2 transition-all delay-2 font-bold text-blue-700 text-[23px]" />
+                    <p className="font-satoshi-bold text-center">{item.key}</p>
                   </div>
                 ))}
               </div>

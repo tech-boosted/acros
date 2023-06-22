@@ -128,7 +128,7 @@ const Career = () => {
                       <tbody>
                         {resources.map((item, index) => (
                           <tr>
-                            <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <td key={index} className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                               <span className="relative inline-block px-3 py-1 font-semibold text-blue-600 leading-tight">
                                 <span
                                   aria-hidden

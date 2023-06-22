@@ -1,7 +1,7 @@
 const strings = {
   AGENCY: "Agency",
   AGENCY_DESCRIPTION:
-    "Our adverstising agency companies throughbred e-commerce Advertising Experts who can create conversion focused ad campaigns and strategies that resonate with the e- commerce target audience.They work with highly efficient customer behaviour patterns, buyers mind mapping and decision influencing tools to deliver gold - standard ROI.",
+    "Our adverstising agency comprises of throughbred e-commerce Advertising Experts who can create conversion focused ad campaigns and strategies that resonate with the e- commerce target audience.They work with highly efficient customer behaviour patterns, buyers mind mapping and decision influencing tools to deliver gold - standard ROI.",
   OPERATIONS: "Ads Operations Partners",
 
   //landing section
@@ -9,7 +9,7 @@ const strings = {
   AGENCY_SECTION_1_SUBTITLE:
     "World's leading and trusted E-commerce Advertising Agency.",
   AGENCY_SECTION_1_DESCRIPTION:
-    "Our adverstising agency companies throughbred e-commerce Advertising Experts who can create conversion focused ad campaigns and strategies that resonate with the e-commerce target audience. They work with highly efficient customer behaviour patterns, buyers mind mapping and decision influencing tools to deliver gold-standard ROI.  ",
+    "Our adverstising agency comprises of throughbred e-commerce Advertising Experts who can create conversion focused ad campaigns and strategies that resonate with the e-commerce target audience. They work with highly efficient customer behaviour patterns, buyers mind mapping and decision influencing tools to deliver gold-standard ROI.  ",
 
   // detail section
   AGENCY_SECTION_2_TITLE:
@@ -257,7 +257,7 @@ const strings = {
         "Advertising Partners of 50+ Leading E-commerce Agencies Worldwide.",
     },
     {
-      TITLE: "150+",
+      TITLE: "15+",
       DESCRIPTION: "Proficient in 15+ E- commerce Marketplaces.",
     },
     {
@@ -361,7 +361,7 @@ const strings = {
 
   HOME_SECTION_9_TITLE_1: "Agency ",
   HOME_SECTION_9_DESCRIPTION_1:
-    "Our adverstising agency companies throughbred e-commerce Advertising Experts who can create conversion focused ad campaigns and strategies that resonate with the e- commerce target audience.They work with highly efficient customer behaviour patterns, buyers mind mapping and decision influencing tools to deliver gold - standard ROI.",
+    "Our adverstising agency comprises of throughbred e-commerce Advertising Experts who can create conversion focused ad campaigns and strategies that resonate with the e- commerce target audience.They work with highly efficient customer behaviour patterns, buyers mind mapping and decision influencing tools to deliver gold - standard ROI.",
 
   HOME_SECTION_9_TITLE_2: "Ads Operations",
   HOME_SECTION_9_DESCRIPTION_2:

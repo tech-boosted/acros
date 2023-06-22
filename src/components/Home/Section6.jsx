@@ -23,7 +23,7 @@ const Section6 = () => {
           </div>
           <div className="grid md:grid-cols-4 gap-4  grid-cols-1 text-center">
             {strings.HOME_SECTION_6_GRID.map((item, index) => (
-              <div>
+              <div key={index}>
                 <h1 className="md:text-title-large text-title-large font-satoshi-bold">
                   {item.TITLE}
                 </h1>

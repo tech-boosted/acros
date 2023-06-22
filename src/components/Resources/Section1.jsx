@@ -77,7 +77,7 @@ const Section1 = ({ blogs, articles, cs }) => {
       {showArticle && (
         <div className="w-screen  px-[10%] grid md:grid-cols-2  grid-cols-1 gap-8  m-auto  my-10">
           {articles.map((item, index) => (
-            <div className="relative">
+            <div className="relative" key={index}>
               <img
                 src={item.imgSrc}
                 alt="Article1"

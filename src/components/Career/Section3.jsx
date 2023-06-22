@@ -15,11 +15,10 @@ const Section3 = () => {
           {strings.CAREER_SECTION_4_GRID.map((item, index) => (
             <div key={index}>
               <h2 className="font-satoshi-bold md:text-subtitle-basic text-subtitle-basic-mv mb-4 ">
-                Equal Pay
+                {item.TITLE}
               </h2>
               <p>
-                Our salary and compensation is merit based regardless of gender
-                or geography.
+              {item.DESCRIPTION}
               </p>
             </div>
           ))}

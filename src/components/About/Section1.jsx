@@ -6,7 +6,7 @@ const Section1 = () => {
       <div className=" md:w-[60%] w-full px-10    my-auto h-[60%] justify-center gap-8 flex-col flex items-center pt-36 mb-28">
         <p className="md:text-title-extra-large text-title-extra-large-mv font-satoshi-bold">
           We are{" "}
-          <div className="bg-white">
+          <div >
             <span
               style={{
                 color: "red",

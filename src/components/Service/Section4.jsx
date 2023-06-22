@@ -19,7 +19,7 @@ export const Section4 = () => {
 
         <div className="grid md:grid-cols-4 grid-cols-1 gap-4 mt-10 ">
           {strings.AGENCY_SECTION_5_GRID.map((item, index) => (
-            <div>
+            <div key={index}>
               <p className="pr-8 font-satoshi-bold leading-loose">{item}</p>
             </div>
           ))}

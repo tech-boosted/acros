@@ -22,7 +22,7 @@ const Section3 = () => {
 
             <div className="grid md:grid-cols-4 gap-4 grid-cols-1 md:text-start text-center ">
               {strings.HOME_SECTION_3_GRID.map((item, index) => (
-                <div className="flex-col">
+                <div className="flex-col" key={index}>
                   <div className="md:text-title-large text-title-large-mv font-satoshi-bold">
                     {item.TITLE}
                   </div>

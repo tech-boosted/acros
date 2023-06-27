@@ -243,14 +243,7 @@ const Section4 = () => {
             )}
           </div>
         </div>
-        <div className="md:block hidden w-[45%]  items-end self-end ">
-          <img
-            src="https://www.charle.co.uk/media/images/getintouchphones.png"
-            alt=""
-            className="object-contain w-full "
-          />
-        </div>
-
+        
         <Snackbar
           anchorOrigin={{ vertical: "top", horizontal: "right" }}
           open={open}

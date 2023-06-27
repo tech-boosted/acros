@@ -7,7 +7,7 @@ const Section6 = () => {
       <div className="shadow-3xl mb-10 flex md:flex-row flex-col items-center justify-center md:text-desc-basic text-desc-basic-mv md:w-[92%] w-[90%]  rounded-[30px] mx-auto text-white  bg-gradient-to-tr from-[#ff9022] from-25% via-50%   via-[#bb65da]  to-[#7034fc] to-65%">
         <div className="w-[40%] ">
           <img
-            src={logo}
+            src={"https://firebasestorage.googleapis.com/v0/b/acros-resources.appspot.com/o/Acros-files%2FOurImpact%20Section.png?alt=media&token=c13b2e4e-40bd-4cb2-aaf0-c291df7e3a41"}
             alt="candy image"
             className="md:block hidden w-[500px] object-contain"
           />

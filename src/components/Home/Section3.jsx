@@ -32,8 +32,8 @@ const Section3 = () => {
             </div>
           </div>
 
-          <div className="md:block hidden w-[40%]">
-            <img src={logo} alt="Mobile design" />
+          <div className="md:block hidden w-[40%] mt-10 ">
+            <img src={"https://firebasestorage.googleapis.com/v0/b/acros-resources.appspot.com/o/Acros-files%2FMultiChannelAdvertising%20Section.png?alt=media&token=bb99b3f6-6b4b-4835-83fb-5cc9dd06ceee"} alt="Mobile design" />
           </div>
         </div>
       </div>

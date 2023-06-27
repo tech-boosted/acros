@@ -177,13 +177,13 @@ const Section2 = () => {
             </button>
           </div>
         </div>
-        <div className="md:block hidden w-[45%] items-end self-end ">
+        {/* <div className="md:block hidden w-[45%] items-end self-end ">
           <img
             src="https://www.charle.co.uk/media/images/getintouchphones.png"
             alt=""
             className="object-contain w-full "
           />
-        </div>
+        </div> */}
       </div>
       <Snackbar
         anchorOrigin={{ vertical: "top", horizontal: "right" }}

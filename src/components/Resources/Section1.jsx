@@ -75,27 +75,27 @@ const Section1 = ({ blogs, articles, cs }) => {
       </div>
 
       {showArticle && (
-        <div className="w-screen  px-[10%] grid md:grid-cols-2  grid-cols-1 gap-8  m-auto  my-10">
+        <div className="w-screen px-[10%] grid md:grid-cols-2  grid-cols-1 gap-8  m-auto  my-10">
           {articles.map((item, index) => (
-            <div className="relative" key={index}>
-              <img
-                src={item.imgSrc}
-                alt="Article1"
-                className=" w-[700px] rounded-[30px]"
-                key={index}
-              />
-              <div className="absolute top-0 right-0 w-full h-full rounded-[30px] px-10 py-8 text-white bg-[#222f33b5] backdrop:blur-[55px] ">
-                <h2 className="text-subtitle-basic-mv md:text-subtitle-basic font-satoshi-bold my-4">
-                  {item.title}
-                </h2>
-                <span className="text-[12px]  text-white">{item.date}</span>
-                <p className=" my-4 mb-16">{item.shortDescription}</p>
-                <Link to={`/articles/0${index + 1}`} key={index}>
-                  <button className="text-white border border-white hover:bg-white hover:text-black active:bg-white font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
-                    Read More
-                  </button>
-                </Link>
-              </div>
+            <div>
+              <Link to={`/articles/0${index + 1}`} key={index}>
+                <img
+                  src={item.imgSrc}
+                  alt="Article1"
+                  key={index}
+                  className="w-full rounded-[30px]"
+                />
+              </Link>
+              <h2 className="text-subtitle-basic-mv md:text-subtitle-basic font-satoshi-bold my-4">
+                {item.title}
+              </h2>
+              <span className="text-[12px]  ">{item.date}</span>
+              <p className=" my-4">{item.shortDescription}</p>
+              <Link to={`/articles/0${index + 1}`} key={index}>
+                <button className="text-black border border-black hover:bg-black hover:text-white active:bg-white font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                  Read More
+                </button>
+              </Link>{" "}
             </div>
           ))}
         </div>
@@ -119,7 +119,7 @@ const Section1 = ({ blogs, articles, cs }) => {
               <span className="text-[12px]  text-gray-600">{item.date}</span>
               <p className=" my-4">{item.shortDescription}</p>
               <Link to={`/blogs/0${index + 1}`} key={index}>
-                <button className="text-primary border border-primary hover:bg-primary hover:text-white active:bg-primary font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+              <button className="text-black border border-black hover:bg-black hover:text-white active:bg-white font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
                   Read More
                 </button>
               </Link>
@@ -146,7 +146,7 @@ const Section1 = ({ blogs, articles, cs }) => {
               <span className="text-[12px]  text-gray-600">{item.date}</span>
               <p className=" my-4">{item.shortDescription}</p>
               <Link to={`/caseStudies/0${index + 1}`} key={index}>
-                <button className="text-primary border border-primary hover:bg-primary hover:text-white active:bg-primary font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+              <button className="text-black border border-black hover:bg-black hover:text-white active:bg-white font-bold uppercase text-xs px-4 py-2 rounded-[30px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
                   Read More
                 </button>
               </Link>{" "}

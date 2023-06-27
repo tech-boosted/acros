@@ -23,7 +23,7 @@ const WrittenContent = ({ obj }) => {
             alt="blogs/01"
             className="w-[100%] rounded-[30px] my-10 "
           />
-          <p className="font-satoshi-bold text-desc-basic leading-20">
+          <p className="font-satoshi-regular text-desc-basic leading-20">
             {parse(obj.description)}
           </p>
         </div>

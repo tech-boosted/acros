@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { MdClose} from "react-icons/md";
+import { MdClose } from "react-icons/md";
 import { HiMenu } from "react-icons/hi";
 import navlogo from "../assests/acros-media/across-nav-logo.png";
 import navlogowhite from "../assests/acros-media/white-footer-logo.png";
@@ -41,16 +41,15 @@ const Navbar = () => {
               )}
             </button>
           </li>
-          {Links.map((link,index) => (
+          {Links.map((link, index) => (
             <Link
               to={link.link}
               key={index}
               className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium                 
-             ${
-               activeRoute(link.link) === true
-                 ? " text-primary"
-                 : "font-medium text-slate-950"
-             }
+             ${activeRoute(link.link) === true
+                  ? " text-primary"
+                  : "font-medium text-slate-950"
+                }
 `}
             >
               <li
@@ -85,16 +84,22 @@ const Navbar = () => {
       </div>
     );
   };
-  var temp;
-  if(activeRoute("/") ){
-    temp = "py-5";
-  }else{
-    temp="py-10"
+  var content_style;
+  var wrapper_style;
+  if (activeRoute("/")) {
+    content_style = "py-5";
+    wrapper_style = "bg-black fixed z-50 top-0";
+  } else {
+    content_style = "py-10"
+    wrapper_style = "absolute top-0";
   }
 
+  var wrapper_style;
+
+
   return (
-    <div className="w-screen fixed bg-black z-50 top-0">
-      <div className={" md:flex items-center justify-between bg-transparent px-12 "+temp}>
+    <div className={"w-screen " + wrapper_style}>
+      <div className={" md:flex items-center justify-between bg-transparent px-12 " + content_style}>
         <div className="cursor-pointer flex items-center">
           {!activeRoute("/agency") && !activeRoute("/") ? (
             <Link to="/">
@@ -183,10 +188,9 @@ const Navbar = () => {
           <Link
             to={"/agency"}
             className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
-              ${
-                activeRoute("/agency") === true
-                  ? " text-primary"
-                  : "font-medium text-slate-950"
+              ${activeRoute("/agency") === true
+                ? " text-primary"
+                : "font-medium text-slate-950"
               }
 
               `}
@@ -197,10 +201,9 @@ const Navbar = () => {
           <Link
             to={"/about-us"}
             className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
-              ${
-                activeRoute("/about-us") === true
-                  ? " text-primary"
-                  : "font-medium text-slate-950"
+              ${activeRoute("/about-us") === true
+                ? " text-primary"
+                : "font-medium text-slate-950"
               }
 
               `}
@@ -212,10 +215,9 @@ const Navbar = () => {
           <Link
             to={"/resources"}
             className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
-              ${
-                activeRoute("/resources") === true
-                  ? " text-primary"
-                  : "font-medium text-slate-950"
+              ${activeRoute("/resources") === true
+                ? " text-primary"
+                : "font-medium text-slate-950"
               }
 
               `}
@@ -227,10 +229,9 @@ const Navbar = () => {
           <Link
             to={"/career"}
             className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
-              ${
-                activeRoute("/career") === true
-                  ? " text-primary"
-                  : "font-medium text-slate-950"
+              ${activeRoute("/career") === true
+                ? " text-primary"
+                : "font-medium text-slate-950"
               }
 
               `}
@@ -243,10 +244,9 @@ const Navbar = () => {
           <Link
             to={"/contact-us"}
             className={`text-lg hover:text-primary text-slate-950 duration-200 font-satoshi-medium
-              ${
-                activeRoute("/contact-us") === true
-                  ? " text-primary"
-                  : "font-medium text-slate-950"
+              ${activeRoute("/contact-us") === true
+                ? " text-primary"
+                : "font-medium text-slate-950"
               }
 
               `}

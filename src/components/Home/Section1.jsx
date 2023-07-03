@@ -14,23 +14,32 @@ const Section1 = () => {
         toggleActions: "restart pause reverse pause",
         start: "top 1",
         end: "bottom top",
-        scrub: true,
+        scrub: 1,
       },
       clipPath: "polygon(1vw 0%, 100vw 0%, 100vw 100%, 1vw 100%)", // Adjust the ending polygon width
       transform: 'translate3d(-20vw, 0, 0)',
-      duration: 4
+      ease: 'none',
+      duration: 3
     });
   }, []);
 
   return (
     <div className="w-screen bg-black relative flex flex-row h-[100vh]">
 
-      <div className=" relative w-[43%] flex justify-center items-center">
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/acros-resources.appspot.com/o/Acros-files%2F20230620_195918%20(1).png?alt=media&token=a37308d9-f461-4664-862e-1b6221528e07"
+      <div className=" relative w-[43%] flex flex-col  px-12 justify-center
+      uppercase text-white text-left font-satoshi-bold
+      " style={styles.text}>
+        {/* <img
+          // src="https://firebasestorage.googleapis.com/v0/b/acros-resources.appspot.com/o/Acros-files%2F20230620_195918%20(1).png?alt=media"
+          src="https://firebasestorage.googleapis.com/v0/b/acros-resources.appspot.com/o/Acros-files%2Fthe-a-team-black-bg.png?alt=media"
           alt="the A team"
-          className="md:h-[80%]"
-        />
+          className=""
+        /> */}
+        {/* <div className="uppercase text-white tracking-tighter text-xl	text-left font-satoshi-bold"> */}
+        <span style={styles.theateam}>The A Team</span>
+        of
+        E-Commerce Advertising
+        {/* </div> */}
       </div>
       {/* <iframe
         // src="https://player.vimeo.com/video/789740940?autopause=0&amp;loop=1&amp;background=1&amp;app_id=122963"
@@ -66,7 +75,19 @@ const styles = {
   video: {
     clipPath: 'polygon(22vw 0%, 100vw 0%, 100vw 100%, 22vw 100%)',
     transform: 'translate3d(0px, 0px, 0px)'
-  }
+  },
+  theateam: {
+    fontSize: 'clamp(2rem, 0.6737rem + 8vw, 10rem)',
+    fontWeight: 300,
+    lineHeight: 1.2,
+    letterSpacing: '-0.01em',
+  },
+  text: {
+    fontSize: 'clamp(2rem, 0.6737rem + 3vw, 10rem)',
+    fontWeight: 300,
+    lineHeight: 1.2,
+    letterSpacing: '-0.01em',
+  },
 }
 
 export default Section1;

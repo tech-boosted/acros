@@ -17,8 +17,13 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { getMiddleware } from "./middleware";
 import Banner3 from "./pages/Banner3";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 function App() {
+  
+  gsap.registerPlugin(ScrollTrigger);
   const [articles, setArticles] = useState([]);
   const [blogs, setBlogs] = useState([]);
   const [cs, setCS] = useState([]);

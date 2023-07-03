@@ -85,10 +85,16 @@ const Navbar = () => {
       </div>
     );
   };
+  var temp;
+  if(activeRoute("/") ){
+    temp = "py-5";
+  }else{
+    temp="py-10"
+  }
 
   return (
-    <div className="w-screen absolute top-0">
-      <div className=" md:flex items-center justify-between bg-transparent my-10 px-12">
+    <div className="w-screen sticky bg-black z-50 top-0">
+      <div className={" md:flex items-center justify-between bg-transparent px-12 "+temp}>
         <div className="cursor-pointer flex items-center">
           {!activeRoute("/agency") && !activeRoute("/") ? (
             <Link to="/">

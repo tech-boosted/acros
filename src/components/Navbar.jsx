@@ -93,7 +93,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="w-screen sticky bg-black z-50 top-0">
+    <div className="w-screen fixed bg-black z-50 top-0">
       <div className={" md:flex items-center justify-between bg-transparent px-12 "+temp}>
         <div className="cursor-pointer flex items-center">
           {!activeRoute("/agency") && !activeRoute("/") ? (
